@@ -19,6 +19,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'django-insecure-)10m6-b0kyh^pc&6_sa#&+x54lamoyc71@%9(mo=m&9aq5pbqd'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -35,7 +38,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
 
-
+    'student'
 ]
 
 
@@ -139,7 +142,7 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# AUTH_USER_MODEL = 'users.SysUser'
+# AUTH_USER_MODEL = 'users.Student'
 
 # ALLOWED_HOSTS = ['elira.pythonanywhere.com']
 ALLOWED_HOSTS = ['*']
