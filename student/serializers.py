@@ -10,6 +10,7 @@ class StudentSerializer(serializers.ModelSerializer):
             'first_name', 'last_name', 
             'email',
             'password', 
+            'news_history',
             'last_active', 'user_token', 'reset_key']
         extra_kwargs = {
             'password': {'write_only': True}

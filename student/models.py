@@ -7,6 +7,7 @@ class Student(AbstractUser):
     user_token = models.CharField(max_length=200, null=True)
     last_active = models.CharField(max_length=200, null = True)
     reset_key = models.CharField(max_length=200, null=True)
+    news_history = models.JSONField(default=list)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
