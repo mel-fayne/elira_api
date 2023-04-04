@@ -93,5 +93,6 @@ class ResetPasswordView(APIView):
             }
         return Response(data)
     
+# TODO
 # set pipeline to send reset key to email
 #  also make reset key a rest OTP
