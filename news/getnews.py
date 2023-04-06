@@ -152,15 +152,15 @@ TECH_TAGS = {
     'Space': ['nasa', 'spacex', 'mars', 'moon', 'astronomy', 'astrophysics'],
     'DevOps': ['devops', 'api', 'testing', 'pipeline', 'git', 'debugging', 'deployment', 'netlify', 'docker', 'kubernetes', 'ansible'],
     'OS': ['windows', 'ios', 'os', 'ubuntu', 'command', 'gui', 'virtual', 'virtual box', 'batch'],
-    'Mobile Development': ['kotlin', 'flutter', 'native', 'ios', 'android', 'swift', 'xamarin'],
-    'Web Development': ['react', 'javascript', 'html', 'css', 'angular', 'next.js', 'tailwind', 'web', 'wordpress', 'php', 'django', 'flask'],
+    'Mobile Dev': ['kotlin', 'flutter', 'native', 'ios', 'android', 'swift', 'xamarin'],
+    'Web Dev': ['react', 'javascript', 'html', 'css', 'angular', 'next.js', 'tailwind', 'web', 'wordpress', 'php', 'django', 'flask'],
     'Programming': ['python', 'java', 'c++', 'rust', 'javascript', 'json', 'scrum', 'agile', 'git', 'rest', 'springboot', 'api', 'trees', 'graph', 'arrays', 'binary', 'software'],
     'Cybersecurity': ['cybersecurity', 'cyber', 'hacking', 'phishing', 'breaches', 'encryption', 'authentication', 'firewalls', 'theft', 'vpn', 'security'],
     'Events': ['wwdc', 'event', 'summit', 'application', 'i/o'],
     'Business & Finance': ['venture', 'capital', 'fintech', 'banking', 'startup', 'entrepreneurship', 'e-commerce', 'ecosystem', 'lawsuit', 'fund', 'payday', 'bank', 'bankruptcy'],
     'Databases': ['database', 'postgresql', 'mongodb', 'sql', 'server', 'oracle', 'mysql'],
     'Networking': ['hub', 'switch', 'router', 'modem', 'vpn', 'lan', 'wan', 'wi-fi', 'network'],
-    'Cloud Computing': ['computing', 'aws', 'azure', 'cloud', 'storage', 'migration', 'crowdsource', 'service'],
+    'Cloud Computing': ['computing', 'aws', 'azure', 'cloud', 'storage', 'migration', 'crowdsource', 'service', 'quantum'],
     'Internet of Things': ['iot', 'smart', 'wearable', 'sensors'],
     'Gadgets': ['smartphone', 'wireless', 'laptop', 'watch', 'tablet', 'smartwatch', 'headphone', 'camera', '5g', 'wi-fi', 'bluetooth', 'samsung', 'asus', 'sony'],
     'Energy & Sustainability': ['renewable', 'energy', 'electric', 'vehicles', 'carbon', 'footprint', 'climate', 'sustainable'],
@@ -170,18 +170,12 @@ TECH_TAGS = {
 stop_words = set(stopwords.words('english'))
 
 def get_tech_topics(title):
+    title = title.replace("'", " ").replace(',', ' ').replace('.', ' ')
     keywords = [word for word in title.lower().split() if word not in stop_words]
 
     tech_matches = []
     for topic, topic_keywords in TECH_TAGS.items():
         for keyword in keywords:
-            # remove possession
-            if keyword.endswith("'s"):
-                keyword = keyword[:-2]
-            if keyword.endswith("'"):
-                keyword = keyword[:-1]
-
-            # check for match
             if keyword in topic_keywords:
                 if topic not in tech_matches:
                     tech_matches.append(topic)
@@ -214,8 +208,6 @@ NewsPiece.objects.bulk_create(news_pieces)
 
 print(f"NewsPiece Objects Created: {len(news_pieces)}")
 
-# TODO
-# Create Collaborative Filtering Model
-
 print('***************** News Fetch Complete *****************')
 
+# TODO : Create Filtering Models

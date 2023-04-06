@@ -41,3 +41,28 @@ Gadgets: Smartphones, Laptops, Tablets, Smartwatches, Headphones, Cameras, 5G, W
 Energy & Sustainability: Renewable Energy, Electric Vehicles, Clean Energy, Carbon Footprint, Climate Change, Sustainable Living, Green Technology
 
 Blockchain: Cryptocurrency, Crypto, Bitcoin, Web3, Decentralized, Ledger, Smart Contracts, Mining
+
+
+
+EVENT_TYPES = {
+    'Meetup': ['meetup', 'day', 'festival', 'fest'],
+    'Info Session': ['forum', 'expo', 'info session'],
+    'Conference': ['conference', 'summit'],
+    'Hackathon': ['hackathon'],
+    'Bootcamp': ['bootcamp'],
+    'Networking': ['networking'],
+    'Mentorship': ['mentorship']
+}
+
+EVENT_THEMES = {
+    'AI': ['ai', 'recognition', 'artificial', 'bots', 'chatbot', 'sentiment', 'neural', 'vision', 'intelligence'],
+    'DevOps': ['devops', 'api', 'testing', 'pipeline', 'git', 'debugging', 'deployment', 'netlify', 'docker', 'kubernetes'],
+    'Mobile Dev': ['kotlin', 'flutter', 'native', 'ios', 'android', 'swift', 'xamarin'],
+    'Web Dev': ['react', 'javascript', 'html', 'css', 'angular', 'next.js', 'tailwind', 'web', 'wordpress', 'php', 'django', 'flask'],
+    'Programming': ['python', 'java', 'c++', 'rust', 'structures', 'javascript', 'json', 'scrum', 'agile', 'git', 'rest', 'springboot', 'api', 'trees', 'graph', 'arrays', 'binary', 'software'],
+    'Cybersecurity': ['cybersecurity', 'cyber', 'hacking', 'phishing', 'breaches', 'encryption', 'authentication', 'firewalls', 'theft', 'vpn', 'security'],
+       'Cloud Computing': ['computing', 'aws', 'azure', 'cloud', 'storage', 'migration', 'crowdsource', 'service'],
+    'Internet of Things': ['iot', 'sensors'],
+    'Blockchain': ['cryptocurrency', 'blockchain', 'crypto', 'bitcoin', 'Dogecoin', 'ethereum', 'solidity', 'coin', 'web3', 'decentralized', 'ledger', 'contracts', 'mining']
+}'Databases': ['database', 'postgresql', 'mongodb', 'sql', 'server', 'oracle', 'mysql'],
+  
