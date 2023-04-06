@@ -3,7 +3,8 @@ import sys
 import django
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timedelta
+from django.utils import timezone
 
 # Add the project directory to the Python path
 project_dir = '/home/mel/Desktop/code-lab/api/elira_api'
@@ -40,8 +41,23 @@ for listing in eventbrite_listings:
 
     date_txt = listing.find('div', {
         'class': 'eds-event-card-content__sub-title eds-text-color--primary-brand eds-l-pad-bot-1 eds-l-pad-top-2 eds-text-weight--heavy eds-text-bm'}).text
-    date = datetime.strptime(
-        '2023-01-01 00:00:00', '%Y-%m-%d %H:%M:%S') if date_txt == '' else datetime.strptime(date_txt, "%a, %b %d, %I:%M %p")
+   
+    if 'Tomorrow' in date_txt:
+        tomorrow = datetime.today().date() + timedelta(days=1)
+        time_str = date_txt[:8]
+        date_string = f"{tomorrow.strftime('%A')}, {tomorrow.strftime('%b %d')}, {time_str}"
+        date = datetime.strptime(date_string, '%A, %b %d, %I:%M %p')
+    elif 'Today' in date_txt:
+        today = datetime.today().date()
+        time_str = date_txt[9:]
+        date_string = f"{today.strftime('%A')}, {today.strftime('%b %d')}, {time_str}"
+        date = datetime.strptime(date_string, '%A, %b %d, %I:%M %p')
+    elif date_txt == '':
+        date = datetime.strptime('2023-01-01 00:00:00', '%Y-%m-%d %H:%M:%S')
+    else:
+        current_year = datetime.now().year
+        date_txt = str(current_year) + ' ' + date_txt
+        date = datetime.strptime(date_txt, "%Y %a, %b %d, %I:%M %p")
 
     location = listing.find(
         'div', {'data-subcontent-key': 'location'}).text
@@ -83,9 +99,14 @@ for listing in meetup_listings:
 
     date_txt = listing.find(
         'div', class_='flex flex-col uppercase text-sm leading-5 tracking-tight text-darkGold font-medium pb-1 pt-1 line-clamp-1 lg:line-clamp-2').find('time').text
-    date = datetime.strptime(
-        '2023-01-01 00:00:00', '%Y-%m-%d %H:%M:%S') if date_txt == '' else datetime.strptime(date_txt, "%a, %b %d · %I:%M %p %Z"),
 
+    if date_txt == '':
+        date = datetime.strptime('2023-01-01 00:00:00', '%Y-%m-%d %H:%M:%S')
+    else:
+        current_year = datetime.now().year
+        date_txt = str(current_year) + ' ' + date_txt
+        date = datetime.strptime(date_txt, "%Y %a, %b %d · %I:%M %p %Z")
+    
     title = listing.find(
         'h2', class_='text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3').text
 
@@ -128,6 +149,7 @@ EVENT_FORMATS = {
     'Mentorship': ['mentorship']
 }
 
+
 def get_tech_format(title):
     title = title.replace("'", " ").replace(',', ' ').replace('.', ' ')
     keywords = [word for word in title.lower().split()]
@@ -141,18 +163,20 @@ def get_tech_format(title):
 
     return format_matches
 
+
 EVENT_THEMES = {
     'AI': ['ai', 'ai/machine', 'machine', 'learning', 'recognition', 'artificial', 'bots', 'chatbot', 'sentiment', 'neural', 'vision', 'intelligence'],
     'DevOps': ['devops', 'api', 'testing', 'pipeline', 'git', 'debugging', 'deployment', 'netlify', 'docker', 'kubernetes'],
     'Mobile Dev': ['kotlin', 'flutter', 'native', 'ios', 'android', 'swift', 'xamarin'],
     'Web Dev': ['react', 'javascript', 'html', 'css', 'angular', 'next.js', 'tailwind', 'web', 'wordpress', 'elementor', 'php', 'django', 'flask'],
-    'Programming': ['python', 'java', 'c++', 'rust', 'structures', 'javascript', 'json', 'scrum', 'agile', 'git', 'rest', 'springboot', 'api', 'trees', 'graph', 'arrays', 'binary', 'software'],
+    'Programming': ['python', 'java', 'ruby','c++', 'rust', 'structures', 'javascript', 'json', 'scrum', 'agile', 'git', 'rest', 'springboot', 'api', 'trees', 'graph', 'arrays', 'binary', 'software'],
     'Cybersecurity': ['cybersecurity', 'cyber', 'hacking', 'phishing', 'breaches', 'encryption', 'authentication', 'firewalls', 'theft', 'vpn', 'security'],
     'Cloud Computing': ['computing', 'aws', 'azure', 'cloud', 'quantum', 'storage', 'migration', 'crowdsource', 'service'],
     'Internet of Things': ['iot', 'sensors'],
     'Blockchain': ['cryptocurrency', 'blockchain', 'crypto', 'bitcoin', 'Dogecoin', 'ethereum', 'solidity', 'coin', 'web3', 'decentralized', 'ledger', 'contracts', 'mining'],
     'Databases': ['database', 'postgresql', 'mongodb', 'sql', 'server', 'oracle', 'mysql'],
 }
+
 
 def get_tech_themes(title):
     title = title.replace("'", " ").replace(',', ' ').replace('.', ' ')
@@ -167,6 +191,7 @@ def get_tech_themes(title):
 
     return theme_matches
 
+
 # tag event items
 for item in events:
     item['format'] = get_tech_format(item['title'])
@@ -176,8 +201,8 @@ print('All News Items Tagged!')
 
 # ----------- Step Three: Purge Yesterday's events ------------------
 
-today = datetime.date.today()
-news_pieces = TechEvent.objects.filter(date_created__lt=today)
+now = timezone.now()
+news_pieces = TechEvent.objects.filter(date_created__lt=now)
 num_deleted, _ = news_pieces.delete()
 
 print(f"Yesterday's TechEvent Objects Deleted: {num_deleted}")
@@ -193,7 +218,7 @@ for item in events:
         title=item.get('title', ''),
         link=item.get('link', ''),
         img=item.get('img', ''),
-        date=item.get('date',  datetime.strptime('2023-01-01 00:00:00', '%Y-%m-%d %H:%M:%S')),
+        date=date.strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
         location=item.get('location', ''),
         organiser=item.get('organiser', ''),
         format=item.get('format', []),
@@ -203,7 +228,6 @@ for item in events:
 
 TechEvent.objects.bulk_create(tech_events)
 
-print(f"Today's TechEvent Objects Created: {len(news_pieces)}")
+print(f"Today's TechEvent Objects Created: {len(tech_events)}")
 
 print('***************** Events Fetch Ended *****************')
-
