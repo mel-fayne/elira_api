@@ -4,7 +4,6 @@ import django
 import feedparser
 import requests
 from bs4 import BeautifulSoup
-import datetime
 
 import nltk
 from nltk.corpus import stopwords
@@ -195,15 +194,7 @@ for item in news:
 
 print('All News Items Tagged!')
 
-# ----------- Step Three: Purge Yesterday's news pieces ------------------
-
-today = datetime.date.today()
-news_pieces = NewsPiece.objects.filter(date_created__lt=today)
-num_deleted, _ = news_pieces.delete()
-
-print(f"News Items Deleted: {num_deleted}")
-
-# ----------- Step Four: Add Today's news pieces ------------------
+# ----------- Step Three: Add Today's news pieces ------------------
 
 news_pieces = []
 
@@ -221,7 +212,7 @@ for item in news:
 
 NewsPiece.objects.bulk_create(news_pieces)
 
-print(f"News Pieces Created: {len(news_pieces)}")
+print(f"NewsPiece Objects Created: {len(news_pieces)}")
 
 # TODO
 # Create Collaborative Filtering Model
