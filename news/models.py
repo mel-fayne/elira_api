@@ -21,3 +21,20 @@ class NewsGroup(models.Model):
 
     def __str__(self):
         return self.id
+
+class TechEvent(models.Model):
+
+    source = models.CharField(max_length=50)
+    isOnline = models.BooleanField()
+    title = models.CharField(max_length=200)
+    link = models.CharField(max_length=800)
+    img = models.CharField(max_length=800)
+    location = models.CharField(max_length=200)
+    organiser = models.CharField(max_length=200)
+    date = models.DateField()
+    date_created = models.DateTimeField(auto_now_add=True)
+    format = models.JSONField(default=list)
+    themes = models.JSONField(default=list)
+
+    def __str__(self):
+        return self.title

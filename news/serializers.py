@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from news.models import NewsPiece, NewsGroup
+from news.models import NewsPiece, NewsGroup, TechEvent
 
 class NewsPieceSerializer(serializers.ModelSerializer):
     class Meta:
@@ -11,4 +11,9 @@ class NewsPieceSerializer(serializers.ModelSerializer):
 class NewsGroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = NewsGroup
+        fields = '__all__'
+
+class TechEventSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TechEvent
         fields = '__all__'
