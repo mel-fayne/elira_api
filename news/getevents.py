@@ -128,13 +128,14 @@ tech_events = []
 
 for item in events:
     tech_event = TechEvent(
-        source=item.get('source', ''),
-        source_img=item.get('source_img', ''),
-        title=item.get('title', ''),
-        link=item.get('link', ''),
-        header_img=item.get('header_img', ''),
-        publication=item.get('published', ''),
-        tags=item.get('tags', []),
+        source=item.get('source'),
+        isOnline=item.get('isOnline'),
+        title=item.get('title'),
+        link=item.get('link'),
+        img=item.get('img'),
+        date=item.get('date'),
+        location=item.get('location'),
+        organiser=item.get('organiser')
     )
     tech_events.append(tech_event)
 
