@@ -1,11 +1,12 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-from news.serializers import NewsPieceSerializer
-from news.models import NewsPiece
+from datetime import datetime, timedelta
+from news.serializers import NewsPieceSerializer, TechEventSerializer
+from news.models import NewsPiece, TechEvent
 
 # ---------------------- NewsPiece Views ------------------------------------
-class NewsPieceByTagView(APIView):
+class NewsPiecesByTagView(APIView):
     def get(self, request):
         tags = request.GET.get('tag')
 
@@ -22,3 +23,18 @@ class AllNewsPiecesView(APIView):
         news = NewsPiece.objects.all().order_by('date_created')
         news_serializer = NewsPieceSerializer(news, many=True)
         return Response(news_serializer.data)
+
+# ---------------------- TechEvent Views ------------------------------------
+class TechEventsByDateView(APIView):
+    def get(self, request):
+        period = int(request.GET.get('period'))
+        lastDate =  datetime.date.today() - timedelta(days=period)
+        events = TechEvent.objects.filter(date__mt=lastDate)
+        events_serializer = TechEventSerializer(events, many=True)
+        return Response(events_serializer.data)
+        
+class AllTechEventsView(APIView):
+    def get(self):
+        events = TechEvent.objects.all().order_by('date')
+        events_serializer = TechEventSerializer(events, many=True)
+        return Response(events_serializer.data)
