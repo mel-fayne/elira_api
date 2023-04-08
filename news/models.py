@@ -38,3 +38,18 @@ class TechEvent(models.Model):
 
     def __str__(self):
         return self.title
+
+class TechJob(models.Model):
+
+    source = models.CharField(max_length=50)
+    title = models.CharField(max_length=200)
+    link = models.CharField(max_length=800)
+    job_logo = models.CharField(max_length=800)
+    description = models.CharField(max_length=1000)
+    company = models.CharField(max_length=200)
+    posted = models.DateField()
+    date_created = models.DateTimeField(auto_now_add=True)
+    areas = models.JSONField(default=list)
+
+    def __str__(self):
+        return self.title
