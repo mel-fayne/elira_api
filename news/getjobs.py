@@ -3,17 +3,17 @@ import sys
 import django
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 from django.utils import timezone
 
 # Add the project directory to the Python path
-# project_dir = '/home/mel/Desktop/code-lab/api/elira_api'
-# sys.path.append(project_dir)
+project_dir = '/home/mel/Desktop/code-lab/api/elira_api'
+sys.path.append(project_dir)
 
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'elira_api.settings')
-# django.setup()
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'elira_api.settings')
+django.setup()
 
-# from news.models import TechJob
+from news.models import TechJob
 
 print('***************** Jobs Fetch Started *****************')
 
@@ -27,7 +27,7 @@ headers = {
 page = 1 
 while page <= 10:
     url = 'https://www.myjobmag.co.ke/search/jobs?q=intern--software--data--design--network--developer--cyber--database&currentpage=' + str(page)
-    response = requests.get(url)
+    response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.content, 'html.parser')
     job_listings = soup.find_all('li', class_='job-list-li')
 
@@ -51,7 +51,7 @@ while page <= 10:
             if date_elm != None:
                 date_txt = date_elm.text
                 posted = datetime.strptime(date_txt + ' 2023', '%d %B %Y')
-                
+
             jobs.append({
                 'source': 'MyJobMag',
                 'company': company,
@@ -101,5 +101,35 @@ for item in jobs:
     item['areas'] = get_job_area(item['title'])
 
 print('All Jobs Items Tagged!')
+
+
+# ----------- Step Three: Purge Yesterday's events ------------------
+
+now = timezone.now()
+tech_jobs = TechJob.objects.filter(date_created__lt=now)
+num_deleted, _ = tech_jobs.delete()
+
+print(f"Yesterday's TechJob Objects Deleted: {num_deleted}")
+
+# ----------- Step Four: Add Today's events ------------------
+
+tech_jobs = []
+
+for item in jobs:
+    tech_event = TechJob(
+        source=item.get('source', ''),
+        company=item.get('company', ''),
+        title=item.get('title', ''),
+        link=item.get('link', ''),
+        job_logo=item.get('job_logo', ''),
+        posted=item.get('posted').strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+        description=item.get('description', ''),
+        areas=item.get('areas', [])
+    )
+    tech_jobs.append(tech_event)
+
+TechJob.objects.bulk_create(tech_jobs)
+
+print(f"Today's TechJob Objects Created: {len(tech_jobs)}")
 
 print('***************** Events Fetch Ended *****************')

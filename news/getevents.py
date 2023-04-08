@@ -218,7 +218,7 @@ for item in events:
         title=item.get('title', ''),
         link=item.get('link', ''),
         img=item.get('img', ''),
-        date=date.strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+        date=item.get('date').strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
         location=item.get('location', ''),
         organiser=item.get('organiser', ''),
         format=item.get('format', []),
