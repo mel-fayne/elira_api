@@ -51,8 +51,7 @@ while page <= 10:
             if date_elm != None:
                 date_txt = date_elm.text
                 posted = datetime.strptime(date_txt + ' 2023', '%d %B %Y')
-            print(posted)
-
+                
             jobs.append({
                 'source': 'MyJobMag',
                 'company': company,
@@ -66,5 +65,41 @@ while page <= 10:
     page += 1
 
 print(f"Job Items Collected {len(jobs)}")
+
+# ----------- Step Two: Tag Jobs ------------------
+
+JOB_AREAS = {
+    'Data & AI': ['data'],
+    'Software': ['software', 'devops'],
+    'Networking & Cloud': ['network', 'networking', 'cloud'],
+    'Cyber Security': ['cyber', 'security'],
+    'Database': ['database', 'sql'],
+    'Intern': ['intern', 'assistant'],
+    'Developer': ['developer', 'frontend', 'backend', 'stack'],
+    'Design': ['design', 'designer', 'ui/ux', 'ui', 'ux'],
+    'Web Dev': ['web'],
+    'IT & Support': ['support', 'it', 'ict'],
+    'Sales': ['sales', 'marketing']
+}
+
+
+def get_job_area(title):
+    title = title.replace("-", " ").replace(",", " ").replace("-", " ")
+    keywords = [word for word in title.lower().split()]
+
+    area_matches = []
+    for area, area_keywords in JOB_AREAS.items():
+        for keyword in keywords:
+            if keyword in area_keywords:
+                if area not in area_matches:
+                    area_matches.append(area)
+
+    return area_matches
+
+# tag job items
+for item in jobs:
+    item['areas'] = get_job_area(item['title'])
+
+print('All Jobs Items Tagged!')
 
 print('***************** Events Fetch Ended *****************')
