@@ -122,7 +122,7 @@ for item in jobs:
         title=item.get('title', ''),
         link=item.get('link', ''),
         job_logo=item.get('job_logo', ''),
-        posted=item.get('posted').strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+        posted=item.get('posted').date(),
         description=item.get('description', ''),
         areas=item.get('areas', [])
     )
