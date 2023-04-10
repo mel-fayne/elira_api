@@ -11,7 +11,10 @@ class StudentSerializer(serializers.ModelSerializer):
             'first_name', 'last_name',
             'email',
             'password', 
-            'last_active', 'user_token', 'reset_otp', 'reset_time']
+            'news_history'
+            'last_active', 'user_token', 
+            'isVerified', 'verify_otp',
+            'reset_otp', 'reset_expiry']
         extra_kwargs = {
             'password': {'write_only': True}
         }
