@@ -1,8 +1,6 @@
 from django.urls import path
 from student.views.auth_views import ForgotPasswordView, LoginView, ResetOTPView, VerifyUserView, CrudUserView
 from student.views.views import StudentView, AllStudentsView
-from student.views.auth_views import ForgotPasswordView, LoginView, ResetOTPView, VerifyUserView, CrudUserView
-from student.views.views import StudentView, AllStudentsView
 
 urlpatterns = [
     # ---------- GET endpoints ------------
@@ -14,8 +12,6 @@ urlpatterns = [
     path('register', CrudUserView.as_view()),
     path('user_account/<int:student_id>', CrudUserView.as_view()),
     path('login', LoginView.as_view()),
-    path('verify_user/<int:student_id>', VerifyUserView.as_view()),
-    path('verify_user', VerifyUserView.as_view()),
     path('verify_user/<int:student_id>', VerifyUserView.as_view()),
     path('verify_user', VerifyUserView.as_view()),
     path('forgot_password', ForgotPasswordView.as_view()),
