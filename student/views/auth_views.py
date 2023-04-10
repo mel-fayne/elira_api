@@ -151,6 +151,7 @@ class VerifyUserView(APIView):
             Response('Wrong Code!')
 
 
+
 class ForgotPasswordView(APIView):
     def post(self, request):
         student_email = request.data['email']

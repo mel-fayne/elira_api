@@ -12,6 +12,14 @@ class StudentView(APIView):
         serializer = StudentSerializer(student)
         return Response(serializer.data)
     
+    
+
+class StudentView(APIView):
+    def get(self, *args, **kwargs):
+        student = Student.objects.filter(id=self.kwargs['student_id']).first()
+        serializer = StudentSerializer(student)
+        return Response(serializer.data)
+    
     def patch(self, request, *args, **kwargs):
         student = Student.objects.filter(id=self.kwargs['student_id']).first()
         serializer = StudentSerializer(student, data=request.data, partial=True)
