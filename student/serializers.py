@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from student.models import Student
+from student.models import Student, TechnicalProfile
 
 
 class StudentSerializer(serializers.ModelSerializer):
@@ -35,3 +35,9 @@ class StudentSerializer(serializers.ModelSerializer):
                 setattr(instance, attr, value)
         instance.save()
         return instance
+
+
+class TechnicalProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TechnicalProfile
+        fields = '__all__'

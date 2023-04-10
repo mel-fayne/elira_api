@@ -5,7 +5,7 @@ class Student(models.Model):
   
     first_name = models.CharField(max_length=50, null=True)
     last_name = models.CharField(max_length=50, null=True)
-    email = models.CharField(max_length=200, unique=True)
+    email = models.CharField(max_length=100, unique=True)
 
     # ------------- auth fields --------------
     user_token = models.CharField(max_length=200, null=True)
@@ -36,3 +36,17 @@ class Student(models.Model):
     def getOTPTime(self):
         return self.reset_expiry
     
+class TechnicalProfile(models.Model):
+
+    student_id = models.ForeignKey(Student, null=True, on_delete=models.CASCADE)
+    git_username = models.CharField(max_length=50)
+    total_commits = models.IntegerField(default=0)
+    totals_prs = models.IntegerField(default=0)
+    current_streak  = models.IntegerField(default=0)
+    top_languages = models.JSONField(default=dict)
+    repos = models.JSONField(default=dict)
+    technical_score = models.FloatField(default=0.0)
+    specialisation_rank = models.JSONField(default=dict)
+
+    def __str__(self):
+        return self.git_username
