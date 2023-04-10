@@ -53,12 +53,12 @@ class LoginView(APIView):
         return Response(serializer.data)
 
 
-class UserView(APIView):
+class CrudUserView(APIView):
     def get(self, *args, **kwargs):
         student = Student.objects.filter(id=self.kwargs['student_id']).first()
         serializer = StudentSerializer(student)
         return Response(serializer.data)
-
+    
     def post(self, request):
         student_email = request.data['email']
         student = Student.objects.filter(email=student_email).first()
@@ -150,6 +150,7 @@ class VerifyUserView(APIView):
         else:
             Response('Wrong Code!')
 
+
 class ForgotPasswordView(APIView):
     def post(self, request):
         student_email = request.data['email']
@@ -203,10 +204,3 @@ class ResetOTPView(APIView):
                 return Response('Security Check Failed!')
         else:
             return Response('OTP is inactive!')
-
-
-class LogoutView(APIView):
-    def post(self, request):
-        response = Response()
-        response.delete_cookie('jwt')
-        return Response('Logged Out')
