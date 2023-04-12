@@ -97,3 +97,15 @@ class WorkExpProfile(models.Model):
 
     def __str__(self):
             return self.title
+    
+
+class SoftSkillProfile(models.Model):
+
+    student_id = models.ForeignKey(
+        Student, null=True, on_delete=models.CASCADE)
+    skills = models.JSONField(default=dict)
+    mbti = models.CharField(max_length=6, null=True)
+    soft_skill_score = models.FloatField(default=0.0)
+
+    def __str__(self):
+            return self.title
