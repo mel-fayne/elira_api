@@ -41,7 +41,7 @@ class TechnicalProfile(models.Model):
     student_id = models.ForeignKey(Student, null=True, on_delete=models.CASCADE)
     git_username = models.CharField(max_length=50)
     total_commits = models.IntegerField(default=0)
-    totals_prs = models.IntegerField(default=0)
+    total_prs = models.IntegerField(default=0)
     current_streak  = models.IntegerField(default=0)
     top_languages = models.JSONField(default=dict)
     repos = models.JSONField(default=dict)
