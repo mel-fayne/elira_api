@@ -1,6 +1,6 @@
 from django.urls import path
 from student.views.auth_views import ForgotPasswordView, LoginView, ResetOTPView, VerifyUserView, CrudUserView
-from student.views.views import StudentView, AllStudentsView, TechnicalProfileView, WorkExpProfileView
+from student.views.views import StudentView, AllStudentsView, TechnicalProfileView, WorkExpProfileView, SoftSkillProfileView
 
 urlpatterns = [
     # ---------- Student endpoints ------------
@@ -14,6 +14,10 @@ urlpatterns = [
     # ---------- WorkExpProfile endpoints ------------
     path('workexp_profile/<int:student_id>', WorkExpProfileView.as_view()),
     path('workexp_profile', WorkExpProfileView.as_view()),
+
+    # ---------- SoftSkillProfile endpoints ------------
+    path('softskill_profile/<int:student_id>', SoftSkillProfileView.as_view()),
+    path('softskill_profile', SoftSkillProfileView.as_view()),
 
     # ---------- auth endpoints ------------
     path('register', CrudUserView.as_view()),

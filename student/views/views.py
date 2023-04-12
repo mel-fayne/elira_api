@@ -4,8 +4,8 @@ from rest_framework.response import Response
 import requests
 from bs4 import BeautifulSoup
 
-from student.serializers import StudentSerializer, TechnicalProfileSerializer, WorkExpProfileSerializer
-from student.models import Student, TechnicalProfile, WorkExpProfile
+from student.serializers import StudentSerializer, TechnicalProfileSerializer, WorkExpProfileSerializer, SoftSkillProfileSerializer
+from student.models import Student, TechnicalProfile, WorkExpProfile, SoftSkillProfile
 
 # Create your views here.
 
@@ -135,6 +135,26 @@ class WorkExpProfileView(APIView):
     def patch(self, request, *args, **kwargs):
         workexp_profile = WorkExpProfileSerializer.objects.filter(id=self.kwargs['student_id']).first()
         serializer = WorkExpProfileSerializer(
+            workexp_profile, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+
+class SoftSkillProfileView(APIView):
+    def get(self, *args, **kwargs):
+        softskill_profile = SoftSkillProfile.objects.filter(id=self.kwargs['student_id']).first()
+        serializer = SoftSkillProfileSerializer(softskill_profile)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = SoftSkillProfileSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+
+    def patch(self, request, *args, **kwargs):
+        workexp_profile = SoftSkillProfileSerializer.objects.filter(id=self.kwargs['student_id']).first()
+        serializer = SoftSkillProfileSerializer(
             workexp_profile, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
