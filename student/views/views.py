@@ -4,8 +4,8 @@ from rest_framework.response import Response
 import requests
 from bs4 import BeautifulSoup
 
-from student.serializers import StudentSerializer, TechnicalProfileSerializer
-from student.models import Student, TechnicalProfile
+from student.serializers import StudentSerializer, TechnicalProfileSerializer, WorkExpProfileSerializer
+from student.models import Student, TechnicalProfile, WorkExpProfile
 
 # Create your views here.
 
@@ -115,6 +115,27 @@ class TechnicalProfileView(APIView):
         dev_details['repos'] = repos
 
         serializer = TechnicalProfileSerializer(data=dev_details)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+    
+
+class WorkExpProfileView(APIView):
+    def get(self, *args, **kwargs):
+        workexp_profile = WorkExpProfile.objects.filter(id=self.kwargs['student_id']).first()
+        serializer = WorkExpProfileSerializer(workexp_profile)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = WorkExpProfileSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+
+    def patch(self, request, *args, **kwargs):
+        workexp_profile = WorkExpProfileSerializer.objects.filter(id=self.kwargs['student_id']).first()
+        serializer = WorkExpProfileSerializer(
+            workexp_profile, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data)
