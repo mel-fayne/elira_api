@@ -92,3 +92,8 @@ class WorkExpProfile(models.Model):
     end_date = models.DateField(null=True)
     industry = models.CharField(max_length=100, choices=INDUSTRIES)
     skills = models.JSONField(default=dict)
+    work_exp_score = models.FloatField(default=0.0)
+    specialisation_rank = models.JSONField(default=dict)
+
+    def __str__(self):
+            return self.title
