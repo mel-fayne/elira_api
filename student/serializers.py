@@ -1,18 +1,18 @@
 from rest_framework import serializers
 
-from student.models import Student, TechnicalProfile
+from student.models import Student, TechnicalProfile, WorkExpProfile
 
 
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
         fields = [
-            'id', 
+            'id',
             'first_name', 'last_name',
             'email',
-            'password', 
+            'password',
             'news_history'
-            'last_active', 'user_token', 
+            'last_active', 'user_token',
             'isVerified', 'verify_otp',
             'reset_otp', 'reset_expiry']
         extra_kwargs = {
@@ -26,7 +26,7 @@ class StudentSerializer(serializers.ModelSerializer):
             instance.set_password(password)
         instance.save()
         return instance
-    
+
     def update(self, instance, validated_data):
         for attr, value in validated_data.items():
             if attr == 'password':
@@ -40,4 +40,10 @@ class StudentSerializer(serializers.ModelSerializer):
 class TechnicalProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = TechnicalProfile
+        fields = '__all__'
+
+
+class WorkExpProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = WorkExpProfile
         fields = '__all__'

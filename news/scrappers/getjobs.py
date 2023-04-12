@@ -78,6 +78,7 @@ JOB_AREAS = {
     'Developer': ['developer', 'frontend', 'backend', 'stack'],
     'Design': ['design', 'designer', 'ui/ux', 'ui', 'ux'],
     'Web Dev': ['web'],
+    'Mobile Dev': ['mobile'],
     'IT & Support': ['support', 'it', 'ict'],
     'Sales': ['sales', 'marketing']
 }
