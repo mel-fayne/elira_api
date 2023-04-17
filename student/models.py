@@ -38,10 +38,9 @@ class Student(models.Model):
     def getOTPTime(self):
         return self.reset_expiry
 
-
 class TechnicalProfile(models.Model):
 
-    student_id = models.ForeignKey(
+    student_id = models.OneToOneField(
         Student, null=True, on_delete=models.CASCADE)
     git_username = models.CharField(max_length=50)
     total_commits = models.IntegerField(default=0)
@@ -81,7 +80,7 @@ class WorkExpProfile(models.Model):
         ('Design', 'Design'),
     )
 
-    student_id = models.ForeignKey(
+    student_id = models.OneToOneField(
         Student, null=True, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     employment_type = models.CharField(max_length=100, choices=EMP_TYPE)
@@ -101,11 +100,32 @@ class WorkExpProfile(models.Model):
 
 class SoftSkillProfile(models.Model):
 
-    student_id = models.ForeignKey(
+    student_id = models.OneToOneField(
         Student, null=True, on_delete=models.CASCADE)
-    skills = models.JSONField(default=dict)
-    mbti = models.CharField(max_length=6, null=True)
     soft_skill_score = models.FloatField(default=0.0)
 
     def __str__(self):
             return self.title
+
+    def getId(self):
+         return self.id
+    
+class SoftSkill(models.Model):
+    SOFTSKILLS = (
+        ('Teamwork', 'Teamwork'),
+        ('Adaptability', 'Adaptability'),
+        ('Problem Solving', 'Problem Solving'),
+        ('Critical Thinking', 'Critical Thinking'),
+        ('Communication', 'Communication'),
+        ('Interpersonal Skills', 'Interpersonal Skills'),
+        ('Leadership', 'Leadership'),
+        ('Responsibility', 'Responsibility')
+    )
+
+    name = models.CharField(max_length=50, choices=SOFTSKILLS)
+    score = models.FloatField(default=0.0)
+    ss_profile = models.ForeignKey(
+        SoftSkillProfile, null=True, on_delete=models.CASCADE)
+
+    def __str__(self):
+            return self.name

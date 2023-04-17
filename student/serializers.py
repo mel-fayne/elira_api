@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from student.models import SoftSkillProfile, Student, TechnicalProfile, WorkExpProfile
+from student.models import SoftSkill, SoftSkillProfile, Student, TechnicalProfile, WorkExpProfile
 
 
 class StudentSerializer(serializers.ModelSerializer):
@@ -52,4 +52,9 @@ class WorkExpProfileSerializer(serializers.ModelSerializer):
 class SoftSkillProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = SoftSkillProfile
+        fields = '__all__'
+
+class SoftSkillSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SoftSkill
         fields = '__all__'
