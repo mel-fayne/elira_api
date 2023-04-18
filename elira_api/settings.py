@@ -87,18 +87,18 @@ WSGI_APPLICATION = 'elira_api.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-
     # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'elira$default',
-    #     'USER': 'elira',
-    #     'PASSWORD': '#eliraAdmin',
-    #     'HOST': 'elira.mysql.pythonanywhere-services.com',
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
+
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'elira$default',
+        'USER': 'elira',
+        'PASSWORD': '#eliraAdmin',
+        'HOST': 'elira.mysql.pythonanywhere-services.com',
+    }
 }
 
 
@@ -143,8 +143,8 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# ALLOWED_HOSTS = ['elira.pythonanywhere.com']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['elira.pythonanywhere.com']
+# ALLOWED_HOSTS = ['*']
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
