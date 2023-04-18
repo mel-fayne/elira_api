@@ -56,6 +56,15 @@ class TechnicalProfile(models.Model):
 
 
 class WorkExpProfile(models.Model):
+    student_id = models.OneToOneField(
+        Student, null=True, on_delete=models.CASCADE)
+    work_exp_score = models.FloatField(default=0.0)
+    specialisation_rank = models.JSONField(default=dict)
+    
+    def getId(self):
+         return self.id
+
+class WorkExp(models.Model):
     EMP_TYPE = (
         ('Full-Time', 'Full-Time'),
         ('Part-Time', 'Part-Time'),
@@ -80,8 +89,8 @@ class WorkExpProfile(models.Model):
         ('Design', 'Design'),
     )
 
-    student_id = models.OneToOneField(
-        Student, null=True, on_delete=models.CASCADE)
+    wx_profile = models.ForeignKey(
+        WorkExpProfile, null=True, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     employment_type = models.CharField(max_length=100, choices=EMP_TYPE)
     company_name = models.CharField(max_length=100)
@@ -91,8 +100,6 @@ class WorkExpProfile(models.Model):
     end_date = models.DateField(null=True)
     industry = models.CharField(max_length=100, choices=INDUSTRIES)
     skills = models.JSONField(default=dict)
-    work_exp_score = models.FloatField(default=0.0)
-    specialisation_rank = models.JSONField(default=dict)
 
     def __str__(self):
             return self.title
@@ -103,9 +110,6 @@ class SoftSkillProfile(models.Model):
     student_id = models.OneToOneField(
         Student, null=True, on_delete=models.CASCADE)
     soft_skill_score = models.FloatField(default=0.0)
-
-    def __str__(self):
-            return self.title
 
     def getId(self):
          return self.id
