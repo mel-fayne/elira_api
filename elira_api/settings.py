@@ -37,7 +37,7 @@ INSTALLED_APPS = [
 
     'corsheaders',
     'rest_framework',
-    
+
     'student',
     'news'
 ]
@@ -94,10 +94,10 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'elira$default',
-        'USER': 'elira',
-        'PASSWORD': '#eliraAdmin',
-        'HOST': 'elira.mysql.pythonanywhere-services.com',
+        'NAME': 'melfayne$default',
+        'USER': 'melfayne',
+        'PASSWORD': '#EliraAdmin',
+        'HOST': 'melfayne.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -143,7 +143,7 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ['elira.pythonanywhere.com']
+ALLOWED_HOSTS = ['melfayne.pythonanywhere.com']
 # ALLOWED_HOSTS = ['*']
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
