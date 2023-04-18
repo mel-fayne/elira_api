@@ -6,7 +6,7 @@ from django.conf import settings
 from django.utils.crypto import get_random_string
 import jwt
 import datetime
-import requests
+# import requests
 
 from student.serializers import StudentSerializer
 from student.models import Student
@@ -58,58 +58,59 @@ class CrudUserView(APIView):
         student = Student.objects.filter(id=self.kwargs['student_id']).first()
         serializer = StudentSerializer(student)
         return Response(serializer.data)
-    
+
     def post(self, request):
         student_email = request.data['email']
         student = Student.objects.filter(email=student_email).first()
         if student is None:
-            # check to confirm email is valid
-            abstractAPI_res = requests.get(
-                ABSTARCT_API_URL + "&email=" + student_email)
-            is_valid_email = is_valid(abstractAPI_res.content)
+            # # check to confirm email is valid
+            # abstractAPI_res = requests.get(
+            #     ABSTARCT_API_URL + "&email=" + student_email)
+            # is_valid_email = is_valid(abstractAPI_res.content)
 
-            if is_valid_email:
-                # send verification code
-                unique_code = get_random_string(
-                    length=6, allowed_chars='0123456789')
-                send_mail(
-                    subject="One Last Step: Let's get you verified",
-                    message=f'''
-                        Welcome Aboard!
-                        Thank you for signing up for Elira! Here's you're one time passcode:
+            # if is_valid_email:
+            #     # send verification code
+            #     unique_code = get_random_string(
+            #         length=6, allowed_chars='0123456789')
+            #     send_mail(
+            #         subject="One Last Step: Let's get you verified",
+            #         message=f'''
+            #             Welcome Aboard!
+            #             Thank you for signing up for Elira! Here's you're one time passcode:
 
-                        {unique_code}
+            #             {unique_code}
 
-                        Here's to becoming a stellar graduate! We look forward to serving you!
+            #             Here's to becoming a stellar graduate! We look forward to serving you!
 
-                        If you did not sign up for Elira, please ignore this email.
+            #             If you did not sign up for Elira, please ignore this email.
 
-                        Best regards,
-                        Elira Team
-                            ''',
-                    from_email=settings.EMAIL_HOST_USER,
-                    recipient_list=[student_email])
+            #             Best regards,
+            #             Elira Team
+            #                 ''',
+            #         from_email=settings.EMAIL_HOST_USER,
+            #         recipient_list=[student_email])
 
-                # create user account
-                student_data = {"email": student_email,
-                                "first_name": request.data['first_name'],    "last_name": request.data['last_name'],
-                                "school": request.data['school'],
-                                "course": request.data['course'],
-                                "current_sem": request.data['current_sem'],
-                                "verify_otp": int(unique_code)},
-                serializer = StudentSerializer(data=student_data)
-                serializer.is_valid(raise_exception=True)
-                serializer.save()
+            # create user account
+            student_data = {"email": student_email,
+                            "first_name": request.data['first_name'],    "last_name": request.data['last_name']
+                            # "school": request.data['school'],
+                            # "course": request.data['course'],
+                            # "current_sem": request.data['current_sem'],
+                            # "verify_otp": int(unique_code)
+                            },
+            serializer = StudentSerializer(data=student_data)
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
 
-            else:
-                raise AuthenticationFailed(
-                    'Invalid Email!')
+                # else:
+                #     raise AuthenticationFailed(
+                #         'Invalid Email!')
         else:
             raise AuthenticationFailed(
                 'Email exists!')
 
         return Response(serializer.data)
-    
+
     def patch(self, request, *args, **kwargs):
         student = Student.objects.filter(id=self.kwargs['student_id']).first()
         serializer = StudentSerializer(student, data=request.data, partial=True)
