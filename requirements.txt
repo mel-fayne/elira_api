@@ -27,3 +27,5 @@ tzlocal==4.2
 virtualenv==20.16.5
 whitenoise==6.2.0
 mysqlclient==2.1.1
+requests
+bs4
