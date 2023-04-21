@@ -11,26 +11,30 @@ sys.path.append(project_dir)
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'elira_api.settings')
 django.setup()
 
-from student.models import TechnicalProfile
 from student.serializers import TechnicalProfileSerializer
+from student.models import TechnicalProfile
 
 print('***************** Starting Git Status Update *****************')
 
-profiles = TechnicalProfile.objects.all()
+# profiles = TechnicalProfile.objects.all()
+profiles = ['mel-fayne']
 
 for profile in profiles:
     dev_details = {}
-    git_name  = profile.getGitName()
+    # git_name  = profile.getGitName()
+    git_name = profile
 
     # get commits and PRs
-    commits_url = "https://github-readme-stats.vercel.app/api?username=" + git_name + "&count_private=true"
+    commits_url = "https://github-readme-stats.vercel.app/api?username=" + \
+        git_name + "&count_private=true"
     commits_res = requests.get(commits_url)
     commits_soup = BeautifulSoup(commits_res.content, 'html.parser')
     commits_elem = commits_soup.find('desc').text
 
     substrings = commits_elem.split(', ')
     key_value_pairs = [substring.split(': ') for substring in substrings]
-    dev_details = {key.strip(): value.strip() for key, value in key_value_pairs}
+    dev_details = {key.strip(): value.strip()
+                   for key, value in key_value_pairs}
 
     total_commits = dev_details['Total Commits in 2023']
     total_prs = dev_details['Total PRs']
@@ -40,6 +44,9 @@ for profile in profiles:
     del dev_details['Contributed to (last year)']
     del dev_details['Total PRs']
     del dev_details['Total Commits in 2023']
+
+    dev_details['total_commits'] = 634
+    dev_details['total_prs'] = total_prs
 
     # get top langauges
     lang_url = "https://github-readme-stats.vercel.app/api/top-langs/?username=" + git_name
@@ -64,12 +71,13 @@ for profile in profiles:
     streak_url = "https://streak-stats.demolab.com/?user=" + git_name
     streak_res = requests.get(streak_url)
     streak_soup = BeautifulSoup(streak_res.content, 'html.parser')
-    streak = streak_soup.find('text', {'style': 'animation: currstreak 0.6s linear forwards'}).text.strip()
+    streak = streak_soup.find(
+        'text', {'style': 'animation: currstreak 0.6s linear forwards'}).text.strip()
 
     dev_details['streak'] = streak
 
     headers = {
-        'Authorization': 'Bearer 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'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
     }
 
     repos_url = "https://api.github.com/users/" + git_name + "/repos"
@@ -83,11 +91,11 @@ for profile in profiles:
         language = repo['language']
         stargazers_count = repo['stargazers_count']
         commits_url = repo['commits_url'].replace('{/sha}', '')
-        
+
         commits_response = requests.get(commits_url)
         commits = commits_response.json()
         num_commits = len(commits)
-        
+
         repo_details.append({
             'name': name,
             'language': language,
@@ -95,12 +103,17 @@ for profile in profiles:
             'num_commits': num_commits
         })
 
-
     dev_details['repo_details'] = repo_details
 
-    serializer = TechnicalProfileSerializer(profile, data=dev_details, partial=True)
-    serializer.is_valid(raise_exception=True)
-    serializer.save()
+    print(dev_details['streak'])
+    print(dev_details['top_languages'])
+    print(dev_details['total_commits'])
+    print(dev_details['total_prs'])
+    print(dev_details)
+
+    # serializer = TechnicalProfileSerializer(profile, data=dev_details, partial=True)
+    # serializer.is_valid(raise_exception=True)
+    # serializer.save()
 
 
 print('***************** Finished Git Status Update *****************')

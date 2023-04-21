@@ -1,22 +1,28 @@
 import os
 import sys
 
-venv_dir = 'home/melfayne/.virtualenvs/elira-virtualenv'
-venv_python = os.path.join(venv_dir, 'bin', 'python3.10')
-sys.executable = venv_python
+# venv_dir = 'home/melfayne/.virtualenvs/elira-virtualenv'
+# venv_python = os.path.join(venv_dir, 'bin', 'python3.10')
+# sys.executable = venv_python
+
+# # Add the project directory to the Python path
+# project_dir = '/home/melfayne/elira_api'
+# sys.path.append(project_dir)
+
+# # Set the DJANGO_SETTINGS_MODULE environment variable
+# os.environ['DJANGO_SETTINGS_MODULE'] = 'elira_api.settings'
 
 # Add the project directory to the Python path
-project_dir = '/home/melfayne/elira_api'
+project_dir = '/home/mel/Desktop/code-lab/api/elira_api'
 sys.path.append(project_dir)
 
-# Set the DJANGO_SETTINGS_MODULE environment variable
-os.environ['DJANGO_SETTINGS_MODULE'] = 'elira_api.settings'
-
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'elira_api.settings')
 # Load Django Project
 import django
 django.setup()
 
 import requests
+import feedparser
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from django.utils import timezone
@@ -58,10 +64,11 @@ for listing in eventbrite_listings:
         'class': 'eds-event-card-content__sub-title eds-text-color--primary-brand eds-l-pad-bot-1 eds-l-pad-top-2 eds-text-weight--heavy eds-text-bm'}).text
 
     if 'Tomorrow' in date_txt:
-        tomorrow = datetime.today().date() + timedelta(days=1)
-        time_str = date_txt[:8]
-        date_string = f"{tomorrow.strftime('%A')}, {tomorrow.strftime('%b %d')}, {time_str}"
-        date = datetime.strptime(date_string, '%A, %b %d, %I:%M %p')
+        # tomorrow = datetime.today().date() + timedelta(days=1)
+        # time_str = date_txt[:8]
+        # date_string = f"{tomorrow.strftime('%A')}, {tomorrow.strftime('%b %d')}, {time_str}"
+        # date = datetime.strptime(date_string, '%A, %b %d, %I:%M %p')
+        continue
     elif 'Today' in date_txt:
         today = datetime.today().date()
         time_str = date_txt[9:]
