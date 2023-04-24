@@ -1,0 +1,802 @@
+[
+    {
+        "school": "STRATH",
+        "unit": "HED 1102 Communication Skills I",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics"
+        ],
+        "grouping_codes": [
+            "CS03"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "HED 1202 Communication Skills I",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics"
+        ],
+        "grouping_codes": [
+            "CS03"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2103 Computer Networks",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS08"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1101 Computers Fundamentals",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1203 Database Systems",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS06"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1103 Differential Calculus",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1104 Discrete Mathematics",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1105 Fundamentals of Economics",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS15"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1204 Integral Calculus",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1102 Introduction to Programming",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1205 Linear Algebra",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1202 Oriented Programming I",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1206 Principles of Management",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS15"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2203 Advanced Networking",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS08"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2104 Computer Organization and Architecture",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 1201 Data Structures and Algorithms",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2211 Digital Logic",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS02 : Hardware and Electronics"
+        ],
+        "grouping_codes": [
+            "CS02"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3104 Internet Application Programming",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2101 Oriented Programming II",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2202 Operating Systems",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "HED 2101 Principles of Ethics",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics"
+        ],
+        "grouping_codes": [
+            "CS03"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2106 Probability Statistics I",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2206 Probability Statistics II",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2201 Software Engineering",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2105 Systems Analysis and Design",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2102 Web Application Development",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS07 : Web and Mobile App Development"
+        ],
+        "grouping_codes": [
+            "CS07"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3101 Advanced Database Systems",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS06"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3202 Artificial Intelligence",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3203 Assembly Language Programming",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS05"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3103 Automata Theory and Computability",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 2204 CS Project I",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS13 : Final Project"
+        ],
+        "grouping_codes": [
+            "CS13"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3204 Computer Graphics",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS16 : Computer Graphics"
+        ],
+        "grouping_codes": [
+            "CS16"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3201 Computer Security and Cryptography",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS09 : Cyber Security"
+        ],
+        "grouping_codes": [
+            "CS09"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4205 Human Computer Interaction",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS17 : User Design"
+        ],
+        "grouping_codes": [
+            "CS17"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3111 Microprocessors",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS02 : Hardware and Electronics"
+        ],
+        "grouping_codes": [
+            "CS02"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3102 Mobile Application Development",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS07 : Web and Mobile App Development"
+        ],
+        "grouping_codes": [
+            "CS07"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3106 Operations Research",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS14 : Research Methodology"
+        ],
+        "grouping_codes": [
+            "CS14"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3205 Research Methodology and Technical Writing",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS14 : Research Methodology"
+        ],
+        "grouping_codes": [
+            "CS14"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3206 Server Administration",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS06"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4211 Compiler Construction",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4106 Computer Simulations and Modelling",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS16 : Computer Graphics"
+        ],
+        "grouping_codes": [
+            "CS16"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4204 Computing and Business Law",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics"
+        ],
+        "grouping_codes": [
+            "CS03"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4107 Computing for Bioinformatics",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems"
+        ],
+        "grouping_codes": [
+            "CS11"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4212 Corporate Governance and Sustainability",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS15"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4104 Distributed Systems",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS06"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4111 Embedded Systems and Internet of Things",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS02 : Hardware and Electronics"
+        ],
+        "grouping_codes": [
+            "CS02"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4206 IT Entrepreneurship and Innovation",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS15"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4101 Informatics Project II",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems"
+        ],
+        "grouping_codes": [
+            "CS11"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4203 Information Systems Security and Design",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS09 : Cyber Security",
+            "CS11 : Information Systems"
+        ],
+        "grouping_codes": [
+            "CS09",
+            "CS11"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4102 Machine Learning",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 3105 Multimedia Applications",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS07",
+            "CS08"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "SBL 1200 Service Based Learning",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "STRATH",
+        "unit": "ICS 4201 Social Informatics",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems"
+        ],
+        "grouping_codes": [
+            "CS11"
+        ]
+    }
+]

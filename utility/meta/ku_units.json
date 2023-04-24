@@ -1,0 +1,960 @@
+[
+    {
+        "school": "KU",
+        "unit": "UCU 100: Communication Skills",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics"
+        ],
+        "grouping_codes": [
+            "CS03"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 100: Computer Fundamentals",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 102: Introduction to Programming",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 104: Computer Organization and Architecture I",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 106: Electronics",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS02 : Hardware and Electronics"
+        ],
+        "grouping_codes": [
+            "CS02"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 108: Discrete Mathematics",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 110: Mathematical Foundations for Computer Science",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "UCU 101: Development Studies",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "UCU 103: Introduction to Critical and Creative Thinking",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics"
+        ],
+        "grouping_codes": [
+            "CS03"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 103: Object Oriented Programming I",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 105: Data Communication Technologies",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics"
+        ],
+        "grouping_codes": [
+            "CS03"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 113: Foundations of Artificial Intelligence ",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 109: Linear Algebra for Computer Science",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SMA 104: Calculus I",
+        "semester": "1.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 200: Object Oriented Programming II",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 204: Data Structures and Algorithms",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 206: Database Systems",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS06"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 208: Object Oriented Analysis and Design",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SMA 200: Calculus II",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 212: Probability and Statistics for Computer Science",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 201: Computer Organization and Architecture II",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 203: Software Testing and Quality Assurance",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 207: Web Development Technologies",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development",
+            "CS07 : Web and Mobile App Development"
+        ],
+        "grouping_codes": [
+            "CS05",
+            "CS07"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 209: Microprocessor and Assembly Language Programming",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS05"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 211: Automata Theory",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 215: System Analysis and Design",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 217: Operating Systems",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SIT 205: Entrepreneurship and Business Planning",
+        "semester": "2.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems",
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS11",
+            "CS15"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 300: Computer Networks",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS08"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 302: Software Project Management",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development",
+            "CS13 : Final Project",
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS05",
+            "CS13",
+            "CS15"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 304: Advanced Database Systems",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS06"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 306: Programming Languages",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 308: Design and Analysis of Algorithms",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS05"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 310: Component Programming",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SMA 330: Numerical Analysis I",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics",
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS01",
+            "CS04"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 301: Compiler Construction",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 303: Simulation and Modelling",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS16 : Computer Graphics"
+        ],
+        "grouping_codes": [
+            "CS16"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 305: Computer Graphics",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS16 : Computer Graphics"
+        ],
+        "grouping_codes": [
+            "CS16"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 307: Human Computer Interface",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS17 : User Design"
+        ],
+        "grouping_codes": [
+            "CS17"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 309: Research Methods and Technical Writing",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS14 : Research Methodology"
+        ],
+        "grouping_codes": [
+            "CS14"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 311: Electronic Commerce",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS15"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 312: Industrial Attachment",
+        "semester": "3.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS12 : Industrial Attachment"
+        ],
+        "grouping_codes": [
+            "CS12"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 400: Project",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS13 : Final Project"
+        ],
+        "grouping_codes": [
+            "CS13"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 402: Legal and Ethical Issues in Computing",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics",
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS03",
+            "CS04"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 404: Entrepreneurship",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS15"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 406: Computer Systems Security",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS09 : Cyber Security"
+        ],
+        "grouping_codes": [
+            "CS09"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 408: Information Systems Management",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems",
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS11",
+            "CS15"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 410: Distributed Systems",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS06"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 412: Mobile Computing and Wireless Technology",
+        "semester": "4.0",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS07 : Web and Mobile App Development"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS07"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "ECU 400: Research Methodology",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS14 : Research Methodology"
+        ],
+        "grouping_codes": [
+            "CS14"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 401: Network Management",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Net Centric Computing",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking",
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS08",
+            "CS15"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 403: Networked Applications",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Net Centric Computing",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS07 : Web and Mobile App Development"
+        ],
+        "grouping_codes": [
+            "CS07"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 405: Compression",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Net Centric Computing",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS16 : Computer Graphics"
+        ],
+        "grouping_codes": [
+            "CS16"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 407: Multimedia Technologies",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Net Centric Computing",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS08"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 409: Natural Language Processing",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Intelligent Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 411: Neural Networks",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Intelligent Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking",
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS08",
+            "CS10"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 413: Robotics",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Intelligent Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 415: Data Warehouse and Data Mining",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Intelligent Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS06 : Database Administration",
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS06",
+            "CS10"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 417: Geographic Information Systems (GIS)",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Information Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems"
+        ],
+        "grouping_codes": [
+            "CS11"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 419: Enterprise Resource Planning (ERP) Systems",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Information Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems"
+        ],
+        "grouping_codes": [
+            "CS11"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 421: Decision Support Systems",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Information Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems"
+        ],
+        "grouping_codes": [
+            "CS11"
+        ]
+    },
+    {
+        "school": "KU",
+        "unit": "SCO 423: Information System Auditing",
+        "semester": "4.0",
+        "elective": "True",
+        "elective_group": "Information Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems"
+        ],
+        "grouping_codes": [
+            "CS11"
+        ]
+    }
+]

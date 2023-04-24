@@ -1,0 +1,1166 @@
+[
+    {
+        "school": "CUEA",
+        "unit": "GS 100 Christian Ethics and Formation of Moral Maturity",
+        "semester": "1.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics"
+        ],
+        "grouping_codes": [
+            "CS03"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "MAT 111 Discrete Mathematics",
+        "semester": "1.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 102 Fundamentals of Computing",
+        "semester": "1.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 100 Physics for Computer Science",
+        "semester": "1.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+             "CS02 : Hardware and Electronics"
+        ],
+        "grouping_codes": [
+            "CS02"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 108 Introduction to Web Development",
+        "semester": "1.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development",
+            "CS07 : Web and Mobile App Development"
+        ],
+        "grouping_codes": [
+            "CS05",
+            "CS07"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 106 Elements of Accounting",
+        "semester": "1.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS15"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 104 Entrepreneurship",
+        "semester": "1.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS15"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "GS 101 Communication Skill",
+        "semester": "1.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics"
+        ],
+        "grouping_codes": [
+            "CS03"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "MAT 104 Elements of Linear Algebra",
+        "semester": "1.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 101 Hardware and Software Maintenance",
+        "semester": "1.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 110 Programming Methodology",
+        "semester": "1.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 107 Computer Networks",
+        "semester": "1.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS08"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 109 Database Systems",
+        "semester": "1.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS06"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "MAT 101 Differential Calculus",
+        "semester": "2.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 200 Semiconductor Theory",
+        "semester": "2.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+             "CS02 : Hardware and Electronics"
+        ],
+        "grouping_codes": [
+            "CS02"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 210 Object Oriented Programming I",
+        "semester": "2.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 203 Introduction to System Administration",
+        "semester": "2.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 205 Computer Architecture",
+        "semester": "2.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 208 Introduction to Artificial Intelligence",
+        "semester": "2.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "MAT 200 Integral Calculus",
+        "semester": "2.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "MAT 262 Probability & Statistics",
+        "semester": "2.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS01 : Mathematics and Statistics"
+        ],
+        "grouping_codes": [
+            "CS01"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 201 Logic Circuits",
+        "semester": "2.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+             "CS02 : Hardware and Electronics"
+        ],
+        "grouping_codes": [
+            "CS02"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 206 Operating Systems",
+        "semester": "2.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 209 Web Development",
+        "semester": "2.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development",
+            "CS07 : Web and Mobile App Development"
+        ],
+        "grouping_codes": [
+            "CS05",
+            "CS07"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 211 Object Oriented Programming II",
+        "semester": "2.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 300 Data Communications",
+        "semester": "3.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS08"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 302 Advanced Database Systems",
+        "semester": "3.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS06"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 304 Data Structures and Algorithms",
+        "semester": "3.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 308 Distributed Systems",
+        "semester": "3.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS06"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 310 Object Oriented System Analysis and Design",
+        "semester": "3.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 314 Mobile Application Development",
+        "semester": "3.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development",
+            "CS07 : Web and Mobile App Development"
+        ],
+        "grouping_codes": [
+            "CS05",
+            "CS07"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 301 Research Methodology",
+        "semester": "3.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS14 : Research Methodology"
+        ],
+        "grouping_codes": [
+            "CS14"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 307 .NET Programming",
+        "semester": "3.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 309 Design and Analysis of Algorithms",
+        "semester": "3.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 311 Fundamentals of Software Engineering",
+        "semester": "3.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 313 Computer graphics",
+        "semester": "3.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS16 : Computer Graphics"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS16"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 316 Human Computer Interface",
+        "semester": "3.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS17 : User Design"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS17"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 320 Industrial Attachment",
+        "semester": "3.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS12 : Industrial Attachment"
+        ],
+        "grouping_codes": [
+            "CS12"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 400 Research Project",
+        "semester": "4.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS13 : Final Project",
+            "CS14 : Research Methodology"
+        ],
+        "grouping_codes": [
+            "CS13",
+            "CS14"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 406 ICT & Society",
+        "semester": "4.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS03 : Skills and Ethics"
+        ],
+        "grouping_codes": [
+            "CS03"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 408 Software Project Management",
+        "semester": "4.1",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development",
+            "CS13 : Final Project",
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS05",
+            "CS13",
+            "CS15"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 410 Network Programming",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Distributed Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development",
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS05",
+            "CS08"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 412 Distributed Operating Systems",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Distributed Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS06"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 413 Network Design and Administration",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Distributed Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS08"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 416 Client Server Systems and Computing",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Distributed Systems",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 414 Accounting Information Systems",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Software Engineering",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems",
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS11",
+            "CS15"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 415 CAD/CAM Techniques",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Software Engineering",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 418 Multi Media Systems",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Software Engineering",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development",
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS05",
+            "CS08"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 422 Software Engineering Techniques",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Software Engineering",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 420 Systems Programming",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Computer Architecture",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 430 Advanced Computer Architecture",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Computer Architecture",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 431 Simulations and Modeling",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Computer Architecture",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS06 : Database Administration"
+        ],
+        "grouping_codes": [
+            "CS06"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 433 Compiler Construction",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Computer Architecture",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 411 Decision Support Systems",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Artificial Intelligence",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems",
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS11",
+            "CS10"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 424 Natural Language Processing",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Artificial Intelligence",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 427 Knowledge Based Systems",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Artificial Intelligence",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 440 Advanced Artificial Intelligence",
+        "semester": "4.1",
+        "elective": "True",
+        "elective_group": "Artificial Intelligence",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 400 Research Project",
+        "semester": "4.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS13 : Final Project",
+            "CS14 : Research Methodology"
+        ],
+        "grouping_codes": [
+            "CS13",
+            "CS14"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 403 Information Systems Management",
+        "semester": "4.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems",
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS11",
+            "CS15"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 405 Information Systems Security",
+        "semester": "4.2",
+        "elective": "False",
+        "elective_group": "",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS09 : Cyber Security",
+            "CS11 : Information Systems"
+        ],
+        "grouping_codes": [
+            "CS09",
+            "CS11"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 417 Advanced Web Development",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "A",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS05 : Programming and Software Development",
+            "CS07 : Web and Mobile App Development"
+        ],
+        "grouping_codes": [
+            "CS05",
+            "CS07"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 421 Parallel Computing",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "A",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 446 Information Systems Auditing",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "A",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS11 : Information Systems"
+        ],
+        "grouping_codes": [
+            "CS11"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 447 Web Application Security",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "A",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS07 : Web and Mobile App Development",
+            "CS09 : Cyber Security"
+        ],
+        "grouping_codes": [
+            "CS07",
+            "CS09"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 423 Electronic Commerce",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "B",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS15"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 425 Statistical data Analysis",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "B",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture"
+        ],
+        "grouping_codes": [
+            "CS04"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 445 Business Intelligence",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "B",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science",
+            "CS11 : Information Systems",
+            "CS15 : Business and Management"
+        ],
+        "grouping_codes": [
+            "CS10",
+            "CS11",
+            "CS15"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 435 Automata and language",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "C",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 442 Signal Processing",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "C",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking"
+        ],
+        "grouping_codes": [
+            "CS08"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 425 Assembly Language Programming",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "C",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS04 : Systems and Architecture",
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS04",
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 441 Logic Programming",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "D",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS02 : Hardware and Electronics",
+            "CS05 : Programming and Software Development"
+        ],
+        "grouping_codes": [
+            "CS02",
+            "CS05"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 442 Neural Networking",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "D",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS08 : Networking",
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS08",
+            "CS10"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 443 Data Mining",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "D",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS10 : Artificial Intelligence and Data Science"
+        ],
+        "grouping_codes": [
+            "CS10"
+        ]
+    },
+    {
+        "school": "CUEA",
+        "unit": "CMT 444 Game Programming",
+        "semester": "4.2",
+        "elective": "True",
+        "elective_group": "D",
+        "grouping_code": "",
+        "grouping_name": "",
+        "grouping_names": [
+            "CS18 : Gaming Development"
+        ],
+        "grouping_codes": [
+            "CS18"
+        ]
+    }
+]
