@@ -596,11 +596,9 @@
         "grouping_code": "",
         "grouping_name": "",
         "grouping_names": [
-            "CS13 : Final Project",
             "CS14 : Research Methodology"
         ],
         "grouping_codes": [
-            "CS13",
             "CS14"
         ]
     },
@@ -628,13 +626,9 @@
         "grouping_code": "",
         "grouping_name": "",
         "grouping_names": [
-            "CS05 : Programming and Software Development",
-            "CS13 : Final Project",
             "CS15 : Business and Management"
         ],
         "grouping_codes": [
-            "CS05",
-            "CS13",
             "CS15"
         ]
     },
@@ -897,11 +891,9 @@
         "grouping_code": "",
         "grouping_name": "",
         "grouping_names": [
-            "CS13 : Final Project",
             "CS14 : Research Methodology"
         ],
         "grouping_codes": [
-            "CS13",
             "CS14"
         ]
     },

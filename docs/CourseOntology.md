@@ -1,5 +1,6 @@
 # Course Ontology
 
+## List of Unit Groupings
 CS01 : Mathematics and Statistics
 CS02 : Hardware and Electronics
 CS03 : Skills and Ethics
@@ -15,5 +16,6 @@ CS12 : Industrial Attachment
 CS13 : Final Project
 CS14 : Research and Development
 CS15 : Business and Management
-
-
+CS16 : Computer Graphics
+CS17 : User Design
+CS18 : Gaming Development
