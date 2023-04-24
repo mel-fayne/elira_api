@@ -42,11 +42,11 @@ UNIT_GROUPS = [
 
 import json
 
-jkuat_path = '/home/mel/Desktop/code-lab/api/elira_api/utility/units/jkuat_units.json'
-uon_path = '/home/mel/Desktop/code-lab/api/elira_api/utility/units/uon_units.json'
-ku_path = '/home/mel/Desktop/code-lab/api/elira_api/utility/units/ku_units.json'
-cuea_path = '/home/mel/Desktop/code-lab/api/elira_api/utility/units/cuea_units.json'
-strath_path = '/home/mel/Desktop/code-lab/api/elira_api/utility/units/strath_units.json'
+jkuat_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/jkuat_units.json'
+uon_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/uon_units.json'
+ku_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/ku_units.json'
+cuea_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/cuea_units.json'
+strath_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/strath_units.json'
 
 with open(jkuat_path, 'r') as file:
     data = json.load(file)
