@@ -29,3 +29,8 @@ whitenoise==6.2.0
 mysqlclient==2.1.1
 requests
 bs4
+pandas==2.0.1
+matplotlib==3.7.1
+tensorflow==2.12.0
+numpy
+scikit-learn
