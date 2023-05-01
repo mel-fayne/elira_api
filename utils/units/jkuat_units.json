@@ -6,12 +6,10 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS03 : Skills and Ethics",
-      "CS05 : Programming and Software Development"
+      "CS03 : Skills and Ethics"
     ],
     "grouping_codes": [
-      "CS03",
-      "CS05"
+      "CS03"
     ]
   },
   {
