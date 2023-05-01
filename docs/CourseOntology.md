@@ -1,5 +1,23 @@
 # Course Ontology
 
+# Table of Contents
+1. [Specialisations & Unit Grouping](#specialisations--unit-grouping)
+2. [Unit Groupings and Their Individual Units in Select Schools](#unit-groupings-and-their-individual-units-in-select-schools)
+   1. [JKUAT](#jkuat)
+
+
+# Specialisations & Unit Grouping
+
+- A total of 8 CS specialisations are being considered for prediction. Namely:
+  - Network Administration
+  - Database Administration
+  - A.I & Data Science
+  - Cyber Security
+  - Software Development
+  - Graphics & Design
+  - Information Systems
+  - Hardware & Operating Systems
+
 - A total of 18 unit groups across the various curricula were identified as below:
   - CS01 : Mathematics and Statistics
   - CS02 : Hardware and Electronics
