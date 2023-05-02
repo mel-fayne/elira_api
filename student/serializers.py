@@ -13,8 +13,13 @@ class StudentSerializer(serializers.ModelSerializer):
             'password',
             'news_history'
             'last_active', 'user_token',
-            'isVerified', 'verify_otp',
-            'reset_otp', 'reset_expiry']
+            'first_pet',
+            'childhood_street',
+            'first_teacher',
+            'favourite_flavour',
+            'childhod_nickname',
+            'first_phone'
+        ]
         extra_kwargs = {
             'password': {'write_only': True}
         }
@@ -53,6 +58,7 @@ class SoftSkillProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = SoftSkillProfile
         fields = '__all__'
+
 
 class SoftSkillSerializer(serializers.ModelSerializer):
     class Meta:
