@@ -127,8 +127,8 @@ ___
 ### CS04 : Systems and Architecture
 - Code : CS04
 - Name :  : Systems and Architecture
-- Unit_count : 19
-- Unit_perc : 5.26
+- Unit_count : 14
+- Unit_perc : 7.14
  
 <br/>
  
@@ -137,8 +137,6 @@ ___
     - ICS 2102 Introduction to Computer Programming - 1.1
  
 <br/>
- 
-    - SMA 2220 Vector Analysis - 2.1
     - ICS 2202 Operating Systems I - 2.1
  
 <br/>
@@ -155,26 +153,22 @@ ___
 <br/>
  
     - SMA 2305 Complex Analysis I - 3.2
-    - ICS 2306 Computer Networks - 3.2
-    - ICS 2311 Computer Graphics - 3.2
  
 <br/>
  
     - ICS 2401 Compiler Construction - 4.1
     - ICS 2403 Distributed Systems - 4.1
-    - ICS 2406 Computer Systems Project - 4.1
  
 <br/>
  
     - ICS 2407 Theory of Computing - 4.2
     - ICS 2410 Parallel Systems - 4.2
-    - ICS 2406 Computer Systems Project - 4.2
         
 ### CS05 : Programming and Software Development
 - Code : CS05
 - Name :  : Programming and Software Development
 - Unit_count : 17
-- Unit_perc : 
+- Unit_perc : 5.88
  
 <br/>
  
