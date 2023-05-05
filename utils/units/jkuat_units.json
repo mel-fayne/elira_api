@@ -6,10 +6,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS03 : Skills and Ethics"
+      "cs03 : Skills and Ethics"
     ],
     "grouping_codes": [
-      "CS03"
+      "cs03"
+    ],
+    "unit_perecentages": [
+      50
     ]
   },
   {
@@ -19,10 +22,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS01 : Mathematics and Statistics"
+      "cs01 : Mathematics and Statistics"
     ],
     "grouping_codes": [
-      "CS01"
+      "cs01"
+    ],
+    "unit_perecentages": [
+      11.11
     ]
   },
   {
@@ -32,10 +38,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS01 : Mathematics and Statistics"
+      "cs01 : Mathematics and Statistics"
     ],
     "grouping_codes": [
-      "CS01"
+      "cs01"
+    ],
+    "unit_perecentages": [
+      11.11
     ]
   },
   {
@@ -45,10 +54,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS01 : Mathematics and Statistics"
+      "cs01 : Mathematics and Statistics"
     ],
     "grouping_codes": [
-      "CS01"
+      "cs01"
+    ],
+    "unit_perecentages": [
+      11.11
     ]
   },
   {
@@ -58,10 +70,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-       "CS02 : Hardware and Electronics"
+      "cs02 : Hardware and Electronics"
     ],
     "grouping_codes": [
-      "CS02"
+      "cs02"
+    ],
+    "unit_perecentages": [
+      25
     ]
   },
   {
@@ -71,10 +86,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture"
+      "cs04 : Systems and Architecture"
     ],
     "grouping_codes": [
-      "CS04"
+      "cs04"
+    ],
+    "unit_perecentages": [
+      7.14
     ]
   },
   {
@@ -84,10 +102,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture"
+      "cs04 : Systems and Architecture"
     ],
     "grouping_codes": [
-      "CS04"
+      "cs04"
+    ],
+    "unit_perecentages": [
+      7.14
     ]
   },
   {
@@ -97,12 +118,16 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture",
-      "CS05 : Programming and Software Development"
+      "cs04 : Systems and Architecture",
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS04",
-      "CS05"
+      "cs04",
+      "cs05"
+    ],
+    "unit_perecentages": [
+      7.14,
+      5.88
     ]
   },
   {
@@ -112,10 +137,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS03 : Skills and Ethics"
+      "cs03 : Skills and Ethics"
     ],
     "grouping_codes": [
-      "CS03"
+      "cs03"
+    ],
+    "unit_perecentages": [
+      50
     ]
   },
   {
@@ -125,10 +153,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS01 : Mathematics and Statistics"
+      "cs01 : Mathematics and Statistics"
     ],
     "grouping_codes": [
-      "CS01"
+      "cs01"
+    ],
+    "unit_perecentages": [
+      11.11
     ]
   },
   {
@@ -138,10 +169,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS01 : Mathematics and Statistics"
+      "cs01 : Mathematics and Statistics"
     ],
     "grouping_codes": [
-      "CS01"
+      "cs01"
+    ],
+    "unit_perecentages": [
+      11.11
     ]
   },
   {
@@ -151,10 +185,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-       "CS02 : Hardware and Electronics"
+      "cs02 : Hardware and Electronics"
     ],
     "grouping_codes": [
-      "CS02"
+      "cs02"
+    ],
+    "unit_perecentages": [
+      25
     ]
   },
   {
@@ -164,10 +201,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -177,10 +217,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -190,10 +233,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -203,10 +249,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -216,12 +265,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS01 : Mathematics and Statistics",
-      "CS04 : Systems and Architecture"
+      "cs01 : Mathematics and Statistics"
     ],
     "grouping_codes": [
-      "CS01",
-      "CS04"
+      "cs01"
+    ],
+    "unit_perecentages": [
+      11.11
     ]
   },
   {
@@ -231,10 +281,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS01 : Mathematics and Statistics"
+      "cs01 : Mathematics and Statistics"
     ],
     "grouping_codes": [
-      "CS01"
+      "cs01"
+    ],
+    "unit_perecentages": [
+      11.11
     ]
   },
   {
@@ -244,10 +297,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS01 : Mathematics and Statistics"
+      "cs01 : Mathematics and Statistics"
     ],
     "grouping_codes": [
-      "CS01"
+      "cs01"
+    ],
+    "unit_perecentages": [
+      11.11
     ]
   },
   {
@@ -257,10 +313,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-       "CS02 : Hardware and Electronics"
+      "cs02 : Hardware and Electronics"
     ],
     "grouping_codes": [
-      "CS02"
+      "cs02"
+    ],
+    "unit_perecentages": [
+      25
     ]
   },
   {
@@ -270,10 +329,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -283,10 +345,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture"
+      "cs04 : Systems and Architecture"
     ],
     "grouping_codes": [
-      "CS04"
+      "cs04"
+    ],
+    "unit_perecentages": [
+      7.14
     ]
   },
   {
@@ -296,10 +361,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -309,10 +377,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -322,10 +393,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS15 : Business and Management"
+      "cs15 : Business and Management"
     ],
     "grouping_codes": [
-      "CS15"
+      "cs15"
+    ],
+    "unit_perecentages": [
+      33.33
     ]
   },
   {
@@ -335,10 +409,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-       "CS02 : Hardware and Electronics"
+      "cs02 : Hardware and Electronics"
     ],
     "grouping_codes": [
-      "CS02"
+      "cs02"
+    ],
+    "unit_perecentages": [
+      25
     ]
   },
   {
@@ -348,10 +425,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS06 : Database Administration"
+      "cs06 : Database Administration"
     ],
     "grouping_codes": [
-      "CS06"
+      "cs06"
+    ],
+    "unit_perecentages": [
+      33.33
     ]
   },
   {
@@ -361,10 +441,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture"
+      "cs04 : Systems and Architecture"
     ],
     "grouping_codes": [
-      "CS04"
+      "cs04"
+    ],
+    "unit_perecentages": [
+      7.14
     ]
   },
   {
@@ -374,10 +457,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture"
+      "cs04 : Systems and Architecture"
     ],
     "grouping_codes": [
-      "CS04"
+      "cs04"
+    ],
+    "unit_perecentages": [
+      7.14
     ]
   },
   {
@@ -387,12 +473,16 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture",
-      "CS07 : Web and Mobile App Development"
+      "cs04 : Systems and Architecture",
+      "cs07 : Web and Mobile App Development"
     ],
     "grouping_codes": [
-      "CS04",
-      "CS07"
+      "cs04",
+      "cs07"
+    ],
+    "unit_perecentages": [
+      7.14,
+      100
     ]
   },
   {
@@ -402,10 +492,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture"
+      "cs04 : Systems and Architecture"
     ],
     "grouping_codes": [
-      "CS04"
+      "cs04"
+    ],
+    "unit_perecentages": [
+      7.14
     ]
   },
   {
@@ -415,10 +508,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS01 : Mathematics and Statistics"
+      "cs01 : Mathematics and Statistics"
     ],
     "grouping_codes": [
-      "CS01"
+      "cs01"
+    ],
+    "unit_perecentages": [
+      11.11
     ]
   },
   {
@@ -428,10 +524,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS12 : Industrial Attachment"
+      "cs12 : Industrial Attachment"
     ],
     "grouping_codes": [
-      "CS12"
+      "cs12"
+    ],
+    "unit_perecentages": [
+      50
     ]
   },
   {
@@ -441,10 +540,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS15 : Business and Management"
+      "cs15 : Business and Management"
     ],
     "grouping_codes": [
-      "CS15"
+      "cs15"
+    ],
+    "unit_perecentages": [
+      33.33
     ]
   },
   {
@@ -454,10 +556,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS14 : Research Methodology"
+      "cs14 : Research Methodology"
     ],
     "grouping_codes": [
-      "CS14"
+      "cs14"
+    ],
+    "unit_perecentages": [
+      100
     ]
   },
   {
@@ -467,10 +572,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -480,12 +588,16 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture",
-      "CS05 : Programming and Software Development"
+      "cs04 : Systems and Architecture",
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS04",
-      "CS05"
+      "cs04",
+      "cs05"
+    ],
+    "unit_perecentages": [
+      7.14,
+      5.88
     ]
   },
   {
@@ -495,10 +607,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -508,10 +623,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS08 : Networking"
+      "cs08 : Networking"
     ],
     "grouping_codes": [
-      "CS08"
+      "cs08"
+    ],
+    "unit_perecentages": [
+      25
     ]
   },
   {
@@ -521,10 +639,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -534,10 +655,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -547,10 +671,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture"
+      "cs04 : Systems and Architecture"
     ],
     "grouping_codes": [
-      "CS04"
+      "cs04"
+    ],
+    "unit_perecentages": [
+      7.14
     ]
   },
   {
@@ -560,12 +687,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture",
-      "CS08 : Networking"
+      "cs08 : Networking"
     ],
     "grouping_codes": [
-      "CS04",
-      "CS08"
+      "cs08"
+    ],
+    "unit_perecentages": [
+      25
     ]
   },
   {
@@ -575,10 +703,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS16 : Computer Graphics"
+      "cs16 : Computer Graphics"
     ],
     "grouping_codes": [
-      "CS16"
+      "cs16"
+    ],
+    "unit_perecentages": [
+      33.33
     ]
   },
   {
@@ -588,10 +719,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS10 : Artificial Intelligence and Data Science"
+      "cs10 : Artificial Intelligence and Data Science"
     ],
     "grouping_codes": [
-      "CS10"
+      "cs10"
+    ],
+    "unit_perecentages": [
+      33.33
     ]
   },
   {
@@ -601,10 +735,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -614,10 +751,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -627,12 +767,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture",
-      "CS16 : Computer Graphics"
+      "cs16 : Computer Graphics"
     ],
     "grouping_codes": [
-      "CS04",
-      "CS16"
+      "cs16"
+    ],
+    "unit_perecentages": [
+      33.33
     ]
   },
   {
@@ -642,10 +783,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -655,10 +799,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS12 : Industrial Attachment"
+      "cs12 : Industrial Attachment"
     ],
     "grouping_codes": [
-      "CS12"
+      "cs12"
+    ],
+    "unit_perecentages": [
+      50
     ]
   },
   {
@@ -668,10 +815,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS05 : Programming and Software Development"
+      "cs05 : Programming and Software Development"
     ],
     "grouping_codes": [
-      "CS05"
+      "cs05"
+    ],
+    "unit_perecentages": [
+      5.88
     ]
   },
   {
@@ -681,10 +831,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS11 : Information Systems"
+      "cs11 : Information Systems"
     ],
     "grouping_codes": [
-      "CS11"
+      "cs11"
+    ],
+    "unit_perecentages": [
+      100
     ]
   },
   {
@@ -694,10 +847,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture"
+      "cs04 : Systems and Architecture"
     ],
     "grouping_codes": [
-      "CS04"
+      "cs04"
+    ],
+    "unit_perecentages": [
+      7.14
     ]
   },
   {
@@ -707,10 +863,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS17 : User Design"
+      "cs17 : User Design"
     ],
     "grouping_codes": [
-      "CS17"
+      "cs17"
+    ],
+    "unit_perecentages": [
+      100
     ]
   },
   {
@@ -720,12 +879,16 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture",
-      "CS06 : Database Administration"
+      "cs04 : Systems and Architecture",
+      "cs06 : Database Administration"
     ],
     "grouping_codes": [
-      "CS04",
-      "CS06"
+      "cs04",
+      "cs06"
+    ],
+    "unit_perecentages": [
+      7.14,
+      33.33
     ]
   },
   {
@@ -735,10 +898,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS06 : Database Administration"
+      "cs06 : Database Administration"
     ],
     "grouping_codes": [
-      "CS06"
+      "cs06"
+    ],
+    "unit_perecentages": [
+      33.33
     ]
   },
   {
@@ -748,10 +914,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS10 : Artificial Intelligence and Data Science"
+      "cs10 : Artificial Intelligence and Data Science"
     ],
     "grouping_codes": [
-      "CS10"
+      "cs10"
+    ],
+    "unit_perecentages": [
+      33.33
     ]
   },
   {
@@ -761,12 +930,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture",
-      "CS13 : Final Project"
+      "cs13 : Final Project"
     ],
     "grouping_codes": [
-      "CS04",
-      "CS13"
+      "cs13"
+    ],
+    "unit_perecentages": [
+      50
     ]
   },
   {
@@ -776,10 +946,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS15 : Business and Management"
+      "cs15 : Business and Management"
     ],
     "grouping_codes": [
-      "CS15"
+      "cs15"
+    ],
+    "unit_perecentages": [
+      33.33
     ]
   },
   {
@@ -789,10 +962,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture"
+      "cs04 : Systems and Architecture"
     ],
     "grouping_codes": [
-      "CS04"
+      "cs04"
+    ],
+    "unit_perecentages": [
+      7.14
     ]
   },
   {
@@ -802,12 +978,16 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS08 : Networking",
-      "CS09 : Cyber Security"
+      "cs08 : Networking",
+      "cs09 : Cyber Security"
     ],
     "grouping_codes": [
-      "CS08",
-      "CS09"
+      "cs08",
+      "cs09"
+    ],
+    "unit_perecentages": [
+      25,
+      50
     ]
   },
   {
@@ -817,12 +997,16 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS08 : Networking",
-      "CS10 : Artificial Intelligence and Data Science"
+      "cs08 : Networking",
+      "cs10 : Artificial Intelligence and Data Science"
     ],
     "grouping_codes": [
-      "CS08",
-      "CS10"
+      "cs08",
+      "cs10"
+    ],
+    "unit_perecentages": [
+      25,
+      33.33
     ]
   },
   {
@@ -832,10 +1016,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture"
+      "cs04 : Systems and Architecture"
     ],
     "grouping_codes": [
-      "CS04"
+      "cs04"
+    ],
+    "unit_perecentages": [
+      7.14
     ]
   },
   {
@@ -845,10 +1032,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS09 : Cyber Security"
+      "cs09 : Cyber Security"
     ],
     "grouping_codes": [
-      "CS09"
+      "cs09"
+    ],
+    "unit_perecentages": [
+      50
     ]
   },
   {
@@ -858,10 +1048,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS16 : Computer Graphics"
+      "cs16 : Computer Graphics"
     ],
     "grouping_codes": [
-      "CS16"
+      "cs16"
+    ],
+    "unit_perecentages": [
+      33.33
     ]
   },
   {
@@ -871,12 +1064,13 @@
     "elective": "False",
     "elective_group": "",
     "grouping_names": [
-      "CS04 : Systems and Architecture",
-      "CS13 : Final Project"
+      "cs13 : Final Project"
     ],
     "grouping_codes": [
-      "CS04",
-      "CS13"
+      "cs13"
+    ],
+    "unit_perecentages": [
+      50
     ]
   }
 ]

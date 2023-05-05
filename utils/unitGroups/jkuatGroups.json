@@ -1,0 +1,110 @@
+[
+    {
+        "school": "JKUAT",
+        "name": "CS01",
+        "description": "Mathematics and Statistics",
+        "unit_percentage": 11.11
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS02",
+        "description": "Hardware and Electronics",
+        "unit_percentage": 25.0
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS03",
+        "description": "Skills and Ethics",
+        "unit_percentage": 50.0
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS04",
+        "description": "Systems and Architecture",
+        "unit_percentage": 7.4
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS05",
+        "description": "Programming and Software Development",
+        "unit_percentage": 5.88
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS06",
+        "description": "Database Administration",
+        "unit_percentage": 33.33
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS07",
+        "description": "Web and Mobile App Development",
+        "unit_percentage": 100
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS08",
+        "description": "Networking",
+        "unit_percentage": 25.0
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS09",
+        "description": "Cyber Security",
+        "unit_percentage": 50.0
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS10",
+        "description": "Artificial Intelligence and Data Science",
+        "unit_percentage": 33.33
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS11",
+        "description": "Information Systems",
+        "unit_percentage": 100.0
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS12",
+        "description": "Industrial Attachment",
+        "unit_percentage": 50.0
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS13",
+        "description": "Final Project",
+        "unit_percentage": 50.0
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS14",
+        "description": "Research Methodology",
+        "unit_percentage": 100.0
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS15",
+        "description": "Business and Management",
+        "unit_percentage": 33.33
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS16",
+        "description": "Computer Graphics",
+        "unit_percentage": 33.33
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS17",
+        "description": "User Design",
+        "unit_percentage": 100.0
+    },
+    {
+        "school": "JKUAT",
+        "name": "CS18",
+        "description": "Gaming Development",
+        "unit_percentage": 0.0
+    }
+]

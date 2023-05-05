@@ -1,4 +1,7 @@
 import json
+
+from student.models.academicModels import SchoolUnit
+
 UNIT_TAGS = {
     'CS01 : Mathematics and Statistics': ['statistics', 'mathematics', 'calculus', 'algebra', 'probability', 'equations', 'vector', 'numerical'],
     'CS02 : Hardware and Electronics': ['electronics', 'physics', 'chemistry', 'mechanics', 'quantum', 'logic', 'semiconductor', 'embedded', 'hardware'],
@@ -56,14 +59,61 @@ SEMESTERS = [
     '4.2']
 
 
-jkuat_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/jkuat_units.json'
-uon_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/uon_units.json'
-ku_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/ku_units.json'
-cuea_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/cuea_units.json'
-strath_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/strath_units.json'
+jkuatUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/jkuat_units.json'
+uonUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/uon_units.json'
+kuUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/ku_units.json'
+cueaUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/cuea_units.json'
+strathUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/strath_units.json'
 
-with open(jkuat_path, 'r') as file:
-    data = json.load(file)
+jkuatGroups_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/jkuat_groups.json'
+
+with open(jkuatUnits_path, 'r') as file:
+    unitsData = json.load(file)
+
+with open(jkuatGroups_path, 'r') as file:
+    groupsData = json.load(file)
+
+# # Load School Units to db
+
+school_units = []
+
+for item in unitsData:
+    school_unit = SchoolUnit(
+        school=item.get('school', ''),
+        semsester=item.get('semsester', 1.1),
+        name=item.get('name', ''),
+        elective=item.get('elective', False),
+        elective_group=item.get('elective_group', ''),
+        grouping_name=item.get('grouping_name', []),
+        grouping_code=item.get('grouping_code', []),
+        unit_percentages=item.get('unit_percentages', []),
+        grade=item.get('grade', None),
+        mark=item.get('mark', 0.0),
+    )
+    school_units.append(school_unit)
+
+SchoolUnit.objects.bulk_create(school_units)
+
+print(f"SchoolUnit Objects Created: {len(school_units)}")
+
+
+# # Load School Groupings to db
+
+# school_groups = []
+
+# for item in groupsData:
+#     school_group = SchoolGrouping(
+#         school=item.get('school', ''),
+#         name=item.get('name', ''),
+#         unit_percentage=item.get('unit_percentages', ''),
+#         code=item.get('code', ''),
+#     )
+#     school_units.append(school_group)
+
+# SchoolGrouping.objects.bulk_create(school_groups)
+
+# print(f"SchoolGroup Objects Created: {len(school_groups)}")
+
 
 # # ---------- Group Units ------------
 # for item in data:
@@ -96,30 +146,31 @@ with open(jkuat_path, 'r') as file:
 #         if item['semester'] == sem:
 #             units.append(item)
     
-for group in UNIT_GROUPS:
-    print('______________________________________')
-    print(f"### {group}")
-    print(f"- Code : {group[0:4]}")
-    print(f"- Name : {group[4:len(group)+1]}")
-    print("- Unit_perc : ")
-    print(" ")
-    print("<br/>")
-    print(" ")
-    group_units = []
-    for item in data:
-        if group in item['grouping_names']:
-            group_units.append(item)
-            print(f"        - {item['unit']} - {item['semester']}")
+# # Get Documentation Formatting
+# for group in UNIT_GROUPS:
+#     print('______________________________________')
+#     print(f"### {group}")
+#     print(f"- Code : {group[0:4]}")
+#     print(f"- Name : {group[4:len(group)+1]}")
+#     print("- Unit_perc : ")
+#     print(" ")
+#     print("<br/>")
+#     print(" ")
+#     group_units = []
+#     for item in data:
+#         if group in item['grouping_names']:
+#             group_units.append(item)
+#             print(f"        - {item['unit']} - {item['semester']}")
     
-    print(f"Unit Count : {len(group_units)}")
-    # if group_units != []:
-    #     print(' ')
-    #     print(group)
-    #     print(' ')
-    #     for item in group_units:
-    #         print(item['unit'])
+#     print(f"Unit Count : {len(group_units)}")
+#     # if group_units != []:
+#     #     print(' ')
+#     #     print(group)
+#     #     print(' ')
+#     #     for item in group_units:
+#     #         print(item['unit'])
 
-    print('______________________________________')
+#     print('______________________________________')
     
 
 # # ---------- Get Particular Units ------------
