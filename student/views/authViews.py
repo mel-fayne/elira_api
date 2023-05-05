@@ -83,4 +83,9 @@ class CrudUserView(APIView):
         Student.objects.filter(id=self.kwargs['student_id']).delete()
         return Response('Deleted Successfully')
 
-        
+class AllStudentsView(APIView):
+    def get(self, request):
+        students = Student.objects.all()
+        students_serializer = StudentSerializer(
+            students, many=True)
+        return Response(students_serializer.data)
