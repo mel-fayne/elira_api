@@ -59,3 +59,20 @@ class StudentUnitSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentUnit
         fields = '__all__'
+
+class GetStudentUnitSerializer(serializers.ModelSerializer):
+    unit_name = serializers.CharField(source='school_unit.name')
+    unit_codes = serializers.CharField(source='school_unit.grouping_code')
+    unit_perc = serializers.CharField(source='school_unit.unit_percentages')
+    class Meta:
+        model = StudentUnit
+        fields = [
+            'id',
+            'ac_profile',
+            'school_unit',
+            'grade',
+            'mark'
+            'unit_name',
+            'unit_codes',
+            'unit_perc'
+        ]
