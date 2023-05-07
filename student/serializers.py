@@ -3,6 +3,7 @@ from rest_framework import serializers
 
 from student.models.authModels import Student
 from student.models.academicModels import AcademicProfile, SchoolUnit, StudentUnit
+from student.models.technicalModels import TechnicalProfile
 
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
@@ -76,3 +77,8 @@ class GetStudentUnitSerializer(serializers.ModelSerializer):
             'unit_codes',
             'unit_perc'
         ]
+
+class TechnicalProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TechnicalProfile
+        fields = '__all__'
