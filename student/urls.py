@@ -2,6 +2,7 @@ from django.urls import path
 
 from student.views.academicViews import AcademicProfileView, StudentUnitView, SchoolUnitView
 from student.views.authViews import AllStudentsView, LoginView, CrudUserView
+from student.views.technicalViews import TechnicalProfileView
 
 urlpatterns = [
     # ---------- auth endpoints ------------
@@ -18,9 +19,9 @@ urlpatterns = [
     path('student_units', StudentUnitView.as_view()),
     path('school_units/<str:groupBy>/<str:school>', SchoolUnitView.as_view()),
 
-    # # ---------- TechProfile endpoints ------------
-    # path('tech_profile/<int:student_id>', TechnicalProfileView.as_view()),
-    # path('tech_profile', TechnicalProfileView.as_view()),
+    # ---------- TechProfile endpoints ------------
+    path('tech_profile/<int:student_id>', TechnicalProfileView.as_view()),
+    path('tech_profile', TechnicalProfileView.as_view()),
 
     # # ---------- WorkExpProfile endpoints ------------
     # path('workexp_profile/<int:student_id>', WorkExpProfileView.as_view()),
