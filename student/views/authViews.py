@@ -5,7 +5,7 @@ import jwt
 import datetime
 
 from student.serializers import StudentSerializer
-from student.models.authModels import Student
+from student.models.studentModels import Student
 
 class LoginView(APIView):
     def get(self, *args, **kwargs):

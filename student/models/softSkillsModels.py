@@ -1,6 +1,6 @@
 from django.db import models
 
-from student.models.authModels import Student
+from student.models.studentModels import Student
 
 class SoftSkillProfile(models.Model):
 

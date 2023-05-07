@@ -1,7 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-from student.models.authModels import Student
+from student.models.studentModels import Student
 from student.models.softSkillsModels import SoftSkillProfile, SoftSkill
 from student.serializers import SoftSkillProfileSerializer, SoftSkillSerializer
 

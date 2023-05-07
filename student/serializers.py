@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 
-from student.models.authModels import Student
+from student.models.studentModels import Student
 from student.models.academicModels import AcademicProfile, SchoolUnit, StudentUnit
 from student.models.softSkillsModels import SoftSkillProfile, SoftSkill
 from student.models.technicalModels import TechnicalProfile

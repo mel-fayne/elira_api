@@ -19,7 +19,7 @@ class Student(models.Model):
 
     # ------------- prediction fields --------------
     specialisation = models.CharField(max_length=50, choices=SPECIALISATIONS)
-    compatibility_scores = models.JSONField(default=list    )
+    compatibility_scores = models.JSONField(default=list)
 
     # ------------- auth fields --------------
     user_token = models.CharField(max_length=200, null=True)

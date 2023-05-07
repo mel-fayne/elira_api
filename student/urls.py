@@ -2,9 +2,9 @@ from django.urls import path
 
 from student.views.academicViews import AcademicProfileView, StudentUnitView, SchoolUnitView
 from student.views.authViews import AllStudentsView, LoginView, CrudUserView
-from student.views.softskills_views import SoftSkillProfileView
+from student.views.softskillsViews import SoftSkillProfileView
 from student.views.technicalViews import TechnicalProfileView
-from student.views.workexp_views import WorkExpProfileView, WorkExperienceView
+from student.views.workexpViews import WorkExpProfileView, WorkExperienceView
 
 urlpatterns = [
     # ---------- auth endpoints ------------

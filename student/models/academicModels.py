@@ -1,6 +1,6 @@
 from django.db import models
 
-from student.models.authModels import Student
+from student.models.studentModels import Student
 
 
 GROUPINGS = ['cs01', 'cs02', 'cs03', 'cs04', 'cs05', 'cs06', 'cs07', 'cs08',
