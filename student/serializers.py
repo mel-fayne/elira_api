@@ -4,6 +4,7 @@ from rest_framework import serializers
 from student.models.authModels import Student
 from student.models.academicModels import AcademicProfile, SchoolUnit, StudentUnit
 from student.models.technicalModels import TechnicalProfile
+from student.models.workExpModels import WorkExpProfile, WorkExperience
 
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
@@ -81,4 +82,16 @@ class GetStudentUnitSerializer(serializers.ModelSerializer):
 class TechnicalProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = TechnicalProfile
+        fields = '__all__'
+
+
+class WorkExpProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = WorkExpProfile
+        fields = '__all__'
+
+
+class WorkExperienceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = WorkExperience
         fields = '__all__'

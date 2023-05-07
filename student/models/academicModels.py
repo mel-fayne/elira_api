@@ -88,7 +88,7 @@ class AcademicProfile(models.Model):
     def csMarks(self):
         marks = []
         for cs in GROUPINGS:
-            marks.append(self.cs.mark)
+            marks.append(self.cs)
         return marks
 
 
