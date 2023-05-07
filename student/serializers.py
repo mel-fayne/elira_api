@@ -3,6 +3,7 @@ from rest_framework import serializers
 
 from student.models.authModels import Student
 from student.models.academicModels import AcademicProfile, SchoolUnit, StudentUnit
+from student.models.softSkillsModels import SoftSkillProfile, SoftSkill
 from student.models.technicalModels import TechnicalProfile
 from student.models.workExpModels import WorkExpProfile, WorkExperience
 
@@ -94,4 +95,16 @@ class WorkExpProfileSerializer(serializers.ModelSerializer):
 class WorkExperienceSerializer(serializers.ModelSerializer):
     class Meta:
         model = WorkExperience
+        fields = '__all__'
+
+
+class SoftSkillProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SoftSkillProfile
+        fields = '__all__'
+
+
+class SoftSkillSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SoftSkill
         fields = '__all__'
