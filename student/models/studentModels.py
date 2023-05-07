@@ -19,6 +19,7 @@ class Student(models.Model):
 
     # ------------- prediction fields --------------
     specialisation = models.CharField(max_length=50, choices=SPECIALISATIONS)
+    specialisation_score = models.FloatField(default=0.0)
     compatibility_scores = models.JSONField(default=list)
 
     # ------------- auth fields --------------
@@ -38,5 +39,6 @@ class Student(models.Model):
     def __str__(self):
         return self.first_name + ' ' + self.last_name
 
-    def getId(self):
+    @property
+    def studentId(self):
         return self.id

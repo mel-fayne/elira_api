@@ -43,3 +43,84 @@ class TechnicalProfile(models.Model):
     @property
     def gitName(self):
         return self.git_username
+    
+    @property
+    def c(self):
+        return self.c
+    
+    @property
+    def cPlusPlus(self):
+        return self.cPlusPlus
+    
+    @property
+    def javascript(self):
+        return self.javascript
+    
+    @property
+    def python(self):
+        return self.python
+    
+    @property
+    def r(self):
+        return self.r
+    
+    @property
+    def jupyter(self):
+        return self.jupyter
+    
+    @property
+    def dart(self):
+        return self.dart
+    
+    @property
+    def kotlin(self):
+        return self.kotlin
+    
+    @property
+    def go(self):
+        return self.go
+    
+    @property
+    def swift(self):
+        return self.swift
+    
+    @property
+    def cSharp(self):
+        return self.cSharp
+    
+    @property
+    def typescript(self):
+        return self.typescript
+    
+    @property
+    def php(self):
+        return self.php
+    
+    @property
+    def cPlusPlus(self):
+        return self.cPlusPlus
+    
+    @property
+    def objective_c(self):
+        return self.objective_c
+    
+    @property
+    def ruby(self):
+        return self.ruby
+    
+    @property
+    def html(self):
+        return self.html
+    
+    @property
+    def css(self):
+        return self.css
+    
+    @property
+    def sql(self):
+        return self.sql
+    
+    @property
+    def rust(self):
+        return self.rust
+    

@@ -38,6 +38,38 @@ class WorkExpProfile(models.Model):
     def timeSpent(self):
         return self.time_spent
     
+    @property
+    def aiInd(self):
+        return self.ai_industry
+    
+    @property
+    def csInd(self):
+        return self.cs_industry
+    
+    @property
+    def daInd(self):
+        return self.da_industry
+    
+    @property
+    def gdInd(self):
+        return self.gd_industry
+    
+    @property
+    def hoInd(self):
+        return self.ho_industry
+    
+    @property
+    def isInd(self):
+        return self.is_industry
+    
+    @property
+    def naInd(self):
+        return self.na_industry
+    
+    @property
+    def sdInd(self):
+        return self.sd_industry
+    
 
 class WorkExperience(models.Model):
     EMP_TYPE = (
