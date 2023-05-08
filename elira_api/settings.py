@@ -87,18 +87,18 @@ WSGI_APPLICATION = 'elira_api.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-
     # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'melfayne$default',
-    #     'USER': 'melfayne',
-    #     'PASSWORD': '#EliraAdmin',
-    #     'HOST': 'melfayne.mysql.pythonanywhere-services.com',
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
+
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'melfayne$default',
+        'USER': 'melfayne',
+        'PASSWORD': '#EliraAdmin',
+        'HOST': 'melfayne.mysql.pythonanywhere-services.com',
+    }
 }
 
 
@@ -143,13 +143,6 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# ALLOWED_HOSTS = ['melfayne.pythonanywhere.com']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['melfayne.pythonanywhere.com']
+# ALLOWED_HOSTS = ['*']
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'melaniefayne33@gmail.com'
-EMAIL_HOST_PASSWORD = 'lwfxlzltjnkiwthi'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
