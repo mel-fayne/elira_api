@@ -45,6 +45,10 @@ class Student(models.Model):
         return self.id
 
     @property
+    def specialisation(self):
+        return self.specialisation
+
+    @property
     def securityQuestions(self):
         answers = {}
         answers['name'] = self.first_name + ' ' + self.last_name
