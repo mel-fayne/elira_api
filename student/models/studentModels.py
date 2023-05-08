@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Student(models.Model):
 
     SPECIALISATIONS = (
@@ -26,7 +27,7 @@ class Student(models.Model):
     user_token = models.CharField(max_length=200, null=True)
     last_active = models.CharField(max_length=200, null=True)
 
-    first_pet = models.CharField(max_length=200, null=True)
+    childhod_nicknamefirst_pet = models.CharField(max_length=200, null=True)
     childhood_street = models.CharField(max_length=200, null=True)
     first_teacher = models.CharField(max_length=200, null=True)
     favourite_flavour = models.CharField(max_length=200, null=True)
@@ -42,3 +43,16 @@ class Student(models.Model):
     @property
     def studentId(self):
         return self.id
+
+    @property
+    def securityQuestions(self):
+        answers = {}
+        answers['name'] = self.first_name + ' ' + self.last_name
+        answers['email'] = self.email
+        answers['first_pet'] = self.first_pet
+        answers['childhood_street'] = self.childhood_street
+        answers['first_teacher'] = self.first_teacher
+        answers['favourite_flavour'] = self.favourite_flavour
+        answers['childhod_nickname'] = self.childhod_nickname
+        answers['first_phone'] = self.first_phone
+        return answers

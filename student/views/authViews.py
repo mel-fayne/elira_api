@@ -7,6 +7,7 @@ import datetime
 from student.serializers import StudentSerializer
 from student.models.studentModels import Student
 
+
 class LoginView(APIView):
     def get(self, *args, **kwargs):
         student = Student.objects.filter(id=self.kwargs['email']).first()
@@ -15,7 +16,7 @@ class LoginView(APIView):
         else:
             serializer = StudentSerializer(student)
             return Response(serializer.data)
-        
+
     def post(self, request):
         email = request.data['email']
         password = request.data['password']
@@ -74,7 +75,8 @@ class CrudUserView(APIView):
 
     def patch(self, request, *args, **kwargs):
         student = Student.objects.filter(id=self.kwargs['student_id']).first()
-        serializer = StudentSerializer(student, data=request.data, partial=True)
+        serializer = StudentSerializer(
+            student, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data)
@@ -82,6 +84,25 @@ class CrudUserView(APIView):
     def delete(self, *args, **kwargs):
         Student.objects.filter(id=self.kwargs['student_id']).delete()
         return Response('Deleted Successfully')
+
+
+class ForgotPasswordView(APIView):
+    def get(self, *args, **kwargs):
+        student = Student.objects.filter(email=self.kwargs['email']).first()
+        if student is None:
+            return Response('Email Does Not Exists!')
+        else:
+            studentData = student.securityQuestions
+            return Response(studentData)
+
+    def patch(self, request, *args, **kwargs):
+        student = Student.objects.filter(email=self.kwargs['email']).first()
+        serializer = StudentSerializer(
+            student, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response('Password Reset Successful')
+
 
 class AllStudentsView(APIView):
     def get(self, request):
