@@ -63,7 +63,7 @@ class StudentUnitView(APIView):     # pass ac_profileId
         return Response(unitsData)
 
     def patch(self, request, *args, **kwargs):      # pass ac_profileId and student unit objects
-        ac_profileId = request.data['ac_profileId']
+        ac_profileId = self.kwargs['ac_profileId']
         studentUnits = json.loads(request.data['studentUnits'])
 
         # update StudentUnit objects
@@ -117,6 +117,20 @@ class SchoolUnitView(APIView):
                 schoolUnits[grouping] = groupUnits
 
         return Response(schoolUnits)
+    
+    def post(self, request):
+        serializer = SchoolUnitSerializer(data=request.data['schoolUnits'], many=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return('All Units Uploaded Successfully')
+
+        
+class UnitGroupsView(APIView):
+    def post(self, request):
+        serializer = SchoolUnitSerializer(data=request.data['unitGroups'], many=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return(serializer.data)
 
 
 # ------------------------------- Util Functions -----------------------------

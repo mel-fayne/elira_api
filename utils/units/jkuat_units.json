@@ -2,8 +2,8 @@
   {
     "school": "JKUAT",
     "unit": "HRD 2102 Development Studies and Ethics",
-    "semester": "1.1",
-    "elective": "False",
+    "semester": 1.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs03 : Skills and Ethics"
@@ -18,8 +18,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2104 Mathematics for Sciences",
-    "semester": "1.1",
-    "elective": "False",
+    "semester": 1.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs01 : Mathematics and Statistics"
@@ -34,8 +34,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2100 Discrete Mathematics",
-    "semester": "1.1",
-    "elective": "False",
+    "semester": 1.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs01 : Mathematics and Statistics"
@@ -50,8 +50,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2101 Calculus I",
-    "semester": "1.1",
-    "elective": "False",
+    "semester": 1.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs01 : Mathematics and Statistics"
@@ -66,8 +66,8 @@
   {
     "school": "JKUAT",
     "unit": "SCH 2110 Chemistry",
-    "semester": "1.1",
-    "elective": "False",
+    "semester": 1.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs02 : Hardware and Electronics"
@@ -82,8 +82,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2100 Introduction to Computer Systems",
-    "semester": "1.1",
-    "elective": "False",
+    "semester": 1.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture"
@@ -98,8 +98,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2101 Computer Organisation",
-    "semester": "1.1",
-    "elective": "False",
+    "semester": 1.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture"
@@ -114,8 +114,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2102 Introduction to Computer Programming",
-    "semester": "1.1",
-    "elective": "False",
+    "semester": 1.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture",
@@ -133,8 +133,8 @@
   {
     "school": "JKUAT",
     "unit": "HRD 2101 Communication Skills",
-    "semester": "1.2",
-    "elective": "False",
+    "semester": 1.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs03 : Skills and Ethics"
@@ -149,8 +149,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2102 Calculus II",
-    "semester": "1.2",
-    "elective": "False",
+    "semester": 1.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs01 : Mathematics and Statistics"
@@ -165,8 +165,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2103 Probability and Statistics I",
-    "semester": "1.2",
-    "elective": "False",
+    "semester": 1.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs01 : Mathematics and Statistics"
@@ -181,8 +181,8 @@
   {
     "school": "JKUAT",
     "unit": "SPH 2172 Physics",
-    "semester": "1.2",
-    "elective": "False",
+    "semester": 1.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs02 : Hardware and Electronics"
@@ -197,8 +197,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2103 Introduction to Systems Programming",
-    "semester": "1.2",
-    "elective": "False",
+    "semester": 1.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -213,8 +213,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2104 Object Oriented Programming I",
-    "semester": "1.2",
-    "elective": "False",
+    "semester": 1.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -229,8 +229,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2105 Data Structures and Algorithms",
-    "semester": "1.2",
-    "elective": "False",
+    "semester": 1.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -245,8 +245,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2106 Discrete Structures I",
-    "semester": "1.2",
-    "elective": "False",
+    "semester": 1.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -261,8 +261,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2220 Vector Analysis",
-    "semester": "2.1",
-    "elective": "False",
+    "semester": 2.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs01 : Mathematics and Statistics"
@@ -277,8 +277,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2230 Probability and Statistics II",
-    "semester": "2.1",
-    "elective": "False",
+    "semester": 2.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs01 : Mathematics and Statistics"
@@ -293,8 +293,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2304 Ordinary Differential Equations I",
-    "semester": "2.1",
-    "elective": "False",
+    "semester": 2.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs01 : Mathematics and Statistics"
@@ -309,8 +309,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2200 Electronics",
-    "semester": "2.1",
-    "elective": "False",
+    "semester": 2.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs02 : Hardware and Electronics"
@@ -325,8 +325,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2201 Object Oriented Programming II",
-    "semester": "2.1",
-    "elective": "False",
+    "semester": 2.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -341,8 +341,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2202 Operating Systems I",
-    "semester": "2.1",
-    "elective": "False",
+    "semester": 2.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture"
@@ -357,8 +357,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2203 Internet Application Programming",
-    "semester": "2.1",
-    "elective": "False",
+    "semester": 2.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -373,8 +373,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2204 Programming Languages",
-    "semester": "2.1",
-    "elective": "False",
+    "semester": 2.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -389,8 +389,8 @@
   {
     "school": "JKUAT",
     "unit": "HRD 2104 Principles of Industrial Management",
-    "semester": "2.2",
-    "elective": "False",
+    "semester": 2.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs15 : Business and Management"
@@ -405,8 +405,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2205 Digital Logic",
-    "semester": "2.2",
-    "elective": "False",
+    "semester": 2.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs02 : Hardware and Electronics"
@@ -421,8 +421,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2206 Database Systems  ",
-    "semester": "2.2",
-    "elective": "False",
+    "semester": 2.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs06 : Database Administration"
@@ -437,8 +437,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2207 Scientific Computing",
-    "semester": "2.2",
-    "elective": "False",
+    "semester": 2.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture"
@@ -453,8 +453,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2208 Operating Systems II",
-    "semester": "2.2",
-    "elective": "False",
+    "semester": 2.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture"
@@ -469,8 +469,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2209 Design and Implementation of Computer Applications",
-    "semester": "2.2",
-    "elective": "False",
+    "semester": 2.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture",
@@ -488,8 +488,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2210 Systems Analysis and Design",
-    "semester": "2.2",
-    "elective": "False",
+    "semester": 2.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture"
@@ -504,8 +504,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2211 Numerical Linear Algebra",
-    "semester": "2.2",
-    "elective": "False",
+    "semester": 2.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs01 : Mathematics and Statistics"
@@ -520,8 +520,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2213 Industrial Attachment I",
-    "semester": "2.2",
-    "elective": "False",
+    "semester": 2.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs12 : Industrial Attachment"
@@ -536,8 +536,8 @@
   {
     "school": "JKUAT",
     "unit": "HRD 2103 General Economics",
-    "semester": "3.1",
-    "elective": "False",
+    "semester": 3.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs15 : Business and Management"
@@ -552,8 +552,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2343 Operations Research I",
-    "semester": "3.1",
-    "elective": "False",
+    "semester": 3.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs14 : Research Methodology"
@@ -568,8 +568,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2300 Abstract Data Types and Algorithms",
-    "semester": "3.1",
-    "elective": "False",
+    "semester": 3.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -584,8 +584,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2301 Design and Analysis of Algorithms",
-    "semester": "3.1",
-    "elective": "False",
+    "semester": 3.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture",
@@ -603,8 +603,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2302 Software Engineering",
-    "semester": "3.1",
-    "elective": "False",
+    "semester": 3.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -619,8 +619,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2303 Multimedia Systems",
-    "semester": "3.1",
-    "elective": "False",
+    "semester": 3.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs08 : Networking"
@@ -635,8 +635,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2304 Programming Paradigms",
-    "semester": "3.1",
-    "elective": "False",
+    "semester": 3.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -651,8 +651,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2305 Systems Programming",
-    "semester": "3.1",
-    "elective": "False",
+    "semester": 3.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -667,8 +667,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2305 Complex Analysis I",
-    "semester": "3.2",
-    "elective": "False",
+    "semester": 3.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture"
@@ -683,8 +683,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2306 Computer Networks",
-    "semester": "3.2",
-    "elective": "False",
+    "semester": 3.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs08 : Networking"
@@ -699,8 +699,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2307 Simulation and Modelling",
-    "semester": "3.2",
-    "elective": "False",
+    "semester": 3.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs16 : Computer Graphics"
@@ -715,8 +715,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2308 Artificial Intelligence",
-    "semester": "3.2",
-    "elective": "False",
+    "semester": 3.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs10 : Artificial Intelligence and Data Science"
@@ -731,8 +731,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2309 Commercial Programming",
-    "semester": "3.2",
-    "elective": "False",
+    "semester": 3.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -747,8 +747,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2310 Discrete Structures II",
-    "semester": "3.2",
-    "elective": "False",
+    "semester": 3.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -763,8 +763,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2311 Computer Graphics",
-    "semester": "3.2",
-    "elective": "False",
+    "semester": 3.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs16 : Computer Graphics"
@@ -779,8 +779,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2312 Software Systems Development",
-    "semester": "3.2",
-    "elective": "False",
+    "semester": 3.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -795,8 +795,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2313 Industrial Attachment II",
-    "semester": "3.2",
-    "elective": "False",
+    "semester": 3.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs12 : Industrial Attachment"
@@ -811,8 +811,8 @@
   {
     "school": "JKUAT",
     "unit": "SMA 2433 Quality Control Methods",
-    "semester": "4.1",
-    "elective": "False",
+    "semester": 4.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs05 : Programming and Software Development"
@@ -827,8 +827,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2400 Transaction Processing Systems",
-    "semester": "4.1",
-    "elective": "False",
+    "semester": 4.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs11 : Information Systems"
@@ -843,8 +843,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2401 Compiler Construction",
-    "semester": "4.1",
-    "elective": "False",
+    "semester": 4.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture"
@@ -859,8 +859,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2402 User Interface Architectures",
-    "semester": "4.1",
-    "elective": "False",
+    "semester": 4.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs17 : User Design"
@@ -875,8 +875,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2403 Distributed Systems",
-    "semester": "4.1",
-    "elective": "False",
+    "semester": 4.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture",
@@ -894,8 +894,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2404 Advanced Database Systems",
-    "semester": "4.1",
-    "elective": "False",
+    "semester": 4.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs06 : Database Administration"
@@ -910,8 +910,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2405 Knowledge Based systems",
-    "semester": "4.1",
-    "elective": "False",
+    "semester": 4.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs10 : Artificial Intelligence and Data Science"
@@ -926,8 +926,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2406 Computer Systems Project",
-    "semester": "4.1",
-    "elective": "False",
+    "semester": 4.1,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs13 : Final Project"
@@ -942,8 +942,8 @@
   {
     "school": "JKUAT",
     "unit": "HRD 2115 Accounts and Finance",
-    "semester": "4.2",
-    "elective": "False",
+    "semester": 4.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs15 : Business and Management"
@@ -958,8 +958,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2407 Theory of Computing",
-    "semester": "4.2",
-    "elective": "False",
+    "semester": 4.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture"
@@ -974,8 +974,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2408 Network and Systems Security",
-    "semester": "4.2",
-    "elective": "False",
+    "semester": 4.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs08 : Networking",
@@ -993,8 +993,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2409 Neural Networks",
-    "semester": "4.2",
-    "elective": "False",
+    "semester": 4.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs08 : Networking",
@@ -1012,8 +1012,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2410 Parallel Systems",
-    "semester": "4.2",
-    "elective": "False",
+    "semester": 4.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs04 : Systems and Architecture"
@@ -1028,8 +1028,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2411 Cryptography",
-    "semester": "4.2",
-    "elective": "False",
+    "semester": 4.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs09 : Cyber Security"
@@ -1044,8 +1044,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2412 Digital Image Processing",
-    "semester": "4.2",
-    "elective": "False",
+    "semester": 4.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs16 : Computer Graphics"
@@ -1060,8 +1060,8 @@
   {
     "school": "JKUAT",
     "unit": "ICS 2406 Computer Systems Project",
-    "semester": "4.2",
-    "elective": "False",
+    "semester": 4.2,
+    "elective": false,
     "elective_group": "",
     "grouping_names": [
       "cs13 : Final Project"

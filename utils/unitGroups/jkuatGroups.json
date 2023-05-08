@@ -1,55 +1,55 @@
 [
     {
         "school": "JKUAT",
-        "name": "CS01",
+        "name": "cs01",
         "description": "Mathematics and Statistics",
         "unit_percentage": 11.11
     },
     {
         "school": "JKUAT",
-        "name": "CS02",
+        "name": "cs02",
         "description": "Hardware and Electronics",
         "unit_percentage": 25.0
     },
     {
         "school": "JKUAT",
-        "name": "CS03",
+        "name": "cs03",
         "description": "Skills and Ethics",
         "unit_percentage": 50.0
     },
     {
         "school": "JKUAT",
-        "name": "CS04",
+        "name": "cs04",
         "description": "Systems and Architecture",
         "unit_percentage": 7.4
     },
     {
         "school": "JKUAT",
-        "name": "CS05",
+        "name": "cs05",
         "description": "Programming and Software Development",
         "unit_percentage": 5.88
     },
     {
         "school": "JKUAT",
-        "name": "CS06",
+        "name": "cs06",
         "description": "Database Administration",
         "unit_percentage": 33.33
     },
     {
         "school": "JKUAT",
-        "name": "CS07",
+        "name": "cs07",
         "description": "Web and Mobile App Development",
         "unit_percentage": 100
     },
     {
         "school": "JKUAT",
-        "name": "CS08",
+        "name": "cs08",
         "description": "Networking",
         "unit_percentage": 25.0
     },
     {
         "school": "JKUAT",
-        "name": "CS09",
+        "name": "cs09",
         "description": "Cyber Security",
         "unit_percentage": 50.0
     },

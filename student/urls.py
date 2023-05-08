@@ -1,6 +1,6 @@
 from django.urls import path
 
-from student.views.academicViews import AcademicProfileView, StudentUnitView, SchoolUnitView
+from student.views.academicViews import AcademicProfileView, StudentUnitView, SchoolUnitView, UnitGroupsView
 from student.views.authViews import AllStudentsView, ForgotPasswordView, LoginView, CrudUserView
 from student.views.classifierViews import ClassifierModelView
 from student.views.softskillsViews import SoftSkillProfileView
@@ -22,6 +22,8 @@ urlpatterns = [
     path('student_units/<int:ac_profileId>', StudentUnitView.as_view()),
     path('student_units', StudentUnitView.as_view()),
     path('school_units/<str:groupBy>/<str:school>', SchoolUnitView.as_view()),
+    path('school_units', SchoolUnitView.as_view()),
+    path('unit_groupings', UnitGroupsView.as_view()),
 
     # ---------- TechProfile endpoints ------------
     path('tech_profile/<int:student_id>', TechnicalProfileView.as_view()),
