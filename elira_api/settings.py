@@ -94,7 +94,7 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'melfayne$default',
+        'NAME': 'melfayne$eliraDatabase',
         'USER': 'melfayne',
         'PASSWORD': '#EliraAdmin',
         'HOST': 'melfayne.mysql.pythonanywhere-services.com',
