@@ -57,7 +57,7 @@ class ClassifierModelView(APIView):     # pass studentId
             'c#': [techProfObj.cSharp],
             'typescript': [techProfObj.typescript],
             'php': [techProfObj.php],
-            'objective-c': [techProfObj.objective_c],
+            'objective_c': [techProfObj.objective_c],
             'ruby': [techProfObj.ruby],
             'html': [techProfObj.html],
             'css': [techProfObj.css],
@@ -74,14 +74,14 @@ class ClassifierModelView(APIView):     # pass studentId
             'na_industry': [workProfObj.na_industry],
             'sd_industry': [workProfObj.sd_industry]
         })
-        student = student[['academic_average', 'ai_industry', 'c', 'c#', 'c++', 'cs01', 'cs02',
-            'cs03', 'cs04', 'cs05', 'cs06', 'cs07', 'cs08', 'cs09', 'cs10', 'cs11',
-            'cs12', 'cs13', 'cs14', 'cs15', 'cs16', 'cs17', 'cs18', 'cs_industry',
-            'css', 'da_industry', 'dart', 'gd_industry', 'go', 'ho_industry',
-            'html', 'internships_no', 'is_industry', 'java', 'javascript',
-            'jupyter', 'kotlin', 'na_industry', 'objective-c', 'php', 'python', 'r',
-            'ruby', 'rust', 'sd_industry', 'semeseter', 'sql', 'swift',
-            'time_spent', 'typescript', 'year']]
+        
+        student = student[['ai_industry', 'c', 'c#', 'c++', 'cs01', 'cs02', 'cs03', 'cs04', 'cs05',
+       'cs06', 'cs07', 'cs08', 'cs09', 'cs10', 'cs11', 'cs12', 'cs13', 'cs14',
+       'cs15', 'cs16', 'cs17', 'cs18', 'cs_industry', 'css', 'current_sem',
+       'da_industry', 'dart', 'gd_industry', 'go', 'ho_industry', 'html',
+       'internships_no', 'is_industry', 'java', 'javascript', 'jupyter',
+       'kotlin', 'na_industry', 'objective_c', 'php', 'python', 'r', 'ruby',
+       'rust', 'sd_industry', 'sql', 'swift', 'time_spent', 'typescript']]
         scaler = StandardScaler()
         student = scaler.transform(student)
         
