@@ -4,65 +4,77 @@ from rest_framework.response import Response
 from datetime import datetime, timedelta
 from news.serializers import NewsPieceSerializer, TechEventSerializer, TechJobSerializer
 from news.models import NewsPiece, TechEvent, TechJob
+from student.models.studentModels import Student
 
-# ---------------------- NewsPiece Views ------------------------------------
+NEWS_TAGS = {
+    'AI': ['AI', 'Data Science'],
+    'CS': ['Cybersecurity'],
+    'DA': ['Databases'],
+    'GD': ['Design', 'Gaming'],
+    'HO': ['Internet of Things', 'OS'],
+    'IS': ['Mobile Dev', 'Web Dev', 'Databases'],
+    'NC': ['Networking', 'Blockchain', 'Cloud Computing'],
+    'SD': ['Mobile Dev', 'DevOps', 'Web Dev', 'Programming']
+}
+
+JOB_TAGS = {
+    'AI': ['Data & AI'],
+    'CS': ['Cyber Security'],
+    'DA': ['Database'],
+    'GD': ['Design'],
+    'HO': ['Software'],
+    'IS': ['Mobile Dev', 'Web Dev', 'Databases'],
+    'NC': ['Networking & Cloud'],
+    'SD': ['Developer', 'Software', 'Mobile Dev',  'Web Dev',]
+}
 
 
-class NewsPiecesByTagView(APIView):
-    def get(self, request):
-        tags = request.GET.get('tags')
+class NewsPiecesByTagView(APIView):     # pass studentId
+    def get(self, *args, **kwargs):
+        student = Student.objects.filter(id=self.kwargs['student_id']).first()
+        student_tags = NEWS_TAGS[student.specialisation]
+        newsData = {}
 
-        if tags:
-            tag_list = tags.split(',')
-            news_pieces = NewsPiece.objects.filter(tags__in=tag_list)
-            news_serializer = NewsPieceSerializer(news_pieces, many=True)
-            return Response(news_serializer.data)
-        else:
-            return Response('no news found')
+        news_pieces = NewsPiece.objects.filter(tags__in=student_tags)
+        news_serializer = NewsPieceSerializer(news_pieces, many=True)
+        newsData['studentNews'] = news_serializer.data
 
+        news_pieces = NewsPiece.objects.exclude(tags__in=student_tags)
+        news_serializer = NewsPieceSerializer(news_pieces, many=True)
+        newsData['otherNews'] = news_serializer.data
 
-class AllNewsPiecesView(APIView):
-    def get(self):
-        news = NewsPiece.objects.all().order_by('date_created')
-        news_serializer = NewsPieceSerializer(news, many=True)
-        return Response(news_serializer.data)
-
-# ---------------------- TechEvent Views ------------------------------------
+        return Response(newsData)
 
 
-class TechEventsByDateView(APIView):
-    def get(self, request):
-        period = int(request.GET.get('period'))
+class TechEventsByDateView(APIView):    # pass period in days
+    def get(self, *args, **kwargs):
+        period = self.kwargs['period']
         lastDate = datetime.date.today() - timedelta(days=period)
-        events = TechEvent.objects.filter(date__mt=lastDate)
+        eventsData = {}
+
+        events = TechEvent.objects.filter(date__mt=lastDate).order_by('date')
         events_serializer = TechEventSerializer(events, many=True)
-        return Response(events_serializer.data)
+        eventsData['upcomingEvents'] = events_serializer.data
 
-
-class AllTechEventsView(APIView):
-    def get(self):
-        events = TechEvent.objects.all().order_by('date')
+        events = TechEvent.objects.exclude(date__mt=lastDate).order_by('date')
         events_serializer = TechEventSerializer(events, many=True)
-        return Response(events_serializer.data)
+        eventsData['laterEvents'] = events_serializer.data
 
-# ---------------------- TechJobs Views ------------------------------------
-
-
-class TechJobsByAreaView(APIView):
-    def get(self, request):
-        areas = request.GET.get('areas')
-
-        if jobs_serializer:
-            area_list = areas.split(',')
-            jobs = NewsPiece.objects.filter(areas__in=area_list)
-            jobs_serializer = TechJobSerializer(jobs, many=True)
-            return Response(jobs_serializer.data)
-        else:
-            return Response('no jobs found')
+        return Response(eventsData)
 
 
-class AllTechJobsView(APIView):
-    def get(self):
-        jobs = TechJob.objects.all().order_by('posted')
+class TechJobsByAreaView(APIView):     # pass studentId
+    def get(self, *args, **kwargs):
+        student = Student.objects.filter(id=self.kwargs['student_id']).first()
+        student_tags = JOB_TAGS[student.specialisation]
+        jobsData = {}
+
+        jobs = TechJob.objects.filter(tags__in=student_tags)
         jobs_serializer = TechJobSerializer(jobs, many=True)
-        return Response(jobs_serializer.data)
+        jobsData['studentJobs'] = jobs_serializer.data
+
+        jobs = TechJob.objects.exclude(tags__in=student_tags)
+        jobs_serializer = TechJobSerializer(jobs, many=True)
+        jobsData['otherJobs'] = jobs_serializer.data
+
+        return Response(jobsData)
