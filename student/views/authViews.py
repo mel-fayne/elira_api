@@ -87,14 +87,6 @@ class CrudUserView(APIView):
 
 
 class ForgotPasswordView(APIView):
-    def get(self, *args, **kwargs):
-        student = Student.objects.filter(email=self.kwargs['email']).first()
-        if student is None:
-            return Response('Email Does Not Exists!')
-        else:
-            studentData = student.securityQuestions
-            return Response(studentData)
-
     def patch(self, request, *args, **kwargs):
         student = Student.objects.filter(email=self.kwargs['email']).first()
         serializer = StudentSerializer(

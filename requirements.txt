@@ -34,3 +34,4 @@ matplotlib==3.7.1
 numpy
 scikit-learn
 ipykernel==6.22.0
+joblib

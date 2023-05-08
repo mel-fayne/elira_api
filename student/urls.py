@@ -13,7 +13,7 @@ urlpatterns = [
     path('user_account/<int:student_id>', CrudUserView.as_view()),
     path('login', LoginView.as_view()),
     path('confirm_user/<str:email>', LoginView.as_view()),
-    path('forgot_password/<str:email>', ForgotPasswordView.as_view()),
+    path('reset_password/<str:email>', ForgotPasswordView.as_view()),
     path('all_students', AllStudentsView.as_view()),
 
     # ---------- AcademicProfile endpoints ---------- 

@@ -15,7 +15,6 @@ class StudentSerializer(serializers.ModelSerializer):
             'first_name', 'last_name',
             'email',
             'password',
-            'news_history'
             'last_active', 'user_token',
             'first_pet',
             'childhood_street',
