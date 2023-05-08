@@ -14,14 +14,6 @@ class NewsPiece(models.Model):
     def __str__(self):
         return self.title
 
-
-class NewsGroup(models.Model):
-
-    student_ids = models.JSONField(default=list)
-
-    def __str__(self):
-        return self.id
-
 class TechEvent(models.Model):
 
     source = models.CharField(max_length=50)

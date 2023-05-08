@@ -9,6 +9,10 @@ import nltk
 from nltk.corpus import stopwords
 nltk.download('stopwords')
 
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+}
+
 # Add the project directory to the Python path
 project_dir = '/home/mel/Desktop/code-lab/api/elira_api'
 sys.path.append(project_dir)
@@ -22,14 +26,8 @@ from news.models import NewsPiece
 
 print('***************** News Fetch Started *****************')
 
-news = []
-
 # ----------- Step One: Get News & Articles from RSS Feeds ------------------
-
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
-}
-
+news = []
 sources = [
     {
         "name": "Engadget",
@@ -106,7 +104,7 @@ sources = [
 
 # Function to source images for rss feed entries with no media-content
 def getImageUrl(url):
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=HEADERS)
     soup = BeautifulSoup(response.content, "html.parser")
     images = soup.find_all("img")
     count = 0
@@ -164,7 +162,8 @@ TECH_TAGS = {
     'Internet of Things': ['iot', 'smart', 'wearable', 'sensors'],
     'Gadgets': ['smartphone', 'wireless', 'laptop', 'watch', 'tablet', 'smartwatch', 'headphone', 'camera', '5g', 'wi-fi', 'bluetooth', 'samsung', 'asus', 'sony'],
     'Energy & Sustainability': ['renewable', 'energy', 'electric', 'vehicles', 'carbon', 'footprint', 'climate', 'sustainable'],
-    'Blockchain': ['cryptocurrency', 'blockchain', 'crypto', 'bitcoin', 'Dogecoin', 'ethereum', 'solidity', 'coin', 'web3', 'decentralized', 'ledger', 'contracts', 'mining']
+    'Blockchain': ['cryptocurrency', 'blockchain', 'crypto', 'bitcoin', 'Dogecoin', 'ethereum', 'solidity', 'coin', 'web3', 'decentralized', 'ledger', 'contracts', 'mining'],
+    'Design': ['design', 'ui', 'ux', 'graphics']
 }
 
 stop_words = set(stopwords.words('english'))
@@ -188,7 +187,14 @@ for item in news:
 
 print('All News Items Tagged!')
 
-# ----------- Step Three: Add Today's news pieces ------------------
+# ----------- Step Three: Purge Yesterday's news pieces ------------------
+
+news_piecesObjs = NewsPiece.objects.all()
+num_deleted, _ = news_piecesObjs.delete()
+
+print(f"Yesterday's TechJob Objects Deleted: {num_deleted}")
+
+# ----------- Step Four: Add Today's news pieces ------------------
 
 news_pieces = []
 
@@ -209,5 +215,3 @@ NewsPiece.objects.bulk_create(news_pieces)
 print(f"NewsPiece Objects Created: {len(news_pieces)}")
 
 print('***************** News Fetch Complete *****************')
-
-# TODO : Create Filtering Models

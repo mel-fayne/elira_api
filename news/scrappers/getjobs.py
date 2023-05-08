@@ -6,6 +6,10 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from django.utils import timezone
 
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+}
+
 # Add the project directory to the Python path
 project_dir = '/home/mel/Desktop/code-lab/api/elira_api'
 sys.path.append(project_dir)
@@ -16,18 +20,12 @@ django.setup()
 from news.models import TechJob
 
 print('***************** Jobs Fetch Started *****************')
-
-jobs = []
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
-}
-
 # ----------- Step One: Get Events ------------------
-
+jobs = []
 page = 1 
 while page <= 10:
     url = 'https://www.myjobmag.co.ke/search/jobs?q=intern--software--data--design--network--developer--cyber--database&currentpage=' + str(page)
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=HEADERS)
     soup = BeautifulSoup(response.content, 'html.parser')
     job_listings = soup.find_all('li', class_='job-list-li')
 

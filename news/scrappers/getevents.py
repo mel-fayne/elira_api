@@ -4,7 +4,10 @@ import django
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-from django.utils import timezone
+
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+}
 
 # Add the project directory to the Python path
 project_dir = '/home/mel/Desktop/code-lab/api/elira_api'
@@ -17,16 +20,11 @@ from news.models import TechEvent
 
 print('***************** Events Fetch Started *****************')
 
-events = []
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
-}
-
 # ----------- Step One: Get Events ------------------
-
+events = []
 # ------------------------ Eventbrite
 eventbrite_url = 'https://www.eventbrite.com/d/kenya/tech-events/'
-eventbrite_res = requests.get(eventbrite_url, headers=headers)
+eventbrite_res = requests.get(eventbrite_url, headers=HEADERS)
 eventbrite_content = eventbrite_res.content
 eventbrite_soup = BeautifulSoup(eventbrite_content, 'html.parser')
 eventbrite_listings = eventbrite_soup.find_all(
@@ -85,7 +83,7 @@ print(f"From EventBrite: {eventbrite_no}")
 
 # ------------------------ Meetup
 meetup_url = 'https://www.meetup.com/find/ke--nairobi/technology/'
-meetup_res = requests.get(meetup_url, headers=headers)
+meetup_res = requests.get(meetup_url, headers=HEADERS)
 meetup_content = meetup_res.content
 meetup_soup = BeautifulSoup(meetup_content, 'html.parser')
 meetup_listings = meetup_soup.find_all(
@@ -175,6 +173,7 @@ EVENT_THEMES = {
     'Internet of Things': ['iot', 'sensors'],
     'Blockchain': ['cryptocurrency', 'blockchain', 'crypto', 'bitcoin', 'Dogecoin', 'ethereum', 'solidity', 'coin', 'web3', 'decentralized', 'ledger', 'contracts', 'mining'],
     'Databases': ['database', 'postgresql', 'mongodb', 'sql', 'server', 'oracle', 'mysql'],
+    'Design': ['design', 'ui', 'ux', 'graphics']
 }
 
 
@@ -201,8 +200,7 @@ print('All News Items Tagged!')
 
 # ----------- Step Three: Purge Yesterday's events ------------------
 
-now = timezone.now()
-news_pieces = TechEvent.objects.filter(date_created__lt=now)
+news_pieces = TechEvent.objects.all()
 num_deleted, _ = news_pieces.delete()
 
 print(f"Yesterday's TechEvent Objects Deleted: {num_deleted}")
