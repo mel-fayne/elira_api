@@ -33,7 +33,7 @@ class SoftSkillProfileView(APIView):
             skill_data['name'] = skill['name']
             skill_data['score'] = skill['score']
             scores.append(skill['score']) # to be used to comppute ss score
-            skill_data['ss_profile'] = ss_profile
+            skill_data['ss_profile'] = ss_profile.ssProfileId
 
             ss_serializer = SoftSkillSerializer(data=skill_data)
             ss_serializer.is_valid(raise_exception=True)
@@ -49,21 +49,20 @@ class SoftSkillProfileView(APIView):
         ssp_serializer.is_valid(raise_exception=True)
         ssp_serializer.save()
 
-        return Response(ss_serializer.data)
+        return Response(ssp_serializer.data)
 
     def patch(self, request, *args, **kwargs):      # pass studentId & all softSkills data
-        ss_profile = SoftSkillProfileSerializer.objects.filter(student_id=self.kwargs['student_id']).first()
+        ss_profile = SoftSkillProfile.objects.filter(student_id=self.kwargs['student_id']).first()
 
         skills = SoftSkill.objects.filter(ss_profile=ss_profile.ssProfileId)
 
         scores = []
         for ss in request.data['skills']:
+            scores.append(ss['score'])
             for skill in skills:
                 if ss['name'] == skill.name:
                     skill_data = {}
                     skill_data['score'] = ss['score']
-                    scores.append(ss['score'])
-
                     ss_serializer = SoftSkillSerializer(skill, data=skill_data, partial=True)
                     ss_serializer.is_valid(raise_exception=True)
                     ss_serializer.save()
@@ -71,11 +70,14 @@ class SoftSkillProfileView(APIView):
         # compute ss score
         avg = 0.0
         for score in scores:
-            sc = (score * 10) / 100
+            sc = (score * 12.5) / 100
             avg = avg + sc
 
+        profileData = {}
+        profileData['soft_skill_score'] = avg
+
         serializer = SoftSkillProfileSerializer(
-            ss_profile, data=request.data, partial=True)
+            ss_profile, data=profileData, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
 

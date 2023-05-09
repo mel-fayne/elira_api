@@ -32,3 +32,7 @@ class SoftSkill(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def ssProfileId(self):
+        return self.id
