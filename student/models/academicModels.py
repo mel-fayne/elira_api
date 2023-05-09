@@ -79,13 +79,13 @@ class AcademicProfile(models.Model):
     @property
     def acProfileId(self):
         return self.id
-    
+
     @property
     def currentSem(self):
         return self.current_sem
 
     @property
-    def school(self):
+    def studentSchool(self):
         return self.school
 
     @property
@@ -122,12 +122,13 @@ class SchoolGrouping(models.Model):
         return self.code + ' - ' + self.school
 
     @property
-    def code(self):
+    def groupCode(self):
         return self.code
 
     @property
     def unitPerc(self):
         return self.unit_percentage
+
 
 class SchoolUnit(models.Model):
 
@@ -148,7 +149,7 @@ class SchoolUnit(models.Model):
     @property
     def schoolUnitId(self):
         return self.id
-    
+
     @property
     def groupCodes(self):
         return self.grouping_code
@@ -167,7 +168,7 @@ class StudentUnit(models.Model):
         return self.grade
 
     @property
-    def mark(self):
+    def unitMark(self):
         return self.mark
 
     @property

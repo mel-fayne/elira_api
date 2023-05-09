@@ -1,4 +1,3 @@
-import json
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -19,7 +18,6 @@ class AcademicProfileView(APIView):     # pass studentId
         acData = {}
         acData['ac_profile'] = serializer.data
         acData['student_units'] = getSortedUnitGroups(ac_profile.acProfileId)
-
         return Response(acData)
 
     def post(self, request):    # pass current_sem, school & student_id
@@ -59,12 +57,12 @@ class AcademicProfileView(APIView):     # pass studentId
 class StudentUnitView(APIView):     # pass ac_profileId
     def get(self, *args, **kwargs):
         ac_profileId = self.kwargs['ac_profileId']
-        unitsData = getSortedUnitGroups(ac_profileId) 
+        unitsData = getSortedUnitGroups(ac_profileId)
         return Response(unitsData)
 
     def patch(self, request, *args, **kwargs):      # pass ac_profileId and student unit objects
         ac_profileId = self.kwargs['ac_profileId']
-        studentUnits = json.loads(request.data['studentUnits'])
+        studentUnits = request.data['studentUnits']
 
         # update StudentUnit objects
         for unit in studentUnits:
@@ -73,14 +71,6 @@ class StudentUnitView(APIView):     # pass ac_profileId
                 unitObj, data=unit, partial=True)
             serializer.is_valid(raise_exception=True)
             serializer.save()
-
-        profileData = updateAcademicProfile(ac_profileId)
-
-        # update academic profile
-        ac_profile = AcademicProfile.objects.filter(
-            id=ac_profileId).first()
-        acp_serializer = AcademicProfileSerializer(
-            ac_profile, data=profileData, partial=True)
 
         # return sorted list of student units grouped by unitGrouping
         unitsData = getSortedUnitGroups(ac_profileId)
@@ -117,14 +107,14 @@ class SchoolUnitView(APIView):
                 schoolUnits[grouping] = groupUnits
 
         return Response(schoolUnits)
-    
+
     def post(self, request):
         serializer = SchoolUnitSerializer(data=request.data['schoolUnits'], many=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response('All Units Uploaded Successfully')
 
-        
+
 class UnitGroupsView(APIView):
     def post(self, request):
         serializer = SchoolGroupingSerializer(data=request.data['unitGroups'], many=True)
@@ -171,7 +161,7 @@ def updateAcademicProfile(profileData, ac_profileId):
     sum = 0
 
     for unit in studentUnits:
-        sum = sum + unit.mark
+        sum = sum + unit.unitMark
 
     profileData['average'] = sum / len(studentUnits)
     profileData['honours'] = getHonours(average)
@@ -184,7 +174,7 @@ def updateAcademicProfile(profileData, ac_profileId):
 
             for i, code in enumerate(groupCodes):
                 if code == grouping:
-                    total = total + (unit.mark * unitPerc[i])
+                    total = total + (unit.unitMark * unitPerc[i])
                 else:
                     pass
 
@@ -192,28 +182,24 @@ def updateAcademicProfile(profileData, ac_profileId):
 
     return profileData
 
-
 def getSortedUnitGroups(ac_profileId):
     ac_profile = AcademicProfile.objects.filter(id=ac_profileId).first()
     unitsData = {}
-
-    groupingTotals = ac_profile.csMarks
+    groupingTotals = []
     groupingNames = GROUPINGS[:]
-    zippedLists = zip(groupingTotals, groupingNames)
-    sortedZippedLists = sorted(zippedLists, reverse=True)
-    sortedTotals, sortedNames = zip(*sortedZippedLists)
-
-    groupingObjs = SchoolGrouping.objects.filter(school=ac_profile.school)
+    groupingObjs = SchoolGrouping.objects.filter(school=ac_profile.studentSchool)
     studentUnitObjs = StudentUnit.objects.filter(ac_profile=ac_profileId)
-    for i, grouping in enumerate(sortedNames):
+
+    for i, grouping in enumerate(groupingNames):
         groupingData = {}
-
         groupingData['code'] = grouping
-        groupingData['total'] = sortedTotals[i]
-        groupingObj = next(
-            (obj for obj in groupingObjs if obj.code == grouping), None)
-        groupingData['unit_perc'] = groupingObj.unit_percentage
+        groupingObj = groupingObjs[0]
+        for obj in groupingObjs:
+            if obj.groupCode == grouping:
+                groupingObj = obj
+        groupingData['unit_perc'] = groupingObj.unitPerc
 
+        # compute group units
         groupUnits = []
         groupUnitsMarks = []
         for unit in studentUnitObjs:
@@ -222,18 +208,42 @@ def getSortedUnitGroups(ac_profileId):
                 if code == grouping:
                     serializer = GetStudentUnitSerializer(unit)
                     groupUnits.append(serializer.data)
-                    groupUnitsMarks.append(unit.mark)
+                    groupUnitsMarks.append(unit.unitMark)
                 else:
                     pass
 
-        zippedLists = zip(groupUnitsMarks, groupUnits)
-        sortedZippedLists = sorted(zippedLists, reverse=True)
-        sortedMarks, sortedUnits = zip(*sortedZippedLists)
+        if len(groupUnits) == 0:
+            groupingData['units'] = []
+            groupingData['completeness'] = 0.0
+        else:
+            zippedLists = zip(groupUnits, groupUnitsMarks)
+            sortedZippedLists = sorted(zippedLists, key=lambda x: x[0]['mark'], reverse=True)
+            sortedUnits, sortedMarks = zip(*sortedZippedLists)
 
-        groupingData['units'] = sortedUnits
-        groupingData['completeness'] = len(
-            sortedUnits) * groupingObj.unit_percentage
+            groupingData['units'] = sortedUnits
+            count = 0
+            for unit in sortedUnits:
+                if unit['mark'] > 0:
+                    count = count + 1
+
+            groupingData['completeness'] = count * groupingObj.unit_percentage
+
+        # compute group totals
+        total = 0.0
+        for mark in groupUnitsMarks:
+            total = total + mark
+        groupingTotals.append(total)
+        groupingData['total'] = (total * groupingObj.unitPerc) / 100
 
         unitsData[grouping] = groupingData
+
+    # update academic profile
+    profileData = {}
+    for i, grouping in enumerate(GROUPINGS):
+        profileData[grouping] = groupingTotals[i]
+    ac_profile = AcademicProfile.objects.filter(id=ac_profileId).first()
+    acp_serializer = AcademicProfileSerializer(ac_profile, data=profileData, partial=True)
+    acp_serializer.is_valid(raise_exception=True)
+    acp_serializer.save()
 
     return unitsData
