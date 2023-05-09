@@ -2,7 +2,7 @@ from rest_framework import serializers
 
 
 from student.models.studentModels import Student
-from student.models.academicModels import AcademicProfile, SchoolUnit, StudentUnit
+from student.models.academicModels import AcademicProfile, SchoolGrouping, SchoolUnit, StudentUnit
 from student.models.softSkillsModels import SoftSkillProfile, SoftSkill
 from student.models.technicalModels import TechnicalProfile
 from student.models.workExpModels import WorkExpProfile, WorkExperience
@@ -54,6 +54,11 @@ class AcademicProfileSerializer(serializers.ModelSerializer):
 class SchoolUnitSerializer(serializers.ModelSerializer):
     class Meta:
         model = SchoolUnit
+        fields = '__all__'
+
+class SchoolGroupingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SchoolGrouping
         fields = '__all__'
 
 

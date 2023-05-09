@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 from student.models.academicModels import AcademicProfile, SchoolGrouping, SchoolUnit, StudentUnit
-from student.serializers import AcademicProfileSerializer, GetStudentUnitSerializer, SchoolUnitSerializer, StudentUnitSerializer
+from student.serializers import AcademicProfileSerializer, GetStudentUnitSerializer, SchoolGroupingSerializer, SchoolUnitSerializer, StudentUnitSerializer
 
 GROUPINGS = ['cs01', 'cs02', 'cs03', 'cs04', 'cs05', 'cs06', 'cs07', 'cs08',
              'cs09', 'cs10', 'cs11', 'cs12', 'cs13', 'cs14', 'cs15', 'cs16', 'cs17', 'cs18']
@@ -30,7 +30,7 @@ class AcademicProfileView(APIView):     # pass studentId
 
         # create student units
         # get school units needed to create student units
-        schoolUnitObjs = SchoolUnit.objects.filter(request.data['school'])
+        schoolUnitObjs = SchoolUnit.objects.filter(school=request.data['school'])
         ac_profileId = AcademicProfile.objects.filter(
             student_id=request.data['student_id']).first().acProfileId
         for unit in schoolUnitObjs:
@@ -127,7 +127,7 @@ class SchoolUnitView(APIView):
         
 class UnitGroupsView(APIView):
     def post(self, request):
-        serializer = SchoolUnitSerializer(data=request.data['unitGroups'], many=True)
+        serializer = SchoolGroupingSerializer(data=request.data['unitGroups'], many=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return(serializer.data)
