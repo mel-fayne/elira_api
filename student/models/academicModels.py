@@ -135,7 +135,7 @@ class SchoolUnit(models.Model):
     semester = models.FloatField(max_length=50, choices=SEMESETERS)
     name = models.CharField(max_length=50)
     elective = models.BooleanField(default=False)
-    elective_group = models.CharField(max_length=50, null=True)
+    elective_group = models.CharField(max_length=50, null=True, blank=True)
     grouping_name = models.JSONField(default=list)
     grouping_code = models.JSONField(default=list)
     unit_percentages = models.JSONField(default=list)
