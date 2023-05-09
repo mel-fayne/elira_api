@@ -10,7 +10,7 @@ from student.models.studentModels import Student
 
 class LoginView(APIView):
     def get(self, *args, **kwargs):
-        student = Student.objects.filter(id=self.kwargs['email']).first()
+        student = Student.objects.filter(email=self.kwargs['email']).first()
         if student is None:
             return Response('Email Not Found')
         else:
