@@ -57,8 +57,11 @@ class LoginView(APIView):
 class CrudUserView(APIView):
     def get(self, *args, **kwargs):
         student = Student.objects.filter(id=self.kwargs['student_id']).first()
-        serializer = StudentSerializer(student)
-        return Response(serializer.data)
+        if student is None:
+            return Response('No Student Found')
+        else:
+            serializer = StudentSerializer(student)
+            return Response(serializer.data)
 
     def post(self, request):
         student_email = request.data['email']

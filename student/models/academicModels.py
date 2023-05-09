@@ -91,81 +91,25 @@ class AcademicProfile(models.Model):
     @property
     def csMarks(self):
         marks = []
-        for cs in GROUPINGS:
-            marks.append(self.cs)
+        marks.append(self.cs01)
+        marks.append(self.cs02)
+        marks.append(self.cs03)
+        marks.append(self.cs04)
+        marks.append(self.cs05)
+        marks.append(self.cs06)
+        marks.append(self.cs07)
+        marks.append(self.cs08)
+        marks.append(self.cs09)
+        marks.append(self.cs10)
+        marks.append(self.cs11)
+        marks.append(self.cs12)
+        marks.append(self.cs13)
+        marks.append(self.cs14)
+        marks.append(self.cs15)
+        marks.append(self.cs16)
+        marks.append(self.cs17)
+        marks.append(self.cs18)
         return marks
-    
-    @property
-    def cs01(self):
-        return self.cs01
-    
-    @property
-    def cs02(self):
-        return self.cs02
-    
-    @property
-    def cs03(self):
-        return self.cs03
-    
-    @property
-    def cs04(self):
-        return self.cs04
-    
-    @property
-    def cs05(self):
-        return self.cs05
-    
-    @property
-    def cs06(self):
-        return self.cs06
-    
-    @property
-    def cs07(self):
-        return self.cs07
-    
-    @property
-    def cs08(self):
-        return self.cs08
-    
-    @property
-    def cs09(self):
-        return self.cs09
-    
-    @property
-    def cs10(self):
-        return self.cs10
-    
-    @property
-    def cs11(self):
-        return self.cs11
-    
-    @property
-    def cs12(self):
-        return self.cs12
-    
-    @property
-    def cs13(self):
-        return self.cs13
-    
-    @property
-    def cs14(self):
-        return self.cs14
-    
-    @property
-    def cs15(self):
-        return self.cs15
-    
-    @property
-    def cs16(self):
-        return self.cs16
-    
-    @property
-    def cs17(self):
-        return self.cs17
-    
-    @property
-    def cs18(self):
-        return self.cs18
 
 
 class SchoolGrouping(models.Model):

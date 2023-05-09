@@ -19,30 +19,31 @@ class ClassifierModelView(APIView):     # pass studentId
         # call required objects
         studentObj = Student.objects.filter(id=self.kwargs['student_id']).first()
         acdProfObj = AcademicProfile.objects.filter(id=self.kwargs['student_id']).first()
+        groupingTotals = acdProfObj.csMarks
         techProfObj = TechnicalProfile.objects.filter(id=self.kwargs['student_id']).first()
         workProfObj = WorkExpProfile.objects.filter(id=self.kwargs['student_id']).first()
         
         # prepare student dataframe
         student = pd.DataFrame({
             'current_sem': [acdProfObj.currentSem],
-            'cs01': [acdProfObj.cs01],
-            'cs02': [acdProfObj.cs02],
-            'cs03': [acdProfObj.cs03],
-            'cs04': [acdProfObj.cs04],
-            'cs05': [acdProfObj.cs05],
-            'cs06': [acdProfObj.cs06],
-            'cs07': [acdProfObj.cs07],
-            'cs08': [acdProfObj.cs08],
-            'cs09': [acdProfObj.cs09],
-            'cs10': [acdProfObj.cs1workProfObj],
-            'cs11': [acdProfObj.cs11],
-            'cs12': [acdProfObj.cs12],
-            'cs13': [acdProfObj.cs13],
-            'cs14': [acdProfObj.cs14],
-            'cs15': [acdProfObj.cs15],
-            'cs16': [acdProfObj.cs16],
-            'cs17': [acdProfObj.cs17],
-            'cs18': [acdProfObj.cs18],
+            'cs01': [groupingTotals[0]],
+            'cs02': [groupingTotals[1]],
+            'cs03': [groupingTotals[2]],
+            'cs04': [groupingTotals[3]],
+            'cs05': [groupingTotals[4]],
+            'cs06': [groupingTotals[5]],
+            'cs07': [groupingTotals[6]],
+            'cs08': [groupingTotals[7]],
+            'cs09': [groupingTotals[8]],
+            'cs10': [groupingTotals[9]],
+            'cs11': [groupingTotals[10]],
+            'cs12': [groupingTotals[11]],
+            'cs13': [groupingTotals[12]],
+            'cs14': [groupingTotals[13]],
+            'cs15': [groupingTotals[14]],
+            'cs16': [groupingTotals[15]],
+            'cs17': [groupingTotals[16]],
+            'cs18': [groupingTotals[17]],
             'c': [techProfObj.c],
             'c++': [techProfObj.cPlusPlus],
             'java': [techProfObj.java],
