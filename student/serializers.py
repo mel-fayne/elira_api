@@ -78,7 +78,7 @@ class GetStudentUnitSerializer(serializers.ModelSerializer):
             'ac_profile',
             'school_unit',
             'grade',
-            'mark'
+            'mark',
             'unit_name',
             'unit_codes',
             'unit_perc'

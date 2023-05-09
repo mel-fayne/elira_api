@@ -130,7 +130,7 @@ class UnitGroupsView(APIView):
         serializer = SchoolGroupingSerializer(data=request.data['unitGroups'], many=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        return(serializer.data)
+        return Response(serializer.data)
 
 
 # ------------------------------- Util Functions -----------------------------
