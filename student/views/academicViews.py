@@ -94,7 +94,7 @@ class SchoolUnitView(APIView):
         school = self.kwargs['school']
         schoolUnits = {}
 
-        if groupBy == 'semseter':
+        if groupBy == 'semester':
             for sem in SEMESTERS:
                 units = SchoolUnit.objects.filter(school=school, year_sem=sem)
                 serializer = SchoolUnitSerializer(units, many=True)

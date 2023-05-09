@@ -131,9 +131,9 @@ class SchoolGrouping(models.Model):
 
 class SchoolUnit(models.Model):
 
-    school = models.CharField(max_length=50, choices=SCHOOLS)
-    semester = models.FloatField(max_length=50, choices=SEMESETERS)
-    name = models.CharField(max_length=50)
+    school = models.CharField(max_length=100, choices=SCHOOLS)
+    semester = models.FloatField(choices=SEMESETERS)
+    name = models.CharField(max_length=100)
     elective = models.BooleanField(default=False)
     elective_group = models.CharField(max_length=50, null=True, blank=True)
     grouping_name = models.JSONField(default=list)
