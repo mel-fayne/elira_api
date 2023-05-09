@@ -1,7 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import AuthenticationFailed
-import jwt
 import datetime
 
 from student.serializers import StudentSerializer
@@ -48,9 +47,6 @@ class LoginView(APIView):
                                        partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-
-        # response.set_cookie(key='jwt', value=token, httponly=True)
-
         return Response(serializer.data)
 
 
