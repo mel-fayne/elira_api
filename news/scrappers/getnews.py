@@ -5,10 +5,6 @@ import feedparser
 import requests
 from bs4 import BeautifulSoup
 
-import nltk
-from nltk.corpus import stopwords
-nltk.download('stopwords')
-
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
 }
@@ -166,11 +162,9 @@ TECH_TAGS = {
     'Design': ['design', 'ui', 'ux', 'graphics']
 }
 
-stop_words = set(stopwords.words('english'))
-
 def get_tech_topics(title):
     title = title.replace("'", " ").replace(',', ' ').replace('.', ' ')
-    keywords = [word for word in title.lower().split() if word not in stop_words]
+    keywords = [word for word in title.lower().split()]
 
     tech_matches = []
     for topic, topic_keywords in TECH_TAGS.items():
