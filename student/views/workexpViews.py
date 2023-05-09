@@ -11,18 +11,18 @@ class WorkExpProfileView(APIView):
         wx_profile = WorkExpProfile.objects.filter(id=self.kwargs['student_id']).first()
         serializer = WorkExpProfileSerializer(wx_profile)
         # get work experiences
-        experiences = WorkExperience.objects.filter(wx_profile.wxProfileId)
+        experiences = WorkExperience.objects.filter(id=wx_profile.wxProfileId)
         experiences_ser = WorkExperienceSerializer(experiences, many=True)
         # get work exp pie chart
         expIndustries = []
         expTimes = []
         for exp in experiences:
-            if exp.industry in expIndustries:
+            if exp.wxpInd in expIndustries:
                 idx = expIndustries.index(exp.industry)
-                expTimes[idx] = expTimes[idx] + exp.time
+                expTimes[idx] = expTimes[idx] + exp.timeSpent
             else:
                 expIndustries.append(exp.industry)
-                expTimes.append(exp.time)
+                expTimes.append(exp.timeSpent)
         expPieChart = []
         for i, time in enumerate(expTimes):
             expTime = {}
@@ -34,7 +34,7 @@ class WorkExpProfileView(APIView):
         wxData['wx_profile'] = serializer.data
         wxData['experiences'] = experiences_ser.data
         wxData['expPieChart'] = expPieChart
-        
+
         return Response(wxData)
 
     def post(self, request):    # pass studentId
@@ -61,20 +61,20 @@ class WorkExperienceView(APIView):
         serializer = WorkExperienceSerializer(workExp, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        
+
         # update workExp Profile
         updateWxProfile(workExp.wxProfileId)
 
         return Response(serializer.data)
-    
+
     def delete(self, *args, **kwargs):      # pass wxId
         # update workExp Profile
         workExp = WorkExperience.objects.filter(id=self.kwargs['wxId']).first()
         wx_profile = WorkExpProfile.objects.filter(id=workExp.wxProfileId).first()
-   
+
         wxData = {}
         wxData['internships_no'] = wx_profile.internshipsNo - 1
-        wxData['time_spent'] = wx_profile.timeSpent - workExp.time_spent
+        wxData['time_spent'] = wx_profile.timeSpent - workExp.timeSpent
 
         serializer = WorkExpProfileSerializer(wx_profile, data=wxData, partial=True)
         serializer.is_valid(raise_exception=True)
@@ -88,13 +88,30 @@ class WorkExperienceView(APIView):
 
 def updateWxProfile(wxProfileId):
     wx_profile = WorkExpProfile.objects.filter(id=wxProfileId).first()
-   
+
     wxData = {}
-    experiences = WorkExperience.objects.filter(wx_profile.wxProfileId)
+    experiences = WorkExperience.objects.filter(id=wx_profile.wxProfileId)
     wxData['internships_no'] = len(experiences)
     timeSpent = 0
     for exp in experiences:
         timeSpent += exp.timeSpent
+        if exp.wxpInd == 'sd_industry':
+            wxData['sd_industry'] = 1
+        if exp.wxpInd == 'na_industry':
+            wxData['na_industry'] = 1
+        if exp.wxpInd == 'ai_industry':
+            wxData['ai_industry'] = 1
+        if exp.wxpInd == 'cs_industry':
+            wxData['cs_industry'] = 1
+        if exp.wxpInd == 'da_industry':
+            wxData['da_industry'] = 1
+        if exp.wxpInd == 'ho_industry':
+            wxData['ho_industry'] = 1
+        if exp.wxpInd == 'is_industry':
+            wxData['is_industry'] = 1
+        if exp.wxpInd == 'gd_industry':
+            wxData['gd_industry'] = 1
+
     wxData['time_spent'] = timeSpent
 
     serializer = WorkExpProfileSerializer(wx_profile, data=wxData, partial=True)

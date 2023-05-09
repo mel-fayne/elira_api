@@ -233,7 +233,7 @@ def getSortedUnitGroups(ac_profileId):
         for mark in groupUnitsMarks:
             total = total + mark
         groupingTotals.append(total)
-        groupingData['total'] = (total * groupingObj.unitPerc) / 100
+        groupingData['total'] = round(((total * groupingObj.unitPerc) / 100), 2)
 
         unitsData[grouping] = groupingData
 

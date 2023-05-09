@@ -29,47 +29,47 @@ class WorkExpProfile(models.Model):
     @property
     def wxProfileId(self):
         return self.id
-    
+
     @property
     def internshipsNo(self):
         return self.internships_no
-    
+
     @property
     def timeSpent(self):
         return self.time_spent
-    
+
     @property
     def aiInd(self):
         return self.ai_industry
-    
+
     @property
     def csInd(self):
         return self.cs_industry
-    
+
     @property
     def daInd(self):
         return self.da_industry
-    
+
     @property
     def gdInd(self):
         return self.gd_industry
-    
+
     @property
     def hoInd(self):
         return self.ho_industry
-    
+
     @property
     def isInd(self):
         return self.is_industry
-    
+
     @property
     def naInd(self):
         return self.na_industry
-    
+
     @property
     def sdInd(self):
         return self.sd_industry
-    
+
 
 class WorkExperience(models.Model):
     EMP_TYPE = (
@@ -110,15 +110,15 @@ class WorkExperience(models.Model):
 
     def __str__(self):
         return self.title
-    
+
     @property
     def wxProfileId(self):
-        return self.wx_profile
-    
+        return self.wx_profile.id
+
     @property
     def timeSpent(self):
         return self.time_spent
-    
+
     @property
-    def industry(self):
+    def wxpInd(self):
         return self.industry

@@ -1,7 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-from student.models.studentModels import Student
 from student.models.softSkillsModels import SoftSkillProfile, SoftSkill
 from student.serializers import SoftSkillProfileSerializer, SoftSkillSerializer
 
@@ -20,12 +19,12 @@ class SoftSkillProfileView(APIView):
         return Response(ss_data)
 
     def post(self, request):    # pass studentId and all softSkills data
-        # create ss_profile  
+        # create ss_profile
         ssp_serializer = SoftSkillProfileSerializer(data={'student_id': request.data['student_id']})
         ssp_serializer.is_valid(raise_exception=True)
         ssp_serializer.save()
 
-        # create skills for this ss_profile 
+        # create skills for this ss_profile
         ss_profile = SoftSkillProfile.objects.filter(student_id=request.data['student_id']).first()
         scores = []
         for skill in request.data['skills']:
@@ -39,13 +38,13 @@ class SoftSkillProfileView(APIView):
             ss_serializer = SoftSkillSerializer(data=skill_data)
             ss_serializer.is_valid(raise_exception=True)
             ss_serializer.save()
-        
+
         # compute ss score
         avg = 0.0
         for score in scores:
             sc = (score * 10) / 100
             avg = avg + sc
-        
+
         ssp_serializer = SoftSkillProfileSerializer(ss_profile, data={'soft_skill_score': avg}, partial=True)
         ssp_serializer.is_valid(raise_exception=True)
         ssp_serializer.save()
@@ -54,7 +53,7 @@ class SoftSkillProfileView(APIView):
 
     def patch(self, request, *args, **kwargs):      # pass studentId & all softSkills data
         ss_profile = SoftSkillProfileSerializer.objects.filter(student_id=self.kwargs['student_id']).first()
-       
+
         skills = SoftSkill.objects.filter(ss_profile=ss_profile.ssProfileId)
 
         scores = []
@@ -68,7 +67,7 @@ class SoftSkillProfileView(APIView):
                     ss_serializer = SoftSkillSerializer(skill, data=skill_data, partial=True)
                     ss_serializer.is_valid(raise_exception=True)
                     ss_serializer.save()
-        
+
         # compute ss score
         avg = 0.0
         for score in scores:
@@ -81,4 +80,3 @@ class SoftSkillProfileView(APIView):
         serializer.save()
 
         return Response(serializer.data)
-    
