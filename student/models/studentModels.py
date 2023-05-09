@@ -1,3 +1,5 @@
+import hashlib
+import os
 from django.db import models
 
 
@@ -58,3 +60,23 @@ class Student(models.Model):
         answers['childhod_nickname'] = self.childhod_nickname
         answers['first_phone'] = self.first_phone
         return answers
+    
+    def set_password(self, raw_password):
+        """
+        Set the password for the user. The raw password will be hashed before
+        storing it in the database.
+        """
+        salt = hashlib.sha256(os.urandom(60)).hexdigest().encode('ascii')
+        pwd_hash = hashlib.pbkdf2_hmac('sha256', raw_password.encode('utf-8'), salt, 100000)
+        pwd_hash = pwd_hash.hex()
+        self.password = f"{salt.decode('ascii')}:{pwd_hash}"
+
+    
+    def check_password(self, raw_password):
+        """
+        Check if the provided password matches the user's hashed password.
+        """
+        salt, pwd_hash = self.password.split(':')
+        pwd_input_hash = hashlib.pbkdf2_hmac('sha256', raw_password.encode('utf-8'), salt.encode('ascii'), 100000)
+        pwd_input_hash = pwd_input_hash.hex()
+        return pwd_input_hash == pwd_hash
