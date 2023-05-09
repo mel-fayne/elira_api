@@ -96,7 +96,7 @@ class SchoolUnitView(APIView):
 
         if groupBy == 'semester':
             for sem in SEMESTERS:
-                units = SchoolUnit.objects.filter(school=school, year_sem=sem)
+                units = SchoolUnit.objects.filter(school=school, semester=sem)
                 serializer = SchoolUnitSerializer(units, many=True)
                 schoolUnits[sem] = serializer.data
 
@@ -122,7 +122,7 @@ class SchoolUnitView(APIView):
         serializer = SchoolUnitSerializer(data=request.data['schoolUnits'], many=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        return('All Units Uploaded Successfully')
+        return Response('All Units Uploaded Successfully')
 
         
 class UnitGroupsView(APIView):

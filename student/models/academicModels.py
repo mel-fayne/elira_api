@@ -148,6 +148,10 @@ class SchoolUnit(models.Model):
     @property
     def schoolUnitId(self):
         return self.id
+    
+    @property
+    def groupCodes(self):
+        return self.grouping_code
 
 
 class StudentUnit(models.Model):
