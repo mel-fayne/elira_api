@@ -17,6 +17,7 @@ class Student(models.Model):
     first_name = models.CharField(max_length=50, null=True)
     last_name = models.CharField(max_length=50, null=True)
     email = models.CharField(max_length=100, unique=True)
+    password = models.CharField(max_length=20)
 
     # ------------- prediction fields --------------
     specialisation = models.CharField(max_length=50, choices=SPECIALISATIONS, null=True)

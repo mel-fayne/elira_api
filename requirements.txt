@@ -5,6 +5,7 @@ django-cors-headers==3.14.0
 feedparser==6.0.10
 joblib==1.2.0
 pandas==2.0.1
+PyJWT==2.6.0
 Requests==2.30.0
 scikit_learn==1.2.2
 mysqlclient==2.1.1
