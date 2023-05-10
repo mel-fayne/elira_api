@@ -14,6 +14,10 @@ class NewsPiece(models.Model):
     def __str__(self):
         return self.title
 
+    @property
+    def newsTags(self):
+        return self.tags
+
 class TechEvent(models.Model):
 
     source = models.CharField(max_length=50)
@@ -45,3 +49,7 @@ class TechJob(models.Model):
 
     def __str__(self):
         return self.title
+
+    @property
+    def jobAreas(self):
+        return self.areas

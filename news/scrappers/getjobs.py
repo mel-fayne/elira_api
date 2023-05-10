@@ -11,7 +11,7 @@ HEADERS = {
 }
 
 # Add the project directory to the Python path
-project_dir = '/home/mel/Desktop/code-lab/api/elira_api'
+project_dir = '/home/melfayne/elira_api'
 sys.path.append(project_dir)
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'elira_api.settings')
@@ -22,7 +22,7 @@ from news.models import TechJob
 print('***************** Jobs Fetch Started *****************')
 # ----------- Step One: Get Events ------------------
 jobs = []
-page = 1 
+page = 1
 while page <= 10:
     url = 'https://www.myjobmag.co.ke/search/jobs?q=intern--software--data--design--network--developer--cyber--database&currentpage=' + str(page)
     response = requests.get(url, headers=HEADERS)
@@ -32,7 +32,7 @@ while page <= 10:
     for listing in job_listings:
         company_elm = listing.find('li', class_='job-logo')
         if company_elm != None:
-            company_elm = company_elm.find('img')    
+            company_elm = company_elm.find('img')
             company = company_elm['alt']
 
             job_logo = company_elm['src']
@@ -59,7 +59,7 @@ while page <= 10:
                 'posted': posted,
                 'description': description.replace('&nbsp;', ' ').replace('\n', ' ').replace('\xa0', ' ')
             })
-    
+
     page += 1
 
 print(f"Job Items Collected {len(jobs)}")

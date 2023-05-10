@@ -10,7 +10,7 @@ HEADERS = {
 }
 
 # Add the project directory to the Python path
-project_dir = '/home/mel/Desktop/code-lab/api/elira_api'
+project_dir = '/home/melfayne/elira_api'
 sys.path.append(project_dir)
 
 

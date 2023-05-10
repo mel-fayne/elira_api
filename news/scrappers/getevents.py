@@ -10,7 +10,7 @@ HEADERS = {
 }
 
 # Add the project directory to the Python path
-project_dir = '/home/mel/Desktop/code-lab/api/elira_api'
+project_dir = '/home/melfayne/elira_api'
 sys.path.append(project_dir)
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'elira_api.settings')
@@ -32,17 +32,17 @@ eventbrite_listings = eventbrite_soup.find_all(
 
 for listing in eventbrite_listings:
     link = listing.find(
-        'a', {'class': 'eds-event-card-content__action-link'})['href']
+        'a', {'class': 'event-card-link'})['href']
 
-    title = listing.find('div', {
-                         'class': 'eds-event-card__formatted-name--is-clamped eds-event-card__formatted-name--is-clamped-three eds-text-weight--heavy'}).text
+    title = listing.find('h2', {
+                         'class': 'Typography_root__lp5bn #585163 Typography_body-lg__lp5bn event-card__clamp-line--three Typography_align-match-parent__lp5bn'}).text
 
-    date_txt = listing.find('div', {
-        'class': 'eds-event-card-content__sub-title eds-text-color--primary-brand eds-l-pad-bot-1 eds-l-pad-top-2 eds-text-weight--heavy eds-text-bm'}).text
-   
+    date_txt = listing.find('p', {
+        'class': 'Typography_root__lp5bn #585163 Typography_body-md-bold__lp5bn eds-text-color--primary-brand Typography_align-match-parent__lp5bn'}).text
+
     if 'Tomorrow' in date_txt:
         tomorrow = datetime.today().date() + timedelta(days=1)
-        time_str = date_txt[:8]
+        time_str = date_txt[11:]
         date_string = f"{tomorrow.strftime('%A')}, {tomorrow.strftime('%b %d')}, {time_str}"
         date = datetime.strptime(date_string, '%A, %b %d, %I:%M %p')
     elif 'Today' in date_txt:
@@ -51,20 +51,22 @@ for listing in eventbrite_listings:
         date_string = f"{today.strftime('%A')}, {today.strftime('%b %d')}, {time_str}"
         date = datetime.strptime(date_string, '%A, %b %d, %I:%M %p')
     elif date_txt == '':
-        date = datetime.strptime('2023-01-01 00:00:00', '%Y-%m-%d %H:%M:%S')
+        date = datetime.strptime('2023-06-09 00:00:00', '%Y-%m-%d %H:%M:%S')
+    elif 'more' in date_txt or 'at' in date_txt:
+        pass
     else:
         current_year = datetime.now().year
         date_txt = str(current_year) + ' ' + date_txt
         date = datetime.strptime(date_txt, "%Y %a, %b %d, %I:%M %p")
 
     location = listing.find(
-        'div', {'data-subcontent-key': 'location'}).text
+        'p', {'Typography_root__lp5bn #585163 Typography_body-md__lp5bn event-card__clamp-line--one Typography_align-match-parent__lp5bn'}).text
 
-    img_elem = listing.find('img', {'class': 'eds-event-card-content__image'})
+    img_elem = listing.find('img', {'class': 'event-card-image'})
     img = img_elem['src'] if img_elem else 'https://drive.google.com/file/d/1TPcHicT_Q0zWjnh-8KfHJ7A2Uag8-8D5/view?usp=sharing'
 
     organiser_elem = listing.find(
-        'div',  {'data-subcontent-key': 'organizerName'})
+        'p',  {'ypography_root__lp5bn #585163 Typography_body-md-bold__lp5bn Typography_align-match-parent__lp5bn'})
     organiser = organiser_elem.text if organiser_elem else ''
 
     events.append({
@@ -104,7 +106,7 @@ for listing in meetup_listings:
         current_year = datetime.now().year
         date_txt = str(current_year) + ' ' + date_txt
         date = datetime.strptime(date_txt, "%Y %a, %b %d · %I:%M %p %Z")
-    
+
     title = listing.find(
         'h2', class_='text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3').text
 
