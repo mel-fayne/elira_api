@@ -114,11 +114,13 @@ class ClassifierModelView(APIView):     # pass studentId
         studentData = {}
         studentData['specialisation'] = specialisation
         compatibility_scores = {}
-        for i, score in enumerate(compatibilities):
+        for i, score in enumerate(compatibilities[0]):
             compatibility_scores[SPECIALISATIONS[i]] = score
 
         studentData['compatibility_scores'] = compatibility_scores
         studentData['specialisation_score'] = compatibility_scores[specialisation]
+
+        print(studentData)
 
         #  update student predictions
         serializer = StudentSerializer(studentObj, data=studentData, partial=True)
