@@ -83,7 +83,7 @@ class GetStudentUnitSerializer(serializers.ModelSerializer):
             'unit_codes',
             'unit_perc'
         ]
-
+        
 class TechnicalProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = TechnicalProfile
