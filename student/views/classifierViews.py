@@ -22,7 +22,7 @@ class ClassifierModelView(APIView):     # pass studentId
         groupingTotals = acdProfObj.csMarks
         techProfObj = TechnicalProfile.objects.filter(id=self.kwargs['student_id']).first()
         workProfObj = WorkExpProfile.objects.filter(id=self.kwargs['student_id']).first()
-        
+
         # prepare student dataframe
         student = pd.DataFrame({
             'current_sem': [acdProfObj.currentSem],
@@ -44,38 +44,41 @@ class ClassifierModelView(APIView):     # pass studentId
             'cs16': [groupingTotals[15]],
             'cs17': [groupingTotals[16]],
             'cs18': [groupingTotals[17]],
-            'c': [techProfObj.c],
-            'c++': [techProfObj.cPlusPlus],
-            'java': [techProfObj.java],
-            'javascript': [techProfObj.javascript],
-            'python': [techProfObj.python],
-            'r': [techProfObj.r],
-            'jupyter': [techProfObj.jupyter],
-            'dart': [techProfObj.dart],
-            'kotlin': [techProfObj.kotlin],
-            'go': [techProfObj.go],
-            'swift': [techProfObj.swift],
-            'c#': [techProfObj.cSharp],
-            'typescript': [techProfObj.typescript],
-            'php': [techProfObj.php],
-            'objective_c': [techProfObj.objective_c],
-            'ruby': [techProfObj.ruby],
-            'html': [techProfObj.html],
-            'css': [techProfObj.css],
-            'sql': [techProfObj.sql],
-            'rust': [techProfObj.rust],
+            'c': [techProfObj.cLang],
+            'cmake': [techProfObj.cmakeLang],
+            'c++': [techProfObj.cPlusPlusLang],
+            'java': [techProfObj.javaLang],
+            'javascript': [techProfObj.jsLang],
+            'python': [techProfObj.pythonLang],
+            'r': [techProfObj.rLang],
+            'jupyter': [techProfObj.jupyterLang],
+            'dart': [techProfObj.dartLang],
+            'kotlin': [techProfObj.kotlinLang],
+            'go': [techProfObj.goLang],
+            'swift': [techProfObj.swiftLang],
+            'c#': [techProfObj.cSharpLang],
+            'aspNet': [techProfObj.aspNetLang],
+            'typescript': [techProfObj.tsLang],
+            'php': [techProfObj.phpLang],
+            'objective_c': [techProfObj.objCLang],
+            'ruby': [techProfObj.rubyLang],
+            'html': [techProfObj.htmlLang],
+            'css': [techProfObj.cssLang],
+            'scss': [techProfObj.scssLang],
+            'sql': [techProfObj.sqlLang],
+            'rust': [techProfObj.rustLang],
             'internships_no': [workProfObj.internshipsNo],
             'time_spent': [workProfObj.timeSpent],
-            'ai_industry': [workProfObj.ai_industry],
-            'cs_industry': [workProfObj.cs_industry],
-            'da_industry': [workProfObj.da_industry],
-            'gd_industry': [workProfObj.gd_industry],
-            'ho_industry': [workProfObj.ho_industry],
-            'is_industry': [workProfObj.is_industry],
-            'na_industry': [workProfObj.na_industry],
-            'sd_industry': [workProfObj.sd_industry]
+            'ai_industry': [workProfObj.aiInd],
+            'cs_industry': [workProfObj.csInd],
+            'da_industry': [workProfObj.daInd],
+            'gd_industry': [workProfObj.gdInd],
+            'ho_industry': [workProfObj.hoInd],
+            'is_industry': [workProfObj.isInd],
+            'na_industry': [workProfObj.naInd],
+            'sd_industry': [workProfObj.sdInd]
         })
-        
+
         student = student[['ai_industry', 'c', 'c#', 'c++', 'cs01', 'cs02', 'cs03', 'cs04', 'cs05',
        'cs06', 'cs07', 'cs08', 'cs09', 'cs10', 'cs11', 'cs12', 'cs13', 'cs14',
        'cs15', 'cs16', 'cs17', 'cs18', 'cs_industry', 'css', 'current_sem',
@@ -85,12 +88,12 @@ class ClassifierModelView(APIView):     # pass studentId
        'rust', 'sd_industry', 'sql', 'swift', 'time_spent', 'typescript']]
         scaler = StandardScaler()
         student = scaler.transform(student)
-        
+
         # call model
         classifer_model = joblib.load(JKUAT_CLASSIFIER_PATH)
         specialisation = classifer_model.predict(student)[0]
         compatibilities = classifer_model.predict_proba(student)
-        
+
         studentData = {}
         studentData['specialisation'] = specialisation
         studentData['compatibility_scores'] = compatibilities
@@ -102,4 +105,3 @@ class ClassifierModelView(APIView):     # pass studentId
         serializer.save()
 
         return Response(serializer.data)
-    

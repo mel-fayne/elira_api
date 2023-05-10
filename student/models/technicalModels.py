@@ -17,6 +17,7 @@ class TechnicalProfile(models.Model):
     current_streak = models.IntegerField(default=0)
 
     c = models.FloatField(default=0.0)
+    cmake = models.FloatField(default=0.0)
     cPlusPlus = models.FloatField(default=0.0)
     java = models.FloatField(default=0.0)
     javascript = models.FloatField(default=0.0)
@@ -28,99 +29,112 @@ class TechnicalProfile(models.Model):
     go = models.FloatField(default=0.0)
     swift = models.FloatField(default=0.0)
     cSharp = models.FloatField(default=0.0)
+    aspNet = models.FloatField(default=0.0)
     typescript = models.FloatField(default=0.0)
     php = models.FloatField(default=0.0)
     objective_c = models.FloatField(default=0.0)
     ruby = models.FloatField(default=0.0)
     html = models.FloatField(default=0.0)
     css = models.FloatField(default=0.0)
+    scss = models.FloatField(default=0.0)
     sql = models.FloatField(default=0.0)
     rust = models.FloatField(default=0.0)
 
     def __str__(self):
         return self.git_username
-    
+
     @property
     def gitName(self):
         return self.git_username
-    
+
     @property
-    def c(self):
+    def cLang(self):
         return self.c
-    
+
     @property
-    def cPlusPlus(self):
+    def cmakeLang(self):
+        return self.cmake
+
+    @property
+    def javaLang(self):
+        return self.java
+
+    @property
+    def cPlusPlusLang(self):
         return self.cPlusPlus
-    
+
     @property
-    def javascript(self):
+    def jsLang(self):
         return self.javascript
-    
+
     @property
-    def python(self):
+    def pythonLang(self):
         return self.python
-    
+
     @property
-    def r(self):
+    def rLang(self):
         return self.r
-    
+
     @property
-    def jupyter(self):
+    def jupyterLang(self):
         return self.jupyter
-    
+
     @property
-    def dart(self):
+    def dartLang(self):
         return self.dart
-    
+
     @property
-    def kotlin(self):
+    def kotlinLang(self):
         return self.kotlin
-    
+
     @property
-    def go(self):
+    def goLang(self):
         return self.go
-    
+
     @property
-    def swift(self):
+    def swiftLang(self):
         return self.swift
-    
+
     @property
-    def cSharp(self):
+    def cSharpLang(self):
         return self.cSharp
-    
+
     @property
-    def typescript(self):
+    def aspNetLang(self):
+        return self.aspNet
+
+    @property
+    def tsLang(self):
         return self.typescript
-    
+
     @property
-    def php(self):
+    def phpLang(self):
         return self.php
-    
+
     @property
-    def cPlusPlus(self):
-        return self.cPlusPlus
-    
-    @property
-    def objective_c(self):
+    def objCLang(self):
         return self.objective_c
-    
+
     @property
-    def ruby(self):
+    def rubyLang(self):
         return self.ruby
-    
+
     @property
-    def html(self):
+    def htmlLang(self):
         return self.html
-    
+
     @property
-    def css(self):
+    def cssLang(self):
         return self.css
-    
+
     @property
-    def sql(self):
+    def scssLang(self):
+        return self.scss
+
+    @property
+    def sqlLang(self):
         return self.sql
-    
+
     @property
-    def rust(self):
+    def rustLang(self):
         return self.rust
-    

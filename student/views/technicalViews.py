@@ -13,9 +13,10 @@ HEADERS = {
 
 LANGUAGES = [
     ('c', 'C'),
+    ('cmake', 'CMake'),
     ('cPlusPlus', 'C++'),
     ('java', 'Java'),
-    ('javascript', 'Javascript'),
+    ('javascript', 'JavaScript'),
     ('python', 'Python'),
     ('r', 'R'),
     ('jupyter', 'Jupyter Notebook'),
@@ -24,12 +25,14 @@ LANGUAGES = [
     ('go', 'Go'),
     ('swift', 'Swift'),
     ('cSharp', 'C#'),
+    ('aspNet', 'ASP.NET'),
     ('typescript', 'Typescript'),
     ('php', 'PHP'),
     ('objective_c', 'Objective-C'),
     ('ruby', 'Ruby'),
     ('html', 'HTML'),
     ('css', 'CSS'),
+    ('scss', 'SCSS'),
     ('sql', 'SQL'),
     ('rust', 'Rust')]
 
@@ -71,10 +74,11 @@ class TechnicalProfileView(APIView):     # pass studentId
 
             if devData == {}:
                 return Response('Github User Not Found')
-            
+
             else:
                 devData['git_username'] = git_name
                 devData['student_id'] = request.data['student_id']
+                print(devData)
                 serializer = TechnicalProfileSerializer(data=devData)
                 serializer.is_valid(raise_exception=True)
                 serializer.save()
@@ -96,7 +100,7 @@ class TechnicalProfileView(APIView):     # pass studentId
 
             if devData == {}:
                 return Response('Github User Not Found')
-            
+
             else:
                 devData['git_username'] = git_name
                 serializer = TechnicalProfileSerializer(
@@ -119,9 +123,13 @@ def getGitData(git_name):
     stars = commits_soup.find('text', {'data-testid': 'stars'})
 
     if stars:
-        devData['stars'] = stars.text
-        devData['total_commits'] = commits_soup.find(
+        devData['total_stars'] = stars.text
+        commits = commits_soup.find(
             'text', {'data-testid': 'commits'}).text
+        if 'k' in commits:
+            commits = commits.replace("k", "").replace(".", "")
+            commits = int(commits) * 1000
+        devData['total_commits'] = commits
         devData['total_prs'] = commits_soup.find(
             'text', {'data-testid': 'prs'}).text
         devData['total_issues'] = commits_soup.find(
@@ -142,11 +150,14 @@ def getGitData(git_name):
             topFive.append(language)
             for langTuple in LANGUAGES: # fill the top 5 languages
                 if langTuple[1] == language:
-                    devData[langTuple[0]] = percentage
-            
+                    percentage = percentage.replace("%", "")
+                    devData[langTuple[0]] = float(percentage)
+
+
         for langTuple in LANGUAGES:     # make the others zero
             if langTuple[1] not in topFive:
                 devData[langTuple[0]] = 0
+
 
         # get streak
         streak_url = "https://streak-stats.demolab.com/?user=" + git_name
@@ -158,6 +169,6 @@ def getGitData(git_name):
 
     else:
         devData = {}
-    
+
     return devData
-    
+
