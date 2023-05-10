@@ -21,7 +21,10 @@ class StudentSerializer(serializers.ModelSerializer):
             'first_teacher',
             'favourite_flavour',
             'childhod_nickname',
-            'first_phone'
+            'first_phone',
+            'specialisation',
+            'specialisation_score',
+            'compatibility_scores'
         ]
         extra_kwargs = {
             'password': {'write_only': True}
@@ -83,7 +86,7 @@ class GetStudentUnitSerializer(serializers.ModelSerializer):
             'unit_codes',
             'unit_perc'
         ]
-        
+
 class TechnicalProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = TechnicalProfile

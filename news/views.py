@@ -32,7 +32,7 @@ JOB_TAGS = {
 class NewsPiecesByTagView(APIView):     # pass studentId
     def get(self, *args, **kwargs):
         student = Student.objects.filter(id=self.kwargs['student_id']).first()
-        student_tags = NEWS_TAGS[student.specialisation]
+        student_tags = NEWS_TAGS[student.studentSpec]
         newsData = {}
 
         news_pieces = NewsPiece.objects.filter(tags__in=student_tags)
@@ -66,7 +66,7 @@ class TechEventsByDateView(APIView):    # pass period in days
 class TechJobsByAreaView(APIView):     # pass studentId
     def get(self, *args, **kwargs):
         student = Student.objects.filter(id=self.kwargs['student_id']).first()
-        student_tags = JOB_TAGS[student.specialisation]
+        student_tags = JOB_TAGS[student.studentSpec]
         jobsData = {}
 
         jobs = TechJob.objects.filter(tags__in=student_tags)

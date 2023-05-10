@@ -128,7 +128,7 @@ def getGitData(git_name):
             'text', {'data-testid': 'commits'}).text
         if 'k' in commits:
             commits = commits.replace("k", "").replace(".", "")
-            commits = int(commits) * 1000
+            commits = int(commits) * 100
         devData['total_commits'] = commits
         devData['total_prs'] = commits_soup.find(
             'text', {'data-testid': 'prs'}).text

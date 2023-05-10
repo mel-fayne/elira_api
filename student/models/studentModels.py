@@ -29,7 +29,7 @@ class Student(models.Model):
     # ------------- auth fields --------------
     user_token = models.CharField(max_length=200, null=True)
     last_active = models.CharField(max_length=200, null=True)
-    
+
     first_pet = models.CharField(max_length=50, null=True)
     childhood_street = models.CharField(max_length=50, null=True)
     first_teacher = models.CharField(max_length=50, null=True)
@@ -45,7 +45,7 @@ class Student(models.Model):
         return self.id
 
     @property
-    def specialisation(self):
+    def studentSpec(self):
         return self.specialisation
 
     @property
@@ -60,7 +60,7 @@ class Student(models.Model):
         answers['childhod_nickname'] = self.childhod_nickname
         answers['first_phone'] = self.first_phone
         return answers
-    
+
     def set_password(self, raw_password):
         """
         Set the password for the user. The raw password will be hashed before
@@ -71,7 +71,7 @@ class Student(models.Model):
         pwd_hash = pwd_hash.hex()
         self.password = f"{salt.decode('ascii')}:{pwd_hash}"
 
-    
+
     def check_password(self, raw_password):
         """
         Check if the provided password matches the user's hashed password.
