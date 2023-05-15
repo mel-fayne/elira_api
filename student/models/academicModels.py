@@ -159,7 +159,7 @@ class StudentUnit(models.Model):
 
     ac_profile = models.ForeignKey(
         AcademicProfile, null=True, on_delete=models.CASCADE)
-    school_unit = models.OneToOneField(
+    school_unit = models.ForeignKey(
         SchoolUnit, null=True, on_delete=models.CASCADE)
     grade = models.CharField(max_length=1, null=True, choices=GRADES)
     mark = models.FloatField(default=0.0)
