@@ -42,16 +42,16 @@
 
 - The table below shows the unit group distribution for the various Specialisations the system is predicting:
 
-| No. | Specialisation         | Abbreviation | Unit Groupings                  |
-|-----|------------------------|--------------|---------------------------------|
-| 1   | Network Administration | NA           | CS04, CS08                      |
-| 2   | Database Administration| DA           | CS04, CS06                      |
-| 3   | A.I & Data Science     | AI           | CS01, CS05, CS10                |
-| 4   | Cyber Security         | CS           | CS04, CS09                      |
-| 5   | Software Development   | SD           | CS01, CS04, CS05, CS07          |
-| 6   | Graphics & Design      | GD           | CS16, CS17, CS18                |
-| 7   | Information Systems    | IS           | CS07, CS11                      |
-| 8   | Hardware & Operating Systems | HO    | CS01, CS02, CS04         |
+| No. | Specialisation               | Abbreviation | Unit Groupings                  |
+|-----|------------------------------|--------------|---------------------------------|
+| 1   | Network Administration       | NA           | CS04, CS08                      |
+| 2   | Database Administration      | DA           | CS04, CS06                      |
+| 3   | A.I & Data Science           | AI           | CS01, CS05, CS06, CS10          |
+| 4   | Cyber Security               | CS           | CS04, CS09                      |
+| 5   | Software Development         | SD           | CS01, CS04, CS05, CS07          |
+| 6   | Graphics & Design            | GD           | CS16, CS17, CS18                |
+| 7   | Information Systems          | IS           | CS07, CS11                      |
+| 8   | Hardware & Operating Systems | HO           | CS01, CS02, CS04                |
 
 <br/>
 
