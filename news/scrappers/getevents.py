@@ -30,15 +30,14 @@ eventbrite_soup = BeautifulSoup(eventbrite_content, 'html.parser')
 eventbrite_listings = eventbrite_soup.find_all(
     'div', {'class': 'search-event-card-wrapper'})
 
+
 for listing in eventbrite_listings:
     link = listing.find(
         'a', {'class': 'event-card-link'})['href']
 
-    title = listing.find('h2', {
-                         'class': 'Typography_root__lp5bn #585163 Typography_body-lg__lp5bn event-card__clamp-line--three Typography_align-match-parent__lp5bn'}).text
+    title = listing.select_one('h2.Typography_root__lp5bn').text
 
-    date_txt = listing.find('p', {
-        'class': 'Typography_root__lp5bn #585163 Typography_body-md-bold__lp5bn eds-text-color--primary-brand Typography_align-match-parent__lp5bn'}).text
+    date_txt = listing.select_one('p.Typography_root__lp5bn').text
 
     if 'Tomorrow' in date_txt:
         tomorrow = datetime.today().date() + timedelta(days=1)
@@ -57,10 +56,14 @@ for listing in eventbrite_listings:
     else:
         current_year = datetime.now().year
         date_txt = str(current_year) + ' ' + date_txt
-        date = datetime.strptime(date_txt, "%Y %a, %b %d, %I:%M %p")
+        try:
+            format_str = "%Y %a, %b %d, %I:%M %p"
+            datetime.strptime(date_txt, format_str)
+            date = datetime.strptime(date_txt, format_str)
+        except ValueError:
+            break
 
-    location = listing.find(
-        'p', {'Typography_root__lp5bn #585163 Typography_body-md__lp5bn event-card__clamp-line--one Typography_align-match-parent__lp5bn'}).text
+    location = listing.select('p.Typography_root__lp5bn')[1].text
 
     img_elem = listing.find('img', {'class': 'event-card-image'})
     img = img_elem['src'] if img_elem else 'https://drive.google.com/file/d/1TPcHicT_Q0zWjnh-8KfHJ7A2Uag8-8D5/view?usp=sharing'
@@ -79,6 +82,13 @@ for listing in eventbrite_listings:
         'link': link,
         'img': img
     })
+
+    print(title)
+    print(date)
+    print(location)
+    print(organiser)
+    print(link)
+    print(img)
 
 eventbrite_no = len(events)
 print(f"From EventBrite: {eventbrite_no}")
