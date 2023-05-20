@@ -13,6 +13,9 @@ class StudentSerializer(serializers.ModelSerializer):
         fields = [
             'id',
             'first_name', 'last_name',
+            'specialisation',
+            'specialisation_score',
+            'compatibility_scores',
             'email',
             'password',
             'last_active', 'user_token',
@@ -21,10 +24,7 @@ class StudentSerializer(serializers.ModelSerializer):
             'first_teacher',
             'favourite_flavour',
             'childhod_nickname',
-            'first_phone',
-            'specialisation',
-            'specialisation_score',
-            'compatibility_scores'
+            'first_phone'
         ]
         extra_kwargs = {
             'password': {'write_only': True}

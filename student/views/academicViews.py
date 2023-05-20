@@ -57,7 +57,11 @@ class AcademicProfileView(APIView):     # pass studentId
 class StudentUnitView(APIView):     # pass ac_profileId
     def get(self, *args, **kwargs):
         ac_profileId = self.kwargs['ac_profileId']
-        unitsData = getSortedUnitGroups(ac_profileId)
+        unitsData = {}
+        for sem in SEMESTERS:
+            units = StudentUnit.objects.filter(ac_profile=ac_profileId, unitSem=sem)
+            serializer = GetStudentUnitSerializer(units, many=True)
+            unitsData[sem] = serializer.data
         return Response(unitsData)
 
     def patch(self, request, *args, **kwargs):      # pass ac_profileId and student unit objects
