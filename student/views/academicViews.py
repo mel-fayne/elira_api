@@ -73,15 +73,14 @@ class StudentUnitView(APIView):     # pass ac_profileId
                     if unit.unitSem == sem:
                         serializer = GetStudentUnitSerializer(unit)
                         semUnits.append(serializer.data)
-                
-                semData[units] = semUnits
-            
+
+                semData['allUnits'] = semUnits
+
             if len(semUnits) != 0:
                 total = 0.0
                 for unit in semUnits:
                     total = total + unit['mark']
-
-                semData['average'] = round((total / len(semUnits)) * 100, 2)
+                semData['average'] = round((total / len(semUnits)), 2)
                 semAvgs.append(semData['average'])
                 semData['honours'] = getHonours(semData['average'])
                 if len(semAvgs) == 0:
@@ -94,15 +93,27 @@ class StudentUnitView(APIView):     # pass ac_profileId
                         semData['status'] = 'Same'
                     else:
                         semData['status'] = 'Up'
-                    
-                    semData['difference'] = abs(semData['average'])
+
+                    semData['difference'] = abs(diff)
+
+                allSemData[sem] = semData
+                index = index + 1
             else:
-                semAvgs.append(0)
-            
-            allSemData[sem] = semData
-            
+                pass
+
         unitsData['semData'] = allSemData
         unitsData['semAvgs'] = semAvgs
+
+        profileData = {}
+        avgTotal = 0.0
+        for avg in semAvgs:
+            avgTotal = avgTotal + avg
+        profileData['current_avg'] = avgTotal / len(semAvgs)
+        profileData['current_honours'] = getHonours(profileData['current_avg'])
+
+        acp_serializer = AcademicProfileSerializer(ac_profile, data=profileData, partial=True)
+        acp_serializer.is_valid(raise_exception=True)
+        acp_serializer.save()
 
         return Response(unitsData)
 
@@ -249,7 +260,7 @@ def getSortedUnitGroups(ac_profileId):
         total = 0.0
         for mark in groupUnitsMarks:
             total = total + ((mark * groupingObj.unitPerc ) / 100)
-        total = round((total / 100), 2)
+        total = round(total, 2)
         groupingTotals.append(total)
         groupingData['total'] = total
 
@@ -257,17 +268,8 @@ def getSortedUnitGroups(ac_profileId):
 
     # update academic profile
     profileData = {}
-    studentUnits = StudentUnit.objects.filter(ac_profile=ac_profileId)
-    average = 0.0
-    sum = 0
-    for unit in studentUnits:
-        sum = sum + unit.unitMark
-
-    profileData['current_avg'] = round((sum / len(studentUnits)), 2)
-    profileData['current_honours'] = getHonours(average)
-
     for i, grouping in enumerate(GROUPINGS):
-        profileData[grouping] = groupingTotals[i] 
+        profileData[grouping] = groupingTotals[i]
     ac_profile = AcademicProfile.objects.filter(id=ac_profileId).first()
     acp_serializer = AcademicProfileSerializer(ac_profile, data=profileData, partial=True)
     acp_serializer.is_valid(raise_exception=True)
