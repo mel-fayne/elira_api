@@ -60,10 +60,12 @@ class StudentUnitView(APIView):     # pass ac_profileId
         ac_profile = AcademicProfile.objects.filter(id=ac_profileId).first()
         current_sem = ac_profile.currentSem
         unitsData = {}
+        allSemData = {}
         semAvgs = []
         index = 0
 
         for sem in SEMESTERS:
+            semData = {}
             if sem < current_sem:
                 units = StudentUnit.objects.filter(ac_profile=ac_profileId)
                 semUnits = []
@@ -72,31 +74,34 @@ class StudentUnitView(APIView):     # pass ac_profileId
                         serializer = GetStudentUnitSerializer(unit)
                         semUnits.append(serializer.data)
                 
-                unitsData[sem] = semUnits
-            
-            total = 0.0
-            for unit in semUnits:
-                total = total + unit['mark']
+                semData[units] = semUnits
             
             if len(semUnits) != 0:
-                unitsData['average'] = round((total / len(semUnits) * 100))
-                semAvgs.append(unitsData['average'])
-                unitsData['honours'] = getHonours(unitsData['average'])
+                total = 0.0
+                for unit in semUnits:
+                    total = total + unit['mark']
+
+                semData['average'] = round((total / len(semUnits)) * 100, 2)
+                semAvgs.append(semData['average'])
+                semData['honours'] = getHonours(semData['average'])
                 if len(semAvgs) == 0:
                     pass
                 else:
                     diff = semAvgs[index] - semAvgs[index - 1]
                     if diff < 0:
-                        unitsData['status'] = 'Drop'
+                        semData['status'] = 'Drop'
                     elif diff == 0:
-                        unitsData['status'] = 'Same'
+                        semData['status'] = 'Same'
                     else:
-                        unitsData['status'] = 'Up'
+                        semData['status'] = 'Up'
                     
-                    unitsData['difference'] = abs(unitsData['average'])
+                    semData['difference'] = abs(semData['average'])
             else:
                 semAvgs.append(0)
             
+            allSemData[sem] = semData
+            
+        unitsData['semData'] = allSemData
         unitsData['semAvgs'] = semAvgs
 
         return Response(unitsData)
