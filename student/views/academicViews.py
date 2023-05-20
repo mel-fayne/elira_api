@@ -153,35 +153,6 @@ def getHonours(average):
 
     return honours
 
-
-def updateAcademicProfile(profileData, ac_profileId):
-    profileData = {}
-    studentUnits = StudentUnit.objects.filter(ac_profile=ac_profileId)
-    average = 0.0
-    sum = 0
-
-    for unit in studentUnits:
-        sum = sum + unit.unitMark
-
-    profileData['average'] = sum / len(studentUnits)
-    profileData['honours'] = getHonours(average)
-
-    for grouping in GROUPINGS:
-        total = 0.0
-        for unit in studentUnits:
-            groupCodes = unit.groupCodes
-            unitPerc = unit.unitPercentages
-
-            for i, code in enumerate(groupCodes):
-                if code == grouping:
-                    total = total + (unit.unitMark * unitPerc[i])
-                else:
-                    pass
-
-        profileData[grouping] = total
-
-    return profileData
-
 def getSortedUnitGroups(ac_profileId):
     ac_profile = AcademicProfile.objects.filter(id=ac_profileId).first()
     unitsData = {}
@@ -226,7 +197,7 @@ def getSortedUnitGroups(ac_profileId):
                 if unit['mark'] > 0:
                     count = count + 1
 
-            groupingData['completeness'] = count * groupingObj.unit_percentage
+            groupingData['completeness'] = round((count * groupingObj.unit_percentage), 2)
 
         # compute group totals
         total = 0.0
@@ -239,6 +210,15 @@ def getSortedUnitGroups(ac_profileId):
 
     # update academic profile
     profileData = {}
+    studentUnits = StudentUnit.objects.filter(ac_profile=ac_profileId)
+    average = 0.0
+    sum = 0
+    for unit in studentUnits:
+        sum = sum + unit.unitMark
+
+    profileData['average'] = round((sum / len(studentUnits)), 2)
+    profileData['honours'] = getHonours(average)
+
     for i, grouping in enumerate(GROUPINGS):
         profileData[grouping] = groupingTotals[i]
     ac_profile = AcademicProfile.objects.filter(id=ac_profileId).first()
