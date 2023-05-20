@@ -57,17 +57,41 @@ class AcademicProfileView(APIView):     # pass studentId
 class StudentUnitView(APIView):     # pass ac_profileId
     def get(self, *args, **kwargs):
         ac_profileId = self.kwargs['ac_profileId']
+        ac_profile = AcademicProfile.objects.filter(id=ac_profileId).first()
+        current_sem = ac_profile.currentSem
         unitsData = {}
+        semAvgs = []
+        index = 0
         for sem in SEMESTERS:
-            units = StudentUnit.objects.filter(ac_profile=ac_profileId)
-            semUnits = []
-            for unit in units:
-                if unit.unitSem == sem:
-                    serializer = GetStudentUnitSerializer(unit)
-                    semUnits.append(serializer.data)
+            if sem < current_sem:
+                units = StudentUnit.objects.filter(ac_profile=ac_profileId)
+                semUnits = []
+                for unit in units:
+                    if unit.unitSem == sem:
+                        serializer = GetStudentUnitSerializer(unit)
+                        semUnits.append(serializer.data)
+                
+                unitsData[sem] = semUnits
             
-            unitsData[sem] = semUnits 
-            
+            total = 0.0
+            for unit in semUnits:
+                total = total + unit['mark']
+            unitsData['average'] = round((total / len(semUnits) * 100))
+            semAvgs.append(unitsData['average'])
+            unitsData['honours'] = getHonours(unitsData['average'])
+            if len(semAvgs) == 0:
+                pass
+            else:
+                diff = semAvgs[index] - semAvgs[index - 1]
+                if diff < 0:
+                    unitsData['status'] = 'Drop'
+                elif diff == 0:
+                    unitsData['status'] = 'Same'
+                else:
+                    unitsData['status'] = 'Up'
+                
+                unitsData['difference'] = abs(unitsData['average'])
+
         return Response(unitsData)
 
     def patch(self, request, *args, **kwargs):      # pass ac_profileId and student unit objects
@@ -213,7 +237,7 @@ def getSortedUnitGroups(ac_profileId):
         total = 0.0
         for mark in groupUnitsMarks:
             total = total + ((mark * groupingObj.unitPerc ) / 100)
-        total = round(total, 2)
+        total = round((total / 100), 2)
         groupingTotals.append(total)
         groupingData['total'] = total
 
@@ -231,7 +255,7 @@ def getSortedUnitGroups(ac_profileId):
     profileData['current_honours'] = getHonours(average)
 
     for i, grouping in enumerate(GROUPINGS):
-        profileData[grouping] = groupingTotals[i]
+        profileData[grouping] = groupingTotals[i] 
     ac_profile = AcademicProfile.objects.filter(id=ac_profileId).first()
     acp_serializer = AcademicProfileSerializer(ac_profile, data=profileData, partial=True)
     acp_serializer.is_valid(raise_exception=True)
