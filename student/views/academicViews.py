@@ -91,6 +91,8 @@ class StudentUnitView(APIView):     # pass ac_profileId
                     unitsData['status'] = 'Up'
                 
                 unitsData['difference'] = abs(unitsData['average'])
+            
+            unitsData['semAvgs'] = semAvgs
 
         return Response(unitsData)
 
