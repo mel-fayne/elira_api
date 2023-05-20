@@ -206,9 +206,9 @@ def getSortedUnitGroups(ac_profileId):
         # compute group totals
         total = 0.0
         for mark in groupUnitsMarks:
-            total = total + mark
+            total = total + (mark * groupingObj.unitPerc)
         groupingTotals.append(total)
-        groupingData['total'] = round(((total * groupingObj.unitPerc) / 100), 2)
+        groupingData['total'] = round(total, 2)
 
         unitsData[grouping] = groupingData
 
@@ -220,8 +220,8 @@ def getSortedUnitGroups(ac_profileId):
     for unit in studentUnits:
         sum = sum + unit.unitMark
 
-    profileData['average'] = round((sum / len(studentUnits)), 2)
-    profileData['honours'] = getHonours(average)
+    profileData['current_avg'] = round((sum / len(studentUnits)), 2)
+    profileData['current_honours'] = getHonours(average)
 
     for i, grouping in enumerate(GROUPINGS):
         profileData[grouping] = groupingTotals[i]
