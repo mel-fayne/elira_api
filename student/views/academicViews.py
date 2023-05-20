@@ -59,9 +59,15 @@ class StudentUnitView(APIView):     # pass ac_profileId
         ac_profileId = self.kwargs['ac_profileId']
         unitsData = {}
         for sem in SEMESTERS:
-            units = StudentUnit.objects.filter(ac_profile=ac_profileId, unitSem=sem)
-            serializer = GetStudentUnitSerializer(units, many=True)
-            unitsData[sem] = serializer.data
+            units = StudentUnit.objects.filter(ac_profile=ac_profileId)
+            semUnits = []
+            for unit in units:
+                if unit.unitSem == sem:
+                    serializer = GetStudentUnitSerializer(unit)
+                    semUnits.append(serializer.data)
+            
+            unitsData[sem] = semUnits 
+            
         return Response(unitsData)
 
     def patch(self, request, *args, **kwargs):      # pass ac_profileId and student unit objects
@@ -201,14 +207,15 @@ def getSortedUnitGroups(ac_profileId):
                 if unit['mark'] > 0:
                     count = count + 1
 
-            groupingData['completeness'] = round((count * groupingObj.unit_percentage), 2)
+            groupingData['completeness'] = round((count * groupingObj.unit_percentage))
 
         # compute group totals
         total = 0.0
         for mark in groupUnitsMarks:
-            total = total + (mark * groupingObj.unitPerc)
+            total = total + ((mark * groupingObj.unitPerc ) / 100)
+        total = round(total, 2)
         groupingTotals.append(total)
-        groupingData['total'] = round(total, 2)
+        groupingData['total'] = total
 
         unitsData[grouping] = groupingData
 
