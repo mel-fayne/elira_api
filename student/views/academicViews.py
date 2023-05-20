@@ -77,23 +77,26 @@ class StudentUnitView(APIView):     # pass ac_profileId
             total = 0.0
             for unit in semUnits:
                 total = total + unit['mark']
-            unitsData['average'] = round((total / len(semUnits) * 100))
-            semAvgs.append(unitsData['average'])
-            unitsData['honours'] = getHonours(unitsData['average'])
-            if len(semAvgs) == 0:
-                pass
-            else:
-                diff = semAvgs[index] - semAvgs[index - 1]
-                if diff < 0:
-                    unitsData['status'] = 'Drop'
-                elif diff == 0:
-                    unitsData['status'] = 'Same'
-                else:
-                    unitsData['status'] = 'Up'
-                
-                unitsData['difference'] = abs(unitsData['average'])
             
-        
+            if len(semUnits) != 0:
+                unitsData['average'] = round((total / len(semUnits) * 100))
+                semAvgs.append(unitsData['average'])
+                unitsData['honours'] = getHonours(unitsData['average'])
+                if len(semAvgs) == 0:
+                    pass
+                else:
+                    diff = semAvgs[index] - semAvgs[index - 1]
+                    if diff < 0:
+                        unitsData['status'] = 'Drop'
+                    elif diff == 0:
+                        unitsData['status'] = 'Same'
+                    else:
+                        unitsData['status'] = 'Up'
+                    
+                    unitsData['difference'] = abs(unitsData['average'])
+            else:
+                semAvgs.append(0)
+            
         unitsData['semAvgs'] = semAvgs
 
         return Response(unitsData)
