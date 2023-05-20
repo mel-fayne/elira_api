@@ -62,6 +62,7 @@ class StudentUnitView(APIView):     # pass ac_profileId
         unitsData = {}
         semAvgs = []
         index = 0
+
         for sem in SEMESTERS:
             if sem < current_sem:
                 units = StudentUnit.objects.filter(ac_profile=ac_profileId)
@@ -92,7 +93,8 @@ class StudentUnitView(APIView):     # pass ac_profileId
                 
                 unitsData['difference'] = abs(unitsData['average'])
             
-            unitsData['semAvgs'] = semAvgs
+        
+        unitsData['semAvgs'] = semAvgs
 
         return Response(unitsData)
 
