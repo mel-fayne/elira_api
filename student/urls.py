@@ -1,6 +1,6 @@
 from django.urls import path
 
-from student.views.academicViews import AcademicProfileView, StudentUnitView, SchoolUnitView, UnitGroupsView
+from student.views.academicViews import AcademicProfileView, StudentTranscript, StudentUnitView, SchoolUnitView, UnitGroupsView
 from student.views.authViews import AllStudentsView, ForgotPasswordView, LoginView, CrudUserView
 from student.views.classifierViews import ClassifierModelView
 from student.views.softskillsViews import SoftSkillProfileView
@@ -16,11 +16,12 @@ urlpatterns = [
     path('reset_password/<str:email>', ForgotPasswordView.as_view()),
     path('all_students', AllStudentsView.as_view()),
 
-    # ---------- AcademicProfile endpoints ---------- 
+    # ---------- AcademicProfile endpoints ----------
     path('academic_profile/<int:student_id>', AcademicProfileView.as_view()),
     path('academic_profile', AcademicProfileView.as_view()),
-    path('student_units/<int:ac_profileId>', StudentUnitView.as_view()),
+    path('student_units/<int:student_id>', StudentUnitView.as_view()),
     path('student_units', StudentUnitView.as_view()),
+    path('student_transcript/<int:student_id>/<str:new_sem>', StudentTranscript.as_view()),
     path('school_units/<str:groupBy>/<str:school>', SchoolUnitView.as_view()),
     path('school_units', SchoolUnitView.as_view()),
     path('unit_groupings', UnitGroupsView.as_view()),
@@ -39,7 +40,7 @@ urlpatterns = [
     path('softskill_profile/<int:student_id>', SoftSkillProfileView.as_view()),
     path('softskill_profile', SoftSkillProfileView.as_view()),
 
-    
+
     # ---------- Classifier endpoints ------------
     path('classifier/<int:student_id>', ClassifierModelView.as_view())
 ]
