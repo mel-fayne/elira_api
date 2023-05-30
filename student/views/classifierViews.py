@@ -12,7 +12,14 @@ from student.models.technicalModels import TechnicalProfile
 from student.models.workExpModels import WorkExpProfile
 from student.serializers import StudentSerializer
 
+JKUAT_DATA_PATH = "/home/melfayne/elira_api/classifierModel/data/jkuatStudents.csv"
+UON_DATA_PATH = "/home/melfayne/elira_api/classifierModel/data/uonStudents.csv"
+STRATH_DATA_PATH = "/home/melfayne/elira_api/classifierModel/data/strathStudents.csv"
+
 JKUAT_CLASSIFIER_PATH = "/home/melfayne/elira_api/classifierModel/trainedModels/jkuatClassifier.pkl"
+UON_CLASSIFIER_PATH = "/home/melfayne/elira_api/classifierModel/trainedModels/uonClassifier.pkl"
+STRATH_CLASSIFIER_PATH = "/home/melfayne/elira_api/classifierModel/trainedModels/strathClassifier.pkl"
+
 SPECIALISATIONS = ['AI','CS','DA','GD','HO','IS','NC','SD']
 
 class ClassifierModelView(APIView):     # pass studentId
@@ -90,7 +97,13 @@ class ClassifierModelView(APIView):     # pass studentId
            'time_spent', 'typescript']]
 
         # fit scaler
-        data = pd.read_csv('/home/melfayne/elira_api/classifierModel/data/jkuatStudents.csv')
+        if acdProfObj.studentSchool == 'JKUAT':
+            data = pd.read_csv(JKUAT_DATA_PATH)
+        elif acdProfObj.studentSchool == 'UoN':
+            data = pd.read_csv(UON_DATA_PATH)
+        else:
+            data = pd.read_csv(STRATH_DATA_PATH)
+            
         main_cols = data.columns.difference(['studentId', 'school', 'specialisation'])
         X = data[main_cols]
         y = data['specialisation']
@@ -105,7 +118,12 @@ class ClassifierModelView(APIView):     # pass studentId
         y_test = encoder.transform(y_test)
 
         # call model
-        classifer_model = joblib.load(JKUAT_CLASSIFIER_PATH)
+        if acdProfObj.studentSchool == 'JKUAT':
+            classifer_model = joblib.load(JKUAT_CLASSIFIER_PATH)
+        elif acdProfObj.studentSchool == 'UoN':
+            classifer_model = joblib.load(UON_CLASSIFIER_PATH)
+        else:
+            classifer_model = joblib.load(STRATH_CLASSIFIER_PATH)
         preds = classifer_model.predict(student)
         preds = encoder.inverse_transform(preds)
         specialisation = preds[0]
