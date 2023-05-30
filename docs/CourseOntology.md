@@ -3,7 +3,9 @@
 # Table of Contents
 1. [Specialisations & Unit Grouping](#specialisations--unit-grouping)
 2. [Unit Groupings and Their Individual Units in Select Schools](#unit-groupings-and-their-individual-units-in-select-schools)
-   1. [JKUAT](#jkuat)
+   1. [Jomo Kenyatta University](#jomo-kenyatta-university)
+   2. [University of Nairobi](#university-of-nairobi)
+   3. [Strathmore University](#strathmore-university)
 
 
 # Specialisations & Unit Grouping
@@ -375,10 +377,11 @@ ___
 - Unit_count : 
 - Unit_perc : 0
 - Units: []
- 
-------------------------------------------------------------------------------------
+
+___
 
 ## **University of Nairobi**
+___
 
 ### CS01 : Mathematics and Statistics
 - Code : CS01
@@ -706,10 +709,10 @@ ___
  
     - CSC481 Computer Games Programming - 4.1
 
- 
-------------------------------------------------------------------------------------
+___
 
 ## **Strathmore University**
+___
 
 ### cs01 : Mathematics and Statistics
 - Code : cs01
