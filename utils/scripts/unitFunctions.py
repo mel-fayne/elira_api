@@ -3,45 +3,45 @@ import json
 # from student.models.academicModels import SchoolUnit
 
 UNIT_TAGS = {
-    'CS01 : Mathematics and Statistics': ['statistics', 'mathematics', 'calculus', 'algebra', 'probability', 'equations', 'vector', 'numerical'],
-    'CS02 : Hardware and Electronics': ['electronics', 'physics', 'chemistry', 'mechanics', 'quantum', 'logic', 'semiconductor', 'embedded', 'hardware'],
-    'CS03 : Skills and Ethics': ['communication', 'ethics', 'critical', 'skills', 'society', 'legal', 'ethical', 'law'],
-    'CS04 : Systems and Architecture': ['assembly', 'architecture', 'parallel', 'compiler', 'operating', 'distributed', 'hardware', 'computing', 'complex', 'analysis'],
-    'CS05 : Programming and Software Development': ['programming', 'algorithms', 'structures', 'development', 'software', 'quality', 'cam'],
-    'CS06 : Database Administration': ['database', 'modeling', 'distributed', 'warehouse'],
-    'CS07 : Web and Mobile App Development': ['web', 'mobile'],
-    'CS08 : Networking': ['network', 'communications', 'signal', 'networks', 'networking', 'multimedia', 'media'],
-    'CS09 : Cyber Security': ['cryptography', 'security', 'encryption', ],
-    'CS10 : Artificial Intelligence and Data Science': ['knowledge', 'robotics', 'artificial', 'mining', 'intelligence', 'learning', 'neural', 'automata', 'natural'],
-    'CS11 : Information Systems': ['information', 'business', 'processes', 'transaction', 'enterprise', 'decision'],
-    'CS12 : Industrial Attachment': ['attachment'],
-    'CS13 : Final Project': ['project'],
-    'CS14 : Research Methodology': ['research', 'thesis'],
-    'CS15 : Business and Management': ['business', 'commerce', 'management', 'finance', 'entrepreneurship', 'marketing', 'accounts', 'accounting', 'economics', 'governance'],
-    'CS16 : Computer Graphics': ['image', 'graphics', 'simulation', 'compression', 'modelling'],
-    'CS17 : User Design': ['interface', 'user', 'human'],
-    'CS18 : Gaming Development': ['game', 'games', 'gaming', 'unity']
+    'cs01 : Mathematics and Statistics': ['statistics', 'mathematics', 'calculus', 'algebra', 'probability', 'equations', 'vector', 'numerical'],
+    'cs02 : Hardware and Electronics': ['electronics', 'physics', 'chemistry', 'mechanics', 'quantum', 'logic', 'semiconductor', 'embedded', 'hardware'],
+    'cs03 : Skills and Ethics': ['communication', 'ethics', 'critical', 'skills', 'society', 'legal', 'ethical', 'law'],
+    'cs04 : Systems and Architecture': ['assembly', 'architecture', 'parallel', 'compiler', 'operating', 'distributed', 'hardware', 'computing', 'complex', 'analysis'],
+    'cs05 : Programming and Software Development': ['programming', 'algorithms', 'structures', 'development', 'software', 'quality', 'cam'],
+    'cs06 : Database Administration': ['database', 'modeling', 'distributed', 'warehouse'],
+    'cs07 : Web and Mobile App Development': ['web', 'mobile'],
+    'cs08 : Networking': ['network', 'communications', 'signal', 'networks', 'networking', 'multimedia', 'media'],
+    'cs09 : Cyber Security': ['cryptography', 'security', 'encryption', ],
+    'cs10 : Artificial Intelligence and Data Science': ['knowledge', 'robotics', 'artificial', 'mining', 'intelligence', 'learning', 'neural', 'automata', 'natural'],
+    'cs11 : Information Systems': ['information', 'business', 'processes', 'transaction', 'enterprise', 'decision'],
+    'cs12 : Industrial Attachment': ['attachment'],
+    'cs13 : Final Project': ['project'],
+    'cs14 : Research Methodology': ['research', 'thesis'],
+    'cs15 : Business and Management': ['business', 'commerce', 'management', 'finance', 'entrepreneurship', 'marketing', 'accounts', 'accounting', 'economics', 'governance'],
+    'cs16 : Computer Graphics': ['image', 'graphics', 'simulation', 'compression', 'modelling'],
+    'cs17 : User Design': ['interface', 'user', 'human'],
+    'cs18 : Gaming Development': ['game', 'games', 'gaming', 'unity']
 }
 
 UNIT_GROUPS = [
-    'CS01 : Mathematics and Statistics',
-    'CS02 : Hardware and Electronics',
-    'CS03 : Skills and Ethics',
-    'CS04 : Systems and Architecture',
-    'CS05 : Programming and Software Development',
-    'CS06 : Database Administration',
-    'CS07 : Web and Mobile App Development',
-    'CS08 : Networking',
-    'CS09 : Cyber Security',
-    'CS10 : Artificial Intelligence and Data Science',
-    'CS11 : Information Systems',
-    'CS12 : Industrial Attachment',
-    'CS13 : Final Project',
-    'CS14 : Research Methodology',
-    'CS15 : Business and Management',
-    'CS16 : Computer Graphics',
-    'CS17 : User Design',
-    'CS18 : Gaming Development'
+    'cs01 : Mathematics and Statistics',
+    'cs02 : Hardware and Electronics',
+    'cs03 : Skills and Ethics',
+    'cs04 : Systems and Architecture',
+    'cs05 : Programming and Software Development',
+    'cs06 : Database Administration',
+    'cs07 : Web and Mobile App Development',
+    'cs08 : Networking',
+    'cs09 : Cyber Security',
+    'cs10 : Artificial Intelligence and Data Science',
+    'cs11 : Information Systems',
+    'cs12 : Industrial Attachment',
+    'cs13 : Final Project',
+    'cs14 : Research Methodology',
+    'cs15 : Business and Management',
+    'cs16 : Computer Graphics',
+    'cs17 : User Design',
+    'cs18 : Gaming Development'
 ]
 
 SEMESTERS = [
@@ -61,17 +61,16 @@ SEMESTERS = [
 
 jkuatUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/jkuat_units.json'
 uonUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/uon_units.json'
-kuUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/ku_units.json'
-cueaUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/cuea_units.json'
 strathUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/strath_units.json'
 
 jkuatGroups_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/unitGroups/jkuatGroups.json'
 uonGroups_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/unitGroups/uonGroups.json'
+strathGroups_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/unitGroups/strathGroups.json'
 
-with open(uonUnits_path, 'r') as file:
+with open(strathUnits_path, 'r') as file:
     unitsData = json.load(file)
 
-with open(uonGroups_path, 'r') as file:
+with open(strathGroups_path, 'r') as file:
     groupsData = json.load(file)
 
 # # Load School Units to db
@@ -168,22 +167,22 @@ with open(uonGroups_path, 'r') as file:
 #     print(" ")
     
 #     for item in group_units:
-#         print(f"        - {item['name']} - {item['semester']}")
+#         print(f"- {item['name']} - {item['semester']}")
 
 #     print(' ')
 
 # # Create Unit Percentages List in Json
-# for unitItem in unitsData:
-#     unitPercs = []
+for unitItem in unitsData:
+    unitPercs = []
 
-#     for groupItem in groupsData:
-#         if groupItem['code'] in unitItem['grouping_code']:
-#             unitPercs.append(groupItem['unit_percentage'])
+    for groupItem in groupsData:
+        if groupItem['code'] in unitItem['grouping_code']:
+            unitPercs.append(groupItem['unit_percentage'])
     
-#     print(' ')
-#     print(unitItem['name'])
-#     print(unitPercs)
-#     print(' ')
+    print(' ')
+    print(unitItem['name'])
+    print(unitPercs)
+    print(' ')
 
 # # ---------- Get Particular Units ------------
 # for item in data:

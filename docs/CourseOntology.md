@@ -58,7 +58,7 @@
 # Unit Groupings and Their Individual Units in Select Schools
 ___
 
-## **JKUAT**
+## **Jomo Kenyatta University**
 ___
 ### CS01 : Mathematics and Statistics
 - Code : CS01
@@ -378,7 +378,7 @@ ___
  
 ------------------------------------------------------------------------------------
 
-## **UoN**
+## **University of Nairobi**
 
 ### CS01 : Mathematics and Statistics
 - Code : CS01
@@ -705,3 +705,222 @@ ___
 <br/>
  
     - CSC481 Computer Games Programming - 4.1
+
+ 
+------------------------------------------------------------------------------------
+
+## **Strathmore University**
+
+### cs01 : Mathematics and Statistics
+- Code : cs01
+- Name :  : Mathematics and Statistics
+- Unit Count : 6
+- Unit_perc : 16.67
+ 
+<br/>
+ 
+    - ICS 1103 Differential Calculus - 1.0
+    - ICS 1104 Discrete Mathematics - 1.0
+    - ICS 1204 Integral Calculus - 1.0
+    - ICS 1205 Linear Algebra - 1.0
+    - ICS 2106 Probability Statistics I - 2.0
+    - ICS 2206 Probability Statistics II - 2.0
+ 
+### cs02 : Hardware and Electronics
+- Code : cs02
+- Name :  : Hardware and Electronics
+- Unit Count : 3
+- Unit_perc : 33.33
+ 
+<br/>
+ 
+    - ICS 2211 Digital Logic - 2.0
+    - ICS 3111 Microprocessors - 3.0
+    - ICS 4111 Embedded Systems and Internet of Things - 4.0
+ 
+### cs03 : Skills and Ethics
+- Code : cs03
+- Name :  : Skills and Ethics
+- Unit Count : 4
+- Unit_perc : 25.0
+ 
+<br/>
+ 
+    - HED 1102 Communication Skills I - 1.0
+    - HED 1202 Communication Skills I - 1.0
+    - HED 2101 Principles of Ethics - 2.0
+    - ICS 4204 Computing and Business Law - 4.0
+ 
+### cs04 : Systems and Architecture
+- Code : cs04
+- Name :  : Systems and Architecture
+- Unit Count : 7
+- Unit_perc : 14.29
+ 
+<br/>
+ 
+    - ICS 1101 Computers Fundamentals - 1.0
+    - ICS 2104 Computer Organization and Architecture - 2.0
+    - ICS 2202 Operating Systems - 2.0
+    - ICS 2105 Systems Analysis and Design - 2.0
+    - ICS 3203 Assembly Language Programming - 3.0
+    - ICS 3103 Automata Theory and Computability - 3.0
+    - ICS 4211 Compiler Construction - 4.0
+ 
+### cs05 : Programming and Software Development
+- Code : cs05
+- Name :  : Programming and Software Development
+- Unit Count : 7
+- Unit_perc : 14.29
+ 
+<br/>
+ 
+    - ICS 1102 Introduction to Programming - 1.0
+    - ICS 1202 Oriented Programming I - 1.0
+    - ICS 1201 Data Structures and Algorithms - 2.0
+    - ICS 3104 Internet Application Programming - 2.0
+    - ICS 2101 Oriented Programming II - 2.0
+    - ICS 2201 Software Engineering - 2.0
+    - ICS 3203 Assembly Language Programming - 3.0
+ 
+### cs06 : Database Administration
+- Code : cs06
+- Name :  : Database Administration
+- Unit Count : 4
+- Unit_perc : 25.0
+ 
+<br/>
+ 
+    - ICS 1203 Database Systems - 1.0
+    - ICS 3101 Advanced Database Systems - 2.0
+    - ICS 3206 Server Administration - 3.0
+    - ICS 4104 Distributed Systems - 4.0
+ 
+### cs07 : Web and Mobile App Development
+- Code : cs07
+- Name :  : Web and Mobile App Development
+- Unit Count : 2
+- Unit_perc : 50.0
+ 
+<br/>
+ 
+    - ICS 2102 Web Application Development - 2.0
+    - ICS 3102 Mobile Application Development - 3.0
+ 
+### cs08 : Networking
+- Code : cs08
+- Name :  : Networking
+- Unit Count : 3
+- Unit_perc : 33.33
+ 
+<br/>
+ 
+    - ICS 2103 Computer Networks - 1.0
+    - ICS 2203 Advanced Networking - 2.0
+    - ICS 3105 Multimedia Applications - 4.0
+ 
+### cs09 : Cyber Security
+- Code : cs09
+- Name :  : Cyber Security
+- Unit Count : 2
+- Unit_perc : 50.0
+ 
+<br/>
+ 
+    - ICS 3201 Computer Security and Cryptography - 3.0
+    - ICS 4203 Information Systems Security and Design - 4.0
+ 
+### cs10 : Artificial Intelligence and Data Science
+- Code : cs10
+- Name :  : Artificial Intelligence and Data Science
+- Unit Count : 3
+- Unit_perc : 33.33
+ 
+<br/>
+ 
+    - ICS 3202 Artificial Intelligence - 3.0
+    - ICS 4102 Machine Learning - 4.0
+    - SBL 1200 Service Based Learning - 4.0
+ 
+### cs11 : Information Systems
+- Code : cs11
+- Name :  : Information Systems
+- Unit Count : 4
+- Unit_perc : 25.0
+ 
+<br/>
+ 
+    - ICS 4107 Computing for Bioinformatics - 4.0
+    - ICS 4101 Informatics Project II - 4.0
+    - ICS 4203 Information Systems Security and Design - 4.0
+    - ICS 4201 Social Informatics - 4.0
+ 
+### cs12 : Industrial Attachment
+- Code : cs12
+- Name :  : Industrial Attachment
+- Unit Count : 0
+- Unit_perc : 0
+ 
+<br/>
+ 
+ 
+### cs13 : Final Project
+- Code : cs13
+- Name :  : Final Project
+- Unit Count : 1
+- Unit_perc : 100.0
+ 
+<br/>
+ 
+    - ICS 2204 CS Project I - 3.0
+ 
+### cs14 : Research Methodology
+- Code : cs14
+- Name :  : Research Methodology
+- Unit Count : 2
+- Unit_perc : 50.0
+ 
+<br/>
+ 
+    - ICS 3106 Operations Research - 3.0
+    - ICS 3205 Research Methodology and Technical Writing - 3.0
+ 
+### cs15 : Business and Management
+- Code : cs15
+- Name :  : Business and Management
+- Unit Count : 4
+- Unit_perc : 25.0
+ 
+<br/>
+ 
+    - ICS 1105 Fundamentals of Economics - 1.0
+    - ICS 1206 Principles of Management - 1.0
+    - ICS 4212 Corporate Governance and Sustainability - 4.0
+    - ICS 4206 IT Entrepreneurship and Innovation - 4.0
+ 
+### cs16 : Computer Graphics
+- Code : cs16
+- Name :  : Computer Graphics
+- Unit Count : 2
+- Unit_perc : 50.0
+ 
+<br/>
+ 
+    - ICS 3204 Computer Graphics - 3.0
+    - ICS 4106 Computer Simulations and Modelling - 4.0
+ 
+### cs17 : User Design
+- Code : cs17
+- Name :  : User Design
+- Unit Count : 1
+- Unit_perc : 100.0
+ 
+<br/>
+ 
+    - ICS 4205 Human Computer Interaction - 3.0
+ 
+### cs18 : Gaming Development
+- Code : cs18
+- Name :  : Gaming Development
+- Unit Count : 0
+- Unit_perc : 0
