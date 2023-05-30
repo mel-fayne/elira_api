@@ -18,7 +18,7 @@ class SoftSkillProfileView(APIView):
 
         return Response(ss_data)
 
-    def post(self, request):    # pass studentId and all softSkills data
+    def post(self, request):    # pass studentId
         # create ss_profile
         ssp_serializer = SoftSkillProfileSerializer(data={'student_id': request.data['student_id']})
         ssp_serializer.is_valid(raise_exception=True)
@@ -26,51 +26,45 @@ class SoftSkillProfileView(APIView):
 
         # create skills for this ss_profile
         ss_profile = SoftSkillProfile.objects.filter(student_id=request.data['student_id']).first()
-        scores = []
-        for skill in request.data['skills']:
+        skills = [
+                'Teamwork',
+                'Adaptability',
+                'Problem Solving',
+                'Critical Thinking',
+                'Communication',
+                'Interpersonal Skills',
+                'Leadership',
+                'Responsibility'
+            ]
+        for name in skills:
             skill_data = {}
-
-            skill_data['name'] = skill['name']
-            skill_data['score'] = skill['score']
-            scores.append(skill['score']) # to be used to comppute ss score
+            skill_data['name'] = name
+            skill_data['score'] = 0
             skill_data['ss_profile'] = ss_profile.ssProfileId
 
             ss_serializer = SoftSkillSerializer(data=skill_data)
             ss_serializer.is_valid(raise_exception=True)
             ss_serializer.save()
 
-        # compute ss score
-        avg = 0.0
-        for score in scores:
-            sc = (score * 10) / 100
-            avg = avg + sc
-
-        ssp_serializer = SoftSkillProfileSerializer(ss_profile, data={'soft_skill_score': avg}, partial=True)
+        ssp_serializer = SoftSkillProfileSerializer(ss_profile, data={'soft_skill_score': 0}, partial=True)
         ssp_serializer.is_valid(raise_exception=True)
         ssp_serializer.save()
 
         return Response(ssp_serializer.data)
 
-    def patch(self, request, *args, **kwargs):      # pass studentId & all softSkills data
+    def patch(self, request, *args, **kwargs):      # pass studentId & softSkill data
         ss_profile = SoftSkillProfile.objects.filter(student_id=self.kwargs['student_id']).first()
 
-        skills = SoftSkill.objects.filter(ss_profile=ss_profile.ssProfileId)
-
-        scores = []
-        for ss in request.data['skills']:
-            scores.append(ss['score'])
-            for skill in skills:
-                if ss['name'] == skill.name:
-                    skill_data = {}
-                    skill_data['score'] = ss['score']
-                    ss_serializer = SoftSkillSerializer(skill, data=skill_data, partial=True)
-                    ss_serializer.is_valid(raise_exception=True)
-                    ss_serializer.save()
+        skill = SoftSkill.objects.filter(id=request.data['id']).first()
+        ss_serializer = SoftSkillSerializer(skill, data=request.data, partial=True)
+        ss_serializer.is_valid(raise_exception=True)
+        ss_serializer.save()
 
         # compute ss score
         avg = 0.0
-        for score in scores:
-            sc = (score * 12.5) / 100
+        skills = SoftSkill.objects.filter(ss_profile=ss_profile.ssProfileId)
+        for skill in skills:
+            sc = (skill.ssScore * 12.5) / 100
             avg = avg + sc
 
         profileData = {}

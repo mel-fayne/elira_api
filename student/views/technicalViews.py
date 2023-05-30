@@ -55,7 +55,15 @@ class TechnicalProfileView(APIView):     # pass studentId
                 tech_profile, data=devData, partial=True)
             serializer.is_valid(raise_exception=True)
             serializer.save()
-            return Response(serializer.data)
+
+            prunedData = {k: v for k, v in serializer.data.items() if v != 0}
+            languages = [{"language": k, "percentage": v} for k, v in prunedData.items() if isinstance(v, float)]
+            prunedData['languages'] = languages
+            prunedData = {k: v for k, v in prunedData.items() if k not in languages}
+            for language in languages:
+                prunedData.pop(language['language'])
+
+            return Response(prunedData)
         else:
             tech_profile = TechnicalProfile.objects.filter(
                 student_id=self.kwargs['student_id']).first()

@@ -36,3 +36,7 @@ class SoftSkill(models.Model):
     @property
     def ssProfileId(self):
         return self.id
+
+    @property
+    def ssScore(self):
+        return self.score

@@ -151,8 +151,16 @@ class SchoolUnit(models.Model):
         return self.id
 
     @property
+    def unitName(self):
+        return self.name
+
+    @property
     def groupCodes(self):
         return self.grouping_code
+
+    @property
+    def unitPercentages(self):
+        return self.unit_percentages
 
 
 class StudentUnit(models.Model):
