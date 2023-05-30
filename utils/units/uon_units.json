@@ -1,776 +1,838 @@
 [
     {
         "school": "UoN",
-        "unit": "CSC111 Introduction to Computer Systems",
-        "semester": "1.1",
-        "elective": "False",
+        "name": "CSC111 Introduction to Computer Systems",
+        "semester": 1.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS04 : Systems and Architecture"
+        "grouping_name": [
+            "cs04 : Systems and Architecture"
         ],
-        "grouping_codes": [
-            "CS04"
+        "grouping_code": [
+            "cs04"
+        ],
+        "unit_percentages": [
+            12.5
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC112 Introduction to Programming",
-        "semester": "1.1",
-        "elective": "False",
+        "name": "CSC112 Introduction to Programming",
+        "semester": 1.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS05 : Programming and Software Development"
+        "grouping_name": [
+            "cs05 : Programming and Software Development"
         ],
-        "grouping_codes": [
-            "CS05"
+        "grouping_code": [
+            "cs05"
+        ],
+        "unit_percentages": [
+            9.09
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC113 Discrete Mathematics",
-        "semester": "1.1",
-        "elective": "False",
+        "name": "CSC113 Discrete Mathematics",
+        "semester": 1.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS01 : Mathematics and Statistics"
+        "grouping_name": [
+            "cs01 : Mathematics and Statistics"
         ],
-        "grouping_codes": [
-            "CS01"
+        "grouping_code": [
+            "cs01"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC115 Programming Lab",
-        "semester": "1.1",
-        "elective": "False",
+        "name": "CSC115 Programming Lab",
+        "semester": 1.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS05 : Programming and Software Development"
+        "grouping_name": [
+            "cs05 : Programming and Software Development"
         ],
-        "grouping_codes": [
-            "CS05"
+        "grouping_code": [
+            "cs05"
+        ],
+        "unit_percentages": [
+            9.09
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC126 Physics for Computing Systems",
-        "semester": "1.1",
-        "elective": "False",
+        "name": "CSC126 Physics for Computing Systems",
+        "semester": 1.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS02 : Hardware and Electronics"
+        "grouping_name": [
+            "cs02 : Hardware and Electronics"
         ],
-        "grouping_codes": [
-            "CS02"
+        "grouping_code": [
+            "cs02"
+        ],
+        "unit_percentages": [
+            33.33
         ]
     },
     {
         "school": "UoN",
-        "unit": "CCS001 Communication Skills",
-        "semester": "1.1",
-        "elective": "False",
+        "name": "Ccs001 Communication Skills",
+        "semester": 1.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS03 : Skills and Ethics"
+        "grouping_name": [
+            "cs03 : Skills and Ethics"
         ],
-        "grouping_codes": [
-            "CS03"
+        "grouping_code": [
+            "cs03"
+        ],
+        "unit_percentages": [
+            50.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CCS009 Elements of Economics",
-        "semester": "1.1",
-        "elective": "False",
+        "name": "Ccs009 Elements of Economics",
+        "semester": 1.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS15 : Business and Management"
+        "grouping_name": [
+            "cs15 : Business and Management"
         ],
-        "grouping_codes": [
-            "CS15"
+        "grouping_code": [
+            "cs15"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC122 Database Systems",
-        "semester": "1.2",
-        "elective": "False",
+        "name": "CSC122 Database Systems",
+        "semester": 1.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS06 : Database Administration"
+        "grouping_name": [
+            "cs06 : Database Administration"
         ],
-        "grouping_codes": [
-            "CS06"
+        "grouping_code": [
+            "cs06"
+        ],
+        "unit_percentages": [
+            20.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC123 Data Communications",
-        "semester": "1.2",
-        "elective": "False",
+        "name": "CSC123 Data Communications",
+        "semester": 1.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS08 : Networking"
+        "grouping_name": [
+            "cs08 : Networking"
         ],
-        "grouping_codes": [
-            "CS08"
+        "grouping_code": [
+            "cs08"
+        ],
+        "unit_percentages": [
+            16.67
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC125 Linear Algebra",
-        "semester": "1.2",
-        "elective": "False",
+        "name": "CSC125 Linear Algebra",
+        "semester": 1.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS01 : Mathematics and Statistics"
+        "grouping_name": [
+            "cs01 : Mathematics and Statistics"
         ],
-        "grouping_codes": [
-            "CS01"
+        "grouping_code": [
+            "cs01"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC127 Object Oriented Programming",
-        "semester": "1.2",
-        "elective": "False",
+        "name": "CSC127 Object Oriented Programming",
+        "semester": 1.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS05 : Programming and Software Development"
+        "grouping_name": [
+            "cs05 : Programming and Software Development"
         ],
-        "grouping_codes": [
-            "CS05"
+        "grouping_code": [
+            "cs05"
+        ],
+        "unit_percentages": [
+            9.09
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC211 Data Structures and Algorithms",
-        "semester": "1.2",
-        "elective": "False",
+        "name": "CSC211 Data Structures and Algorithms",
+        "semester": 1.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS05 : Programming and Software Development"
+        "grouping_name": [
+            "cs05 : Programming and Software Development"
         ],
-        "grouping_codes": [
-            "CS05"
+        "grouping_code": [
+            "cs05"
+        ],
+        "unit_percentages": [
+            9.09
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC214 Digital Electronics",
-        "semester": "1.2",
-        "elective": "False",
+        "name": "CSC214 Digital Electronics",
+        "semester": 1.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS02 : Hardware and Electronics"
+        "grouping_name": [
+            "cs02 : Hardware and Electronics"
         ],
-        "grouping_codes": [
-            "CS02"
+        "grouping_code": [
+            "cs02"
+        ],
+        "unit_percentages": [
+            33.33
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC114 Differential and Integral Calculus",
-        "semester": "2.1",
-        "elective": "False",
+        "name": "CSC114 Differential and Integral Calculus",
+        "semester": 2.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS01 : Mathematics and Statistics"
+        "grouping_name": [
+            "cs01 : Mathematics and Statistics"
         ],
-        "grouping_codes": [
-            "CS01"
+        "grouping_code": [
+            "cs01"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC212 Systems Analysis and Design",
-        "semester": "2.1",
-        "elective": "False",
+        "name": "CSC212 Systems Analysis and Design",
+        "semester": 2.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS04 : Systems and Architecture"
+        "grouping_name": [
+            "cs04 : Systems and Architecture"
         ],
-        "grouping_codes": [
-            "CS04"
+        "grouping_code": [
+            "cs04"
+        ],
+        "unit_percentages": [
+            12.5
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC213 Computer Architecture",
-        "semester": "2.1",
-        "elective": "False",
+        "name": "CSC213 Computer Architecture",
+        "semester": 2.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS04 : Systems and Architecture"
+        "grouping_name": [
+            "cs04 : Systems and Architecture"
         ],
-        "grouping_codes": [
-            "CS04"
+        "grouping_code": [
+            "cs04"
+        ],
+        "unit_percentages": [
+            12.5
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC217 Knowledge-based Systems & Programming",
-        "semester": "2.1",
-        "elective": "False",
+        "name": "CSC217 Knowledge-based Systems & Programming",
+        "semester": 2.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS10 : Artificial Intelligence and Data Science"
+        "grouping_name": [
+            "cs10 : Artificial Intelligence and Data Science"
         ],
-        "grouping_codes": [
-            "CS10"
+        "grouping_code": [
+            "cs10"
+        ],
+        "unit_percentages": [
+            20.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC223 Operating Systems",
-        "semester": "2.1",
-        "elective": "False",
+        "name": "CSC223 Operating Systems",
+        "semester": 2.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS04 : Systems and Architecture"
+        "grouping_name": [
+            "cs04 : Systems and Architecture"
         ],
-        "grouping_codes": [
-            "CS04"
+        "grouping_code": [
+            "cs04"
+        ],
+        "unit_percentages": [
+            12.5
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC224 Software Engineering",
-        "semester": "2.1",
-        "elective": "False",
+        "name": "CSC224 Software Engineering",
+        "semester": 2.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS05 : Programming and Software Development"
+        "grouping_name": [
+            "cs05 : Programming and Software Development"
         ],
-        "grouping_codes": [
-            "CS05"
+        "grouping_code": [
+            "cs05"
+        ],
+        "unit_percentages": [
+            9.09
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC225 Computer Networks",
-        "semester": "2.1",
-        "elective": "False",
+        "name": "CSC225 Computer Networks",
+        "semester": 2.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS08 : Networking"
+        "grouping_name": [
+            "cs08 : Networking"
         ],
-        "grouping_codes": [
-            "CS08"
+        "grouping_code": [
+            "cs08"
+        ],
+        "unit_percentages": [
+            16.67
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC124 Probability and Statistics",
-        "semester": "2.2",
-        "elective": "False",
+        "name": "CSC124 Probability and Statistics",
+        "semester": 2.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS01 : Mathematics and Statistics"
+        "grouping_name": [
+            "cs01 : Mathematics and Statistics"
         ],
-        "grouping_codes": [
-            "CS01"
+        "grouping_code": [
+            "cs01"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC216 Assembly Language Programming",
-        "semester": "2.2",
-        "elective": "False",
+        "name": "CSC216 Assembly Language Programming",
+        "semester": 2.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS04 : Systems and Architecture",
-            "CS05 : Programming and Software Development"
+        "grouping_name": [
+            "cs04 : Systems and Architecture",
+            "cs05 : Programming and Software Development"
         ],
-        "grouping_codes": [
-            "CS04",
-            "CS05"
+        "grouping_code": [
+            "cs04",
+            "cs05"
+        ],
+        "unit_percentages": [
+            12.5,
+            9.09
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC222 Automata Theory",
-        "semester": "2.2",
-        "elective": "False",
+        "name": "CSC222 Automata Theory",
+        "semester": 2.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS10 : Artificial Intelligence and Data Science"
+        "grouping_name": [
+            "cs04 : Systems and Architecture"
         ],
-        "grouping_codes": [
-            "CS10"
+        "grouping_code": [
+            "cs04"
+        ],
+        "unit_percentages": [
+            12.5
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC227 Programming Project",
-        "semester": "2.2",
-        "elective": "False",
+        "name": "CSC227 Programming Project",
+        "semester": 2.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS05 : Programming and Software Development",
-            "CS13 : Final Project"
+        "grouping_name": [
+            "cs05 : Programming and Software Development",
+            "cs13 : Final Project"
         ],
-        "grouping_codes": [
-            "CS05",
-            "CS13"
+        "grouping_code": [
+            "cs05",
+            "cs13"
+        ],
+        "unit_percentages": [
+            9.09,
+            50.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC228 Web and Services Programming",
-        "semester": "2.2",
-        "elective": "False",
+        "name": "CSC228 Web and Services Programming",
+        "semester": 2.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS05 : Programming and Software Development",
-            "CS07 : Web and Mobile App Development"
+        "grouping_name": [
+            "cs05 : Programming and Software Development",
+            "cs07 : Web and Mobile App Development"
         ],
-        "grouping_codes": [
-            "CS05",
-            "CS07"
+        "grouping_code": [
+            "cs05",
+            "cs07"
+        ],
+        "unit_percentages": [
+            9.09,
+            50.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC229 Machine Learning Algorithms & Programming",
-        "semester": "2.2",
-        "elective": "False",
+        "name": "CSC229 Machine Learning Algorithms & Programming",
+        "semester": 2.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS05 : Programming and Software Development",
-            "CS10 : Artificial Intelligence and Data Science"
+        "grouping_name": [
+            "cs05 : Programming and Software Development",
+            "cs10 : Artificial Intelligence and Data Science"
         ],
-        "grouping_codes": [
-            "CS05",
-            "CS10"
+        "grouping_code": [
+            "cs05",
+            "cs10"
+        ],
+        "unit_percentages": [
+            9.09,
+            20.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC313 Foundations of Human Computer Interaction",
-        "semester": "2.2",
-        "elective": "False",
+        "name": "CSC313 Foundations of Human Computer Interaction",
+        "semester": 2.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS17 : User Design"
+        "grouping_name": [
+            "cs17 : User Design"
         ],
-        "grouping_codes": [
-            "CS17"
+        "grouping_code": [
+            "cs17"
+        ],
+        "unit_percentages": [
+            100.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC311 Analysis and Design of Algorithms",
-        "semester": "3.1",
-        "elective": "False",
+        "name": "CSC311 Analysis and Design of Algorithms",
+        "semester": 3.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS04 : Systems and Architecture",
-            "CS05 : Programming and Software Development"
+        "grouping_name": [
+            "cs04 : Systems and Architecture",
+            "cs05 : Programming and Software Development"
         ],
-        "grouping_codes": [
-            "CS04",
-            "CS05"
+        "grouping_code": [
+            "cs04",
+            "cs05"
+        ],
+        "unit_percentages": [
+            12.5,
+            9.09
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC314 Computer Graphics",
-        "semester": "3.1",
-        "elective": "False",
+        "name": "CSC314 Computer Graphics",
+        "semester": 3.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS16 : Computer Graphics"
+        "grouping_name": [
+            "cs16 : Computer Graphics"
         ],
-        "grouping_codes": [
-            "CS16"
+        "grouping_code": [
+            "cs16"
+        ],
+        "unit_percentages": [
+            100.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC315 Distributed Systems",
-        "semester": "3.1",
-        "elective": "False",
+        "name": "CSC315 Distributed Systems",
+        "semester": 3.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS06 : Database Administration"
+        "grouping_name": [
+            "cs06 : Database Administration"
         ],
-        "grouping_codes": [
-            "CS06"
+        "grouping_code": [
+            "cs06"
+        ],
+        "unit_percentages": [
+            20.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC316 Intro to Organizations and Management",
-        "semester": "3.1",
-        "elective": "False",
+        "name": "CSC316 Intro to Organizations and Management",
+        "semester": 3.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS15 : Business and Management"
+        "grouping_name": [
+            "cs15 : Business and Management"
         ],
-        "grouping_codes": [
-            "CS15"
+        "grouping_code": [
+            "cs15"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC317 Artificial Intelligence Applications",
-        "semester": "3.1",
-        "elective": "False",
+        "name": "CSC317 Artificial Intelligence Applications",
+        "semester": 3.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS10 : Artificial Intelligence and Data Science"
+        "grouping_name": [
+            "cs10 : Artificial Intelligence and Data Science"
         ],
-        "grouping_codes": [
-            "CS10"
+        "grouping_code": [
+            "cs10"
+        ],
+        "unit_percentages": [
+            20.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC318 Network Design Implementation and Management",
-        "semester": "3.1",
-        "elective": "False",
+        "name": "CSC318 Network Design Implementation and Management",
+        "semester": 3.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS08 : Networking"
+        "grouping_name": [
+            "cs08 : Networking"
         ],
-        "grouping_codes": [
-            "CS08"
+        "grouping_code": [
+            "cs08"
+        ],
+        "unit_percentages": [
+            16.67
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC319 Innovation & Entrepreneurship",
-        "semester": "3.1",
-        "elective": "False",
+        "name": "CSC319 Innovation & Entrepreneurship",
+        "semester": 3.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS15 : Business and Management"
+        "grouping_name": [
+            "cs15 : Business and Management"
         ],
-        "grouping_codes": [
-            "CS15"
+        "grouping_code": [
+            "cs15"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC321 ICT Project Management",
-        "semester": "3.2",
-        "elective": "False",
+        "name": "CSC321 ICT Project Management",
+        "semester": 3.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS13 : Final Project",
-            "CS15 : Business and Management"
+        "grouping_name": [
+            "cs15 : Business and Management"
         ],
-        "grouping_codes": [
-            "CS13",
-            "CS15"
+        "grouping_code": [
+            "cs15"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC322 Network and Distributed Programming",
-        "semester": "3.2",
-        "elective": "False",
+        "name": "CSC322 Network and Distributed Programming",
+        "semester": 3.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS06 : Database Administration",
-            "CS08 : Networking"
+        "grouping_name": [
+            "cs06 : Database Administration",
+            "cs08 : Networking"
         ],
-        "grouping_codes": [
-            "CS06",
-            "CS08"
+        "grouping_code": [
+            "cs06",
+            "cs08"
+        ],
+        "unit_percentages": [
+            20.0,
+            16.67
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC326 Compiler Construction",
-        "semester": "3.2",
-        "elective": "False",
+        "name": "CSC326 Compiler Construction",
+        "semester": 3.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS04 : Systems and Architecture"
+        "grouping_name": [
+            "cs04 : Systems and Architecture"
         ],
-        "grouping_codes": [
-            "CS04"
+        "grouping_code": [
+            "cs04"
+        ],
+        "unit_percentages": [
+            12.5
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC327 Embedded Systems & Mobile Programming",
-        "semester": "3.2",
-        "elective": "False",
+        "name": "CSC327 Embedded Systems & Mobile Programming",
+        "semester": 3.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS02 : Hardware and Electronics",
-            "CS07 : Web and Mobile App Development"
+        "grouping_name": [
+            "cs02 : Hardware and Electronics",
+            "cs07 : Web and Mobile App Development"
         ],
-        "grouping_codes": [
-            "CS02",
-            "CS07"
+        "grouping_code": [
+            "cs02",
+            "cs07"
+        ],
+        "unit_percentages": [
+            33.33,
+            50.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC328 Business Intelligence & Analytics",
-        "semester": "3.2",
-        "elective": "False",
+        "name": "CSC328 Business Intelligence & Analytics",
+        "semester": 3.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS10 : Artificial Intelligence and Data Science",
-            "CS11 : Information Systems"
+        "grouping_name": [
+            "cs10 : Artificial Intelligence and Data Science",
+            "cs11 : Information Systems"
         ],
-        "grouping_codes": [
-            "CS10",
-            "CS11"
+        "grouping_code": [
+            "cs10",
+            "cs11"
+        ],
+        "unit_percentages": [
+            20.0,
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC411 Computer Network Security",
-        "semester": "3.2",
-        "elective": "False",
+        "name": "CSC411 Computer Network Security",
+        "semester": 3.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS08 : Networking",
-            "CS09 : Cyber Security"
+        "grouping_name": [
+            "cs08 : Networking",
+            "cs09 : Cyber Security"
         ],
-        "grouping_codes": [
-            "CS08",
-            "CS09"
+        "grouping_code": [
+            "cs08",
+            "cs09"
+        ],
+        "unit_percentages": [
+            16.67,
+            50.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC311 Industrial Attachment",
-        "semester": "3.2",
-        "elective": "False",
+        "name": "CSC311 Industrial Attachment",
+        "semester": 3.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS12 : Industrial Attachment"
+        "grouping_name": [
+            "cs12 : Industrial Attachment"
         ],
-        "grouping_codes": [
-            "CS12"
+        "grouping_code": [
+            "cs12"
+        ],
+        "unit_percentages": [
+            100.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC414 ICTs and Society",
-        "semester": "4.1",
-        "elective": "False",
+        "name": "CSC414 ICTs and Society",
+        "semester": 4.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS03 : Skills and Ethics"
+        "grouping_name": [
+            "cs03 : Skills and Ethics"
         ],
-        "grouping_codes": [
-            "CS03"
+        "grouping_code": [
+            "cs03"
+        ],
+        "unit_percentages": [
+            50.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC417 Information Systems and Organizations",
-        "semester": "4.1",
-        "elective": "False",
+        "name": "CSC417 Information Systems and Organizations",
+        "semester": 4.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS11 : Information Systems"
+        "grouping_name": [
+            "cs11 : Information Systems"
         ],
-        "grouping_codes": [
-            "CS11"
+        "grouping_code": [
+            "cs11"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC418 Emerging Technologies Bootcamps",
-        "semester": "4.1",
-        "elective": "False",
+        "name": "CSC418 Emerging Technologies Bootcamps",
+        "semester": 4.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS09 : Cyber Security",
-            "CS10 : Artificial Intelligence and Data Science"
+        "grouping_name": [
+            "cs05 : Programming and Software Development",
+            "cs09 : Cyber Security",
+            "cs10 : Artificial Intelligence and Data Science"
         ],
-        "grouping_codes": [
-            "CS09",
-            "CS10"
+        "grouping_code": [
+            "cs05",
+            "cs09",
+            "cs10"
+        ],
+        "unit_percentages": [
+            9.09,
+            50.0,
+            20.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC451 Distributed Databases", 
-        "semester": "4.1",
-        "elective": "False",
+        "name": "CSC451 Distributed Databases",
+        "semester": 4.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS06 : Database Administration"
+        "grouping_name": [
+            "cs06 : Database Administration"
         ],
-        "grouping_codes": [
-            "CS06"
+        "grouping_code": [
+            "cs06"
+        ],
+        "unit_percentages": [
+            20.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC481 Computer Games Programming",
-        "semester": "4.1",
-        "elective": "False",
+        "name": "CSC481 Computer Games Programming",
+        "semester": 4.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS18 : Gaming Development"
+        "grouping_name": [
+            "cs18 : Gaming Development"
         ],
-        "grouping_codes": [
-            "CS18"
+        "grouping_code": [
+            "cs18"
+        ],
+        "unit_percentages": [
+            100.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC416 Computer Systems Project",
-        "semester": "4.1",
-        "elective": "False",
+        "name": "CSC416 Computer Systems Project",
+        "semester": 4.1,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS13 : Final Project"
+        "grouping_name": [
+            "cs13 : Final Project"
         ],
-        "grouping_codes": [
-            "CS13"
+        "grouping_code": [
+            "cs13"
+        ],
+        "unit_percentages": [
+            50.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC434 Cloud Computing and Services",
-        "semester": "4.2",
-        "elective": "False",
+        "name": "CSC434 Cloud Computing and Services",
+        "semester": 4.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS06 : Database Administration",
-            "CS08 : Networking"
+        "grouping_name": [
+            "cs06 : Database Administration",
+            "cs08 : Networking"
         ],
-        "grouping_codes": [
-            "CS06",
-            "CS08"
+        "grouping_code": [
+            "cs06",
+            "cs08"
+        ],
+        "unit_percentages": [
+            20.0,
+            16.67
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC452 Information Systems Control Audit",
-        "semester": "4.2",
-        "elective": "False",
+        "name": "CSC452 Information Systems Control Audit",
+        "semester": 4.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS11 : Information Systems"
+        "grouping_name": [
+            "cs11 : Information Systems"
         ],
-        "grouping_codes": [
-            "CS11"
+        "grouping_code": [
+            "cs11"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     },
     {
         "school": "UoN",
-        "unit": "CSC455 Information for Emerging Online Solutions",
-        "semester": "4.2",
-        "elective": "False",
+        "name": "CSC455 Information for Emerging Online Solutions",
+        "semester": 4.2,
+        "elective": false,
         "elective_group": "",
-        "grouping_code": "",
-        "grouping_name": "",
-        "grouping_names": [
-            "CS11 : Information Systems"
+        "grouping_name": [
+            "cs11 : Information Systems"
         ],
-        "grouping_codes": [
-            "CS11"
+        "grouping_code": [
+            "cs11"
+        ],
+        "unit_percentages": [
+            25.0
         ]
     }
 ]

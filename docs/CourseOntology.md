@@ -376,3 +376,332 @@ ___
 - Unit_perc : 0
 - Units: []
  
+------------------------------------------------------------------------------------
+
+## **UoN**
+
+### CS01 : Mathematics and Statistics
+- Code : CS01
+- Name :  : Mathematics and Statistics
+- Unit Count : 4
+- Unit_perc : 25.0
+ 
+<br/>
+ 
+    - CSC113 Discrete Mathematics - 1.1
+  
+<br/>
+ 
+    - CSC125 Linear Algebra - 1.2
+  
+<br/>
+ 
+    - CSC114 Differential and Integral Calculus - 2.1
+  
+<br/>
+ 
+    - CSC124 Probability and Statistics - 2.2
+ 
+### CS02 : Hardware and Electronics
+- Code : CS02
+- Name :  : Hardware and Electronics
+- Unit Count : 3
+- Unit_perc : 33.33
+ 
+<br/>
+ 
+    - CSC126 Physics for Computing Systems - 1.1
+  
+<br/>
+ 
+    - CSC214 Digital Electronics - 1.2
+  
+<br/>
+ 
+    - CSC327 Embedded Systems & Mobile Programming - 3.2
+ 
+### CS03 : Skills and Ethics
+- Code : CS03
+- Name :  : Skills and Ethics
+- Unit Count : 2
+- Unit_perc : 50.0
+ 
+<br/>
+ 
+    - CCS001 Communication Skills - 1.1
+  
+<br/>
+ 
+    - CSC414 ICTs and Society - 4.1
+ 
+### CS04 : Systems and Architecture
+- Code : CS04
+- Name :  : Systems and Architecture
+- Unit Count : 8
+- Unit_perc : 12.5
+ 
+<br/>
+ 
+    - CSC111 Introduction to Computer Systems - 1.1
+  
+<br/>
+ 
+    - CSC212 Systems Analysis and Design - 2.1
+    - CSC213 Computer Architecture - 2.1
+    - CSC223 Operating Systems - 2.1
+  
+<br/>
+    
+    - CSC222 Automata Theory - 2.2
+    - CSC216 Assembly Language Programming - 2.2
+  
+<br/>
+ 
+    - CSC311 Analysis and Design of Algorithms - 3.1
+  
+<br/>
+ 
+    - CSC326 Compiler Construction - 3.2
+ 
+### CS05 : Programming and Software Development
+- Code : CS05
+- Name :  : Programming and Software Development
+- Unit Count : 11
+- Unit_perc : 9.09
+ 
+<br/>
+ 
+    - CSC112 Introduction to Programming - 1.1
+    - CSC115 Programming Lab - 1.1
+  
+<br/>
+ 
+    - CSC127 Object Oriented Programming - 1.2
+    - CSC211 Data Structures and Algorithms - 1.2
+  
+<br/>
+ 
+    - CSC224 Software Engineering - 2.1
+  
+<br/>
+ 
+    - CSC216 Assembly Language Programming - 2.2
+    - CSC227 Programming Project - 2.2
+    - CSC228 Web and Services Programming - 2.2
+    - CSC229 Machine Learning Algorithms & Programming - 2.2
+  
+<br/>
+ 
+    - CSC311 Analysis and Design of Algorithms - 3.1
+  
+<br/>
+ 
+    - CSC418 Emerging Technologies Bootcamps - 4.1
+ 
+### CS06 : Database Administration
+- Code : CS06
+- Name :  : Database Administration
+- Unit Count : 5
+- Unit_perc : 20.0
+ 
+<br/>
+ 
+    - CSC122 Database Systems - 1.2
+  
+<br/>
+ 
+    - CSC315 Distributed Systems - 3.1
+  
+<br/>
+ 
+    - CSC322 Network and Distributed Programming - 3.2
+  
+<br/>
+ 
+    - CSC451 Distributed Databases - 4.1
+  
+<br/>
+ 
+    - CSC434 Cloud Computing and Services - 4.2
+ 
+### CS07 : Web and Mobile App Development
+- Code : CS07
+- Name :  : Web and Mobile App Development
+- Unit Count : 2
+- Unit_perc : 50.0
+ 
+<br/>
+ 
+    - CSC228 Web and Services Programming - 2.2
+  
+<br/>
+ 
+    - CSC327 Embedded Systems & Mobile Programming - 3.2
+ 
+### CS08 : Networking
+- Code : CS08
+- Name :  : Networking
+- Unit Count : 6
+- Unit_perc : 16.67
+ 
+<br/>
+ 
+    - CSC123 Data Communications - 1.2
+  
+<br/>
+ 
+    - CSC225 Computer Networks - 2.1
+  
+<br/>
+ 
+    - CSC318 Network Design Implementation and Management - 3.1
+  
+<br/>
+ 
+    - CSC322 Network and Distributed Programming - 3.2
+    - CSC411 Computer Network Security - 3.2
+  
+<br/>
+ 
+    - CSC434 Cloud Computing and Services - 4.2
+ 
+### CS09 : Cyber Security
+- Code : CS09
+- Name :  : Cyber Security
+- Unit Count : 2
+- Unit_perc : 50.0
+ 
+<br/>
+ 
+    - CSC411 Computer Network Security - 3.2
+  
+<br/>
+ 
+    - CSC418 Emerging Technologies Bootcamps - 4.1
+ 
+### CS10 : Artificial Intelligence and Data Science
+- Code : CS10
+- Name :  : Artificial Intelligence and Data Science
+- Unit Count : 5
+- Unit_perc : 20.0
+ 
+<br/>
+ 
+    - CSC217 Knowledge-based Systems & Programming - 2.1
+  
+<br/>
+ 
+    - CSC229 Machine Learning Algorithms & Programming - 2.2
+  
+<br/>
+ 
+    - CSC317 Artificial Intelligence Applications - 3.1
+  
+<br/>
+ 
+    - CSC328 Business Intelligence & Analytics - 3.2
+  
+<br/>
+ 
+    - CSC418 Emerging Technologies Bootcamps - 4.1
+ 
+### CS11 : Information Systems
+- Code : CS11
+- Name :  : Information Systems
+- Unit Count : 4
+- Unit_perc : 25.0
+ 
+<br/>
+ 
+    - CSC328 Business Intelligence & Analytics - 3.2
+  
+<br/>
+ 
+    - CSC417 Information Systems and Organizations - 4.1
+  
+<br/>
+ 
+    - CSC452 Information Systems Control Audit - 4.2
+    - CSC455 Information for Emerging Online Solutions - 4.2
+ 
+### CS12 : Industrial Attachment
+- Code : CS12
+- Name :  : Industrial Attachment
+- Unit Count : 1
+- Unit_perc : 100.0
+ 
+<br/>
+ 
+    - CSC311 Industrial Attachment - 3.2
+ 
+### CS13 : Final Project
+- Code : CS13
+- Name :  : Final Project
+- Unit Count : 2
+- Unit_perc : 50.0
+ 
+<br/>
+ 
+    - CSC227 Programming Project - 2.2
+  
+<br/>
+ 
+    - CSC416 Computer Systems Project - 4.1
+ 
+### CS14 : Research Methodology
+- Code : CS14
+- Name :  : Research Methodology
+- Unit Count : 0
+- Unit_perc : 0
+ 
+<br/>
+ 
+ 
+### CS15 : Business and Management
+- Code : CS15
+- Name :  : Business and Management
+- Unit Count : 4
+- Unit_perc : 25.0
+ 
+<br/>
+ 
+    - CCS009 Elements of Economics - 1.1
+  
+<br/>
+ 
+    - CSC316 Intro to Organizations and Management - 3.1
+    - CSC319 Innovation & Entrepreneurship - 3.1
+  
+<br/>
+ 
+    - CSC321 ICT Project Management - 3.2
+ 
+### CS16 : Computer Graphics
+- Code : CS16
+- Name :  : Computer Graphics
+- Unit Count : 1
+- Unit_perc : 100.0
+ 
+<br/>
+ 
+    - CSC314 Computer Graphics - 3.1
+ 
+### CS17 : User Design
+- Code : CS17
+- Name :  : User Design
+- Unit Count : 1
+- Unit_perc : 100.0
+ 
+<br/>
+ 
+    - CSC313 Foundations of Human Computer Interaction - 2.2
+ 
+### CS18 : Gaming Development
+- Code : CS18
+- Name :  : Gaming Development
+- Unit Count : 1
+- Unit_perc : 100.0
+ 
+<br/>
+ 
+    - CSC481 Computer Games Programming - 4.1

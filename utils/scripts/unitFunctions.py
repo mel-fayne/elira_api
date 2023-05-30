@@ -1,6 +1,6 @@
 import json
 
-from student.models.academicModels import SchoolUnit
+# from student.models.academicModels import SchoolUnit
 
 UNIT_TAGS = {
     'CS01 : Mathematics and Statistics': ['statistics', 'mathematics', 'calculus', 'algebra', 'probability', 'equations', 'vector', 'numerical'],
@@ -65,36 +65,37 @@ kuUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/ku_units.js
 cueaUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/cuea_units.json'
 strathUnits_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/strath_units.json'
 
-jkuatGroups_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/units/jkuat_groups.json'
+jkuatGroups_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/unitGroups/jkuatGroups.json'
+uonGroups_path = '/home/mel/Desktop/code-lab/api/elira_api/utils/unitGroups/uonGroups.json'
 
-with open(jkuatUnits_path, 'r') as file:
+with open(uonUnits_path, 'r') as file:
     unitsData = json.load(file)
 
-with open(jkuatGroups_path, 'r') as file:
+with open(uonGroups_path, 'r') as file:
     groupsData = json.load(file)
 
 # # Load School Units to db
 
-school_units = []
+# school_units = []
 
-for item in unitsData:
-    school_unit = SchoolUnit(
-        school=item.get('school', ''),
-        semsester=item.get('semsester', 1.1),
-        name=item.get('name', ''),
-        elective=item.get('elective', False),
-        elective_group=item.get('elective_group', ''),
-        grouping_name=item.get('grouping_name', []),
-        grouping_code=item.get('grouping_code', []),
-        unit_percentages=item.get('unit_percentages', []),
-        grade=item.get('grade', None),
-        mark=item.get('mark', 0.0),
-    )
-    school_units.append(school_unit)
+# for item in unitsData:
+#     school_unit = SchoolUnit(
+#         school=item.get('school', ''),
+#         semsester=item.get('semsester', 1.1),
+#         name=item.get('name', ''),
+#         elective=item.get('elective', False),
+#         elective_group=item.get('elective_group', ''),
+#         grouping_name=item.get('grouping_name', []),
+#         grouping_code=item.get('grouping_code', []),
+#         unit_percentages=item.get('unit_percentages', []),
+#         grade=item.get('grade', None),
+#         mark=item.get('mark', 0.0),
+#     )
+#     school_units.append(school_unit)
 
-SchoolUnit.objects.bulk_create(school_units)
+# SchoolUnit.objects.bulk_create(school_units)
 
-print(f"SchoolUnit Objects Created: {len(school_units)}")
+# print(f"SchoolUnit Objects Created: {len(school_units)}")
 
 
 # # Load School Groupings to db
@@ -148,30 +149,41 @@ print(f"SchoolUnit Objects Created: {len(school_units)}")
     
 # # Get Documentation Formatting
 # for group in UNIT_GROUPS:
-#     print('______________________________________')
 #     print(f"### {group}")
 #     print(f"- Code : {group[0:4]}")
 #     print(f"- Name : {group[4:len(group)+1]}")
-#     print("- Unit_perc : ")
+    
+#     group_units = []
+#     for item in unitsData:
+#         if group in item['grouping_name']:
+#             group_units.append(item)
+            
+#     print(f"- Unit Count : {len(group_units)}")
+#     if len(group_units) == 0:
+#         print("- Unit_perc : 0")
+#     else:
+#         print(f"- Unit_perc : {round(100 / len(group_units), 2)}")
 #     print(" ")
 #     print("<br/>")
 #     print(" ")
-#     group_units = []
-#     for item in data:
-#         if group in item['grouping_names']:
-#             group_units.append(item)
-#             print(f"        - {item['unit']} - {item['semester']}")
     
-#     print(f"Unit Count : {len(group_units)}")
-#     # if group_units != []:
-#     #     print(' ')
-#     #     print(group)
-#     #     print(' ')
-#     #     for item in group_units:
-#     #         print(item['unit'])
+#     for item in group_units:
+#         print(f"        - {item['name']} - {item['semester']}")
 
-#     print('______________________________________')
+#     print(' ')
+
+# # Create Unit Percentages List in Json
+# for unitItem in unitsData:
+#     unitPercs = []
+
+#     for groupItem in groupsData:
+#         if groupItem['code'] in unitItem['grouping_code']:
+#             unitPercs.append(groupItem['unit_percentage'])
     
+#     print(' ')
+#     print(unitItem['name'])
+#     print(unitPercs)
+#     print(' ')
 
 # # ---------- Get Particular Units ------------
 # for item in data:

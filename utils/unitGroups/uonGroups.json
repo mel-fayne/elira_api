@@ -1,0 +1,128 @@
+[
+    {
+        "school": "UoN",
+        "name": "cs01 : Mathematics and Statistics",
+        "code": "cs01",
+        "description": "Mathematics and Statistics",
+        "unit_percentage": 25.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs02 : Hardware and Electronics",
+        "code": "cs02",
+        "description": "Hardware and Electronics",
+        "unit_percentage": 33.33
+    },
+    {
+        "school": "UoN",
+        "name": "cs03 : Skills and Ethics",
+        "code": "cs03",
+        "description": "Skills and Ethics",
+        "unit_percentage": 50.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs04 : Systems and Architecture",
+        "code": "cs04",
+        "description": "Systems and Architecture",
+        "unit_percentage": 12.5
+    },
+    {
+        "school": "UoN",
+        "name": "cs05 : Programming and Software Development",
+        "code": "cs05",
+        "description": "Programming and Software Development",
+        "unit_percentage": 9.09
+    },
+    {
+        "school": "UoN",
+        "name": "cs06 : Database Administration",
+        "code": "cs06",
+        "description": "Database Administration",
+        "unit_percentage": 20.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs07 : Web and Mobile App Development",
+        "code": "cs07",
+        "description": "Web and Mobile App Development",
+        "unit_percentage": 50.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs08 : Networking",
+        "code": "cs08",
+        "description": "Networking",
+        "unit_percentage": 16.67
+    },
+    {
+        "school": "UoN",
+        "name": "cs09 : Cyber Security",
+        "code": "cs09",
+        "description": "Cyber Security",
+        "unit_percentage": 50.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs10 : Artificial Intelligence and Data Science",
+        "code": "cs10",
+        "description": "Artificial Intelligence and Data Science",
+        "unit_percentage": 20.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs11 : Information Systems",
+        "code": "cs11",
+        "description": "Information Systems",
+        "unit_percentage": 25.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs12 : Industrial Attachment",
+        "code": "cs12",
+        "description": "Industrial Attachment",
+        "unit_percentage": 100.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs13 : Final Project",
+        "code": "cs13",
+        "description": "Final Project",
+        "unit_percentage": 50.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs14 : Research Methodology",
+        "code": "cs14",
+        "description": "Research Methodology",
+        "unit_percentage": 0.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs15 : Business and Management",
+        "code": "cs15",
+        "description": "Business and Management",
+        "unit_percentage": 25.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs16 : Computer Graphics",
+        "code": "cs16",
+        "description": "Computer Graphics",
+        "unit_percentage": 100.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs17 : User Design",
+        "code": "cs17",
+        "description": "User Design",
+        "unit_percentage": 100.0
+    },
+    {
+        "school": "UoN",
+        "name": "cs18 : Gaming Development",
+        "code": "cs18",
+        "description": "Gaming Development",
+        "unit_percentage": 100.0
+    }
+]
