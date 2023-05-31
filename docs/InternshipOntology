@@ -1,0 +1,40 @@
+# Internship Ontology
+
+## Specialisations
+
+- A total of 8 CS specialisations are being considered for prediction. Namely:
+  - Network Administration
+  - Database Administration
+  - A.I & Data Science
+  - Cyber Security
+  - Software Development
+  - Graphics & Design
+  - Information Systems
+  - Hardware & Operating Systems
+
+## Industry Assignment
+
+- Each specialisation's industry wwas identified as below:
+  1. ai_industry
+  2. da_industry
+  3. cs_industry	
+  4. na_industry
+  5. sd_industry
+  6. ho_industry
+  7. gd_industry
+  8. is_industry
+
+- The table below shows the industries for which bias was introduced in the dataset to represent student behaviour in terms of work experience in relation to their suitable specialisation. The columns listed work hand in hand with another column named timeSpent, which is a total of the months the student spent in their listed intersnhips.
+- The columns values will be boolean values (1 or 0) indicating whether the student has experience in the said industry or not.
+- The distribution is as follows:
+
+| No. | Specialisation               | Abbreviation | Unit Groupings                    |
+|-----|------------------------------|--------------|-----------------------------------|
+| 1   | Network Administration       | NA           | na_industry, cs_industry          |
+| 2   | Database Administration      | DA           | db_industry                       |
+| 3   | A.I & Data Science           | AI           | ai_industry, db_industry          |
+| 4   | Cyber Security               | CS           | na_industry, cs_industry          |
+| 5   | Software Development         | SD           | sd_industry                       |
+| 6   | Graphics & Design            | GD           | gd_industry, sd_industry          |
+| 7   | Information Systems          | IS           | is_industry                       |
+| 8   | Hardware & Operating Systems | HO           | ho_industry                       |

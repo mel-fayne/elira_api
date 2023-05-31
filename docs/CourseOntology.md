@@ -42,7 +42,9 @@
 
 <br/>
 
-- The table below shows the unit group distribution for the various Specialisations the system is predicting:
+- The table below shows the unit group distribution for the various Specialisations the system is predicting.
+- The columns will be filled with an aggregate of the student's marks in the various units as per their current semester.
+- The distribution is as follows:
 
 | No. | Specialisation               | Abbreviation | Unit Groupings                  |
 |-----|------------------------------|--------------|---------------------------------|
