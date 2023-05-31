@@ -1,0 +1,362 @@
+[
+    {
+        "specialisation": "AI",
+        "name": "Sentiment Analysis for Social Media",
+        "description": "Build a model that can analyze social media posts and classify them as positive, negative, or neutral based on the sentiment expressed in the text.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Image Classification for Wildlife Conservation",
+        "description": "Develop an image classification model that can identify and classify different species of wildlife from camera trap images, aiding conservation efforts.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Recommendation System for Movie Ratings",
+        "description": "Create a recommendation system that suggests movies to users based on their past movie ratings and preferences, using collaborative filtering techniques.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Predictive Maintenance for Industrial Machinery",
+        "description": "Build a model that predicts the likelihood of machinery failures in industrial settings, allowing for proactive maintenance and reducing downtime.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Handwriting Recognition for Optical Character Recognition (OCR)",
+        "description": "Develop an OCR system that can accurately recognize and convert handwritten text into digital format, enabling automated data entry from written documents.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Fraud Detection in Financial Transactions",
+        "description": "Create a model that can detect fraudulent transactions by analyzing patterns and anomalies in financial data, helping to prevent financial fraud.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Chatbot for Customer Support",
+        "description": "Build an AI-powered chatbot that can handle customer queries and provide automated support, reducing the workload on customer support teams.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Stock Market Prediction",
+        "description": "Develop a model that predicts stock market trends and prices based on historical data, aiding investors in making informed trading decisions.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Object Detection in Images",
+        "description": "Create an object detection system that can identify and locate specific objects within images, enabling applications like self-driving cars and surveillance.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Recommendation System for E-commerce",
+        "description": "Build a recommendation system that suggests products to users based on their browsing history, purchase behavior, and similarities to other users.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Speech Recognition for Voice Assistants",
+        "description": "Develop a speech recognition model that can accurately transcribe spoken language into text, enabling voice-controlled applications and devices.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Customer Churn Prediction",
+        "description": "Create a model that predicts the likelihood of customer churn for businesses, allowing proactive customer retention strategies to be implemented.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Natural Language Processing (NLP) for Text Summarization",
+        "description": "Build a model that can summarize long texts or articles into shorter, concise summaries, making it easier to extract key information quickly.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Predictive Analytics for Sales Forecasting",
+        "description": "Develop a model that predicts future sales based on historical sales data and other relevant factors, aiding in sales planning and inventory management.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Disease Diagnosis from Medical Images",
+        "description": "Create a model that can analyze medical images like X-rays or MRIs and detect abnormalities or diseases, assisting doctors in accurate diagnosis.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Customer Segmentation for Marketing Campaigns",
+        "description": "Build a model that segments customers based on their demographics, behavior, and preferences, helping businesses target specific customer groups more effectively.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Emotion Recognition in Facial Expressions",
+        "description": "Develop a model that can recognize and classify emotions from facial expressions, enabling applications like personalized advertising and user experience.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Spam Email Classification",
+        "description": "Create a model that can identify and classify spam emails, helping users filter and prioritize their email inbox more efficiently.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Traffic Flow Prediction",
+        "description": "Build a model that predicts traffic flow and congestion patterns based on historical traffic data, aiding in urban planning and traffic management.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Anomaly Detection in Network Traffic",
+        "description": "Develop a model that can detect anomalous behavior in network traffic, helping to identify potential cyber attacks or security breaches.",
+        "level": "Beginner"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Deepfake Detection",
+        "description": "Create a model that can detect and classify deepfake videos, helping to combat misinformation and preserve trust in media content.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Document Classification for Content Organization",
+        "description": "Develop a model that can automatically categorize and classify documents based on their content, making it easier to organize and retrieve information.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Predicting Air Quality Index (AQI)",
+        "description": "Build a model that predicts the AQI in different locations based on weather data, aiding in air pollution monitoring and health management.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Autonomous Drone Navigation",
+        "description": "Create an AI system that enables drones to autonomously navigate and avoid obstacles, opening up possibilities for various applications like delivery and surveillance.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Fake News Detection",
+        "description": "Develop a model that can identify and classify fake news articles, helping users distinguish between reliable and unreliable information sources.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Predicting Customer Lifetime Value (CLV)",
+        "description": "Build a model that predicts the CLV for customers, providing insights into customer behavior, retention, and lifetime revenue potential.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Autonomous Vehicle Control",
+        "description": "Create an AI system that can control autonomous vehicles, including decision-making, navigation, and adaptive behavior in complex traffic scenarios.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Music Genre Classification",
+        "description": "Develop a model that can classify songs into different genres based on their audio features, aiding in music recommendation and personalized playlists.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Energy Consumption Forecasting",
+        "description": "Build a model that predicts future energy consumption based on historical data and external factors, enabling better energy management and planning.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Facial Recognition for Attendance System",
+        "description": "Create a facial recognition system that can accurately identify and track individuals for attendance purposes, eliminating the need for manual check-ins.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Predicting Customer Churn with Social Media Data",
+        "description": "Build a model that predicts customer churn using not only traditional data but also social media data, capturing customers' sentiments and engagement levels.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Recommendation System with Reinforcement Learning",
+        "description": "Develop a recommendation system that utilizes reinforcement learning algorithms to continually improve and optimize recommendations based on user feedback.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Autonomous Robotic Arm Control",
+        "description": "Create an AI system that can control a robotic arm to perform tasks and manipulate objects in dynamic and unstructured environments.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Stock Market Sentiment Analysis",
+        "description": "Build a model that analyzes and predicts stock market trends based on sentiment analysis of news articles, social media data, and market indicators.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Predicting Customer Satisfaction from Customer Reviews",
+        "description": "Develop a model that predicts customer satisfaction levels based on their reviews and feedback, providing valuable insights for product improvement.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Autonomous Indoor Navigation for Robots",
+        "description": "Create an AI system that enables robots to navigate autonomously in indoor environments, avoiding obstacles and reaching specified destinations.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Predicting Loan Default Risk",
+        "description": "Build a model that predicts the risk of loan default based on applicant data, helping lenders make informed decisions and manage credit risk.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Object Tracking in Videos",
+        "description": "Develop a model that can track and follow objects of interest in videos, enabling applications like video surveillance and augmented reality.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Land Cover Classification from Satellite Imagery",
+        "description": "Create a model that can classify land cover types from satellite imagery, aiding in environmental monitoring, urban planning, and agriculture.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Human Pose Estimation",
+        "description": "Develop a model that can estimate and track human poses from images or video, enabling applications like fitness tracking and gesture-based control.",
+        "level": "Intermediate"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Generative Adversarial Networks (GANs) for Image Synthesis",
+        "description": "Build a GAN model that can generate realistic images, such as human faces or landscapes, by training a generator and discriminator network.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Autonomous Drone Swarm Control",
+        "description": "Create an AI system that can control a swarm of autonomous drones to perform complex tasks, such as formation flying or cooperative object manipulation.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Neural Machine Translation",
+        "description": "Develop a model that can translate text between different languages using neural networks, achieving more accurate and natural language translation.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Reinforcement Learning for Game Playing",
+        "description": "Build a reinforcement learning agent that can learn to play and master complex games, such as chess or Go, by training through self-play.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Real-time Object Detection and Tracking in Videos",
+        "description": "Create a model that can detect and track objects in real-time video streams, allowing for applications like video surveillance and autonomous driving.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Deep Reinforcement Learning for Robotics",
+        "description": "Develop a deep reinforcement learning system that can train robots to perform complex tasks and learn from their interactions with the environment.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Speech Synthesis with Neural Networks",
+        "description": "Build a model that can generate realistic and natural-sounding speech based on text input, enabling applications like virtual assistants and voiceovers.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Natural Language Processing for Language Generation",
+        "description": "Create a model that can generate coherent and contextually relevant text, such as news articles or story narratives, using natural language processing techniques.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Autonomous Vehicle Routing and Planning",
+        "description": "Develop an AI system that can plan optimal routes and make intelligent decisions for autonomous vehicles in dynamic and unpredictable environments.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Unsupervised Learning for Anomaly Detection",
+        "description": "Build a model that can detect anomalies and outliers in large-scale datasets without labeled data, using unsupervised learning algorithms.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Machine Learning for Drug Discovery",
+        "description": "Develop models and algorithms that can analyze molecular structures and predict the effectiveness and safety of potential drug compounds.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Privacy-Preserving Machine Learning",
+        "description": "Design techniques and algorithms that allow for training models on sensitive data while preserving privacy and ensuring data confidentiality.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Emotion Generation in Virtual Characters",
+        "description": "Create virtual characters that can express and generate emotions in real-time based on user interactions and contextual cues.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Automated Machine Learning (AutoML)",
+        "description": "Build a system that can automatically search, select, and optimize machine learning models and hyperparameters for a given task or dataset.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Graph Neural Networks for Social Network Analysis",
+        "description": "Develop models that can analyze and understand social network structures and dynamics, enabling tasks like community detection and influence analysis.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Federated Learning for Privacy-Preserving Collaborative AI",
+        "description": "Design a framework that allows multiple parties to collaboratively train a shared model without sharing their private data, using federated learning techniques.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Deep Learning for Medical Image Analysis",
+        "description": "Build models that can analyze medical images, such as CT scans or pathology slides, for tasks like disease diagnosis and treatment planning.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Automated Video Editing with AI",
+        "description": "Create an AI system that can automatically edit and enhance videos, including tasks like video summarization, object removal, and scene generation.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Adversarial Attacks and Defenses in Deep Learning",
+        "description": "Explore methods to attack and defend deep learning models against adversarial attacks, improving model robustness and security.",
+        "level": "Advanced"
+    },
+    {
+        "specialisation": "AI",
+        "name": "Knowledge Graph Construction and Reasoning",
+        "description": "Develop techniques to automatically construct knowledge graphs from unstructured data and perform complex reasoning and inference tasks.",
+        "level": "Advanced"
+    }
+]

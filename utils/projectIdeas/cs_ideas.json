@@ -1,0 +1,362 @@
+[
+    {
+        "name": "Password Strength Checker",
+        "description": "Develop a tool that evaluates the strength of user passwords based on factors like length, complexity, and presence of common patterns. Provide feedback and suggestions for improving password security.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Network Scanner",
+        "description": "Build a network scanner that discovers and maps devices connected to a local network. Retrieve information like IP addresses, MAC addresses, and open ports to identify potential vulnerabilities.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Virus/Malware Detection",
+        "description": "Create a simple antivirus or malware detection program that scans files or directories for known malware signatures. Implement basic detection techniques like pattern matching or signature-based analysis.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure File Encryption",
+        "description": "Design a program that encrypts sensitive files using symmetric or asymmetric encryption algorithms. Provide options for encryption and decryption, and ensure data confidentiality and integrity.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Basic Firewall Configuration",
+        "description": "Configure a basic firewall using tools like iptables or Windows Firewall. Define rules to control incoming and outgoing network traffic based on specific criteria like IP addresses or port numbers.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Packet Sniffer",
+        "description": "Develop a packet sniffer that captures and analyzes network traffic. Display information like source and destination IP addresses, protocols, and payload data to gain insights into network communication.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Login System",
+        "description": "Create a secure login system that authenticates users and protects against common attacks like password guessing and brute-force attacks. Implement secure password hashing and account lockout mechanisms.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Network Traffic Monitor",
+        "description": "Build a network traffic monitoring tool that captures and analyzes network packets in real-time. Display information like source and destination IP addresses, protocols, and traffic volume.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Basic Intrusion Detection System",
+        "description": "Develop a basic intrusion detection system that monitors network or system logs for suspicious activities or known attack patterns. Raise alerts or take actions when potential threats are detected.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure File Transfer Protocol (FTP) Server",
+        "description": "Build a secure FTP server that allows encrypted file transfers using protocols like FTPS or SFTP. Ensure data integrity and confidentiality during file uploads and downloads.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Basic Network Configuration Tool",
+        "description": "Create a tool that simplifies the configuration of network settings like IP addresses, subnet masks, and DNS servers. Automate the process of modifying network configurations on different devices.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Email Sender",
+        "description": "Design an application that enables secure email communication using encryption techniques like PGP (Pretty Good Privacy). Implement key generation, encryption, and decryption functionalities.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Website Vulnerability Scanner",
+        "description": "Build a simple tool that scans websites for common security vulnerabilities like cross-site scripting (XSS) or SQL injection. Provide a report of identified vulnerabilities and potential remediation steps.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Basic VPN Configuration",
+        "description": "Configure a basic virtual private network (VPN) using tools like OpenVPN or IPSec. Establish a secure connection between two networks or devices to ensure encrypted and private communication.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Website Password Strength Checker",
+        "description": "Create a tool that assesses the strength of website passwords for users. Analyze password requirements, provide feedback on password strength, and suggest improvements.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Basic Network Traffic Analyzer",
+        "description": "Develop a network traffic analyzer that captures and analyzes packet data to identify protocols, top talkers, and network anomalies. Display information in a user-friendly and informative manner.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Chat Application",
+        "description": "Build a secure chat application that encrypts messages to ensure confidentiality. Implement end-to-end encryption and authentication mechanisms to protect communication between users.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Basic Network Device Configuration",
+        "description": "Create a tool that simplifies the configuration of network devices like routers or switches. Enable users to configure settings like IP addresses, VLANs, or access control lists (ACLs).",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Basic Wi-Fi Analyzer",
+        "description": "Develop a Wi-Fi analyzer tool that scans nearby wireless networks, displays their signal strength, channels, and security settings. Assist users in optimizing their Wi-Fi network performance and security.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Data Backup Tool",
+        "description": "Create a tool that automates the secure backup of important files or directories. Implement encryption and compression techniques to ensure data integrity and confidentiality during the backup process.",
+        "level": "Beginner",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Network Traffic Analyzer with Intrusion Detection",
+        "description": "Develop a network traffic analyzer tool that not only captures and analyzes network packets but also includes intrusion detection capabilities. Identify and raise alerts for suspicious activities or potential attacks.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Web Application Development",
+        "description": "Build a web application with a focus on security. Implement secure coding practices, input validation, authentication mechanisms, and protection against common web vulnerabilities like cross-site scripting (XSS) and SQL injection.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Cyber Threat Intelligence Tool",
+        "description": "Create a tool that collects, analyzes, and presents cyber threat intelligence from various sources. Gather information about known threats, vulnerabilities, and indicators of compromise to aid in proactive defense.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Network Access Control System",
+        "description": "Design a network access control (NAC) system that enforces security policies and controls access to network resources based on factors like user identity, device health, and compliance with security requirements.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Code Review Tool",
+        "description": "Develop a tool that automates the process of reviewing source code for security vulnerabilities. Perform static code analysis, identify potential security weaknesses, and provide actionable recommendations.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Virtual Private Network (VPN) with Multi-factor Authentication",
+        "description": "Enhance a VPN solution by adding multi-factor authentication (MFA) mechanisms. Implement an additional layer of security to verify user identities using methods like one-time passwords or biometrics.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Mobile Application Development",
+        "description": "Build a mobile application with a strong focus on security. Implement secure data storage, secure communication protocols, and protection against mobile-specific threats like reverse engineering or tampering.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Security Information and Event Management (SIEM) System",
+        "description": "Create a SIEM system that aggregates and analyzes security event logs from various sources. Provide real-time monitoring, threat detection, and log correlation capabilities for comprehensive security management.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Wireless Network Penetration Testing",
+        "description": "Conduct a penetration test on a wireless network to identify vulnerabilities and assess its security posture. Perform attacks like unauthorized access, packet sniffing, or deauthentication to uncover weaknesses.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Web Application Firewall (WAF) Implementation",
+        "description": "Implement a web application firewall (WAF) to protect web applications from common attacks like SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF). Configure rules and analyze traffic for potential threats.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Digital Forensics Investigation Tool",
+        "description": "Develop a digital forensics tool that assists in the investigation and analysis of digital evidence. Provide functionalities for file recovery, metadata analysis, timeline reconstruction, and reporting.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Intrusion Prevention System (IPS)",
+        "description": "Design and implement an intrusion prevention system (IPS) that actively monitors network traffic and takes action to block or prevent malicious activities. Utilize techniques like signature-based detection and behavior analysis.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Remote Access Solution",
+        "description": "Build a secure remote access solution that enables users to connect to a network or system remotely. Implement secure authentication, encryption, and access controls to ensure secure remote communication.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Vulnerability Management System",
+        "description": "Create a vulnerability management system that scans networks or systems for vulnerabilities, prioritizes them based on severity, and provides recommendations for remediation. Include features like vulnerability tracking and reporting.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Security Awareness Training Platform",
+        "description": "Develop an online platform for security awareness training. Provide interactive modules, quizzes, and simulations to educate users about common security threats, best practices, and how to identify phishing attempts.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Cloud Infrastructure Configuration",
+        "description": "Configure a secure cloud infrastructure on platforms like AWS, Azure, or Google Cloud. Implement security groups, access controls, encryption, and monitoring to protect cloud resources and data.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Honeypot Deployment and Analysis",
+        "description": "Set up a honeypot system to lure potential attackers and gather information about their techniques and intentions. Analyze captured data to understand emerging threats and enhance security measures.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Internet of Things (IoT) Device Configuration",
+        "description": "Configure and secure Internet of Things (IoT) devices to protect them from potential attacks. Implement secure communication protocols, access controls, and device management mechanisms.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Network Traffic Encryption using Virtual Private Networks (VPNs)",
+        "description": "Implement network traffic encryption by setting up VPN connections between different network segments or devices. Ensure secure communication and data confidentiality over potentially insecure networks.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Software Development Lifecycle (SDLC) Implementation",
+        "description": "Establish and implement a secure software development lifecycle (SDLC) process within an organization. Integrate security practices at every stage, from requirements gathering to deployment, to ensure secure software delivery.",
+        "level": "Intermediate",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Advanced Malware Analysis Sandbox",
+        "description": "Build an Advanced malware analysis sandbox that allows dynamic analysis of malicious software. Execute malware in a controlled environment, monitor its behavior, and analyze its impact on the system.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Threat Hunting Platform",
+        "description": "Create a threat hunting platform that combines log analysis, threat intelligence, and machine learning algorithms to proactively detect and respond to Advanced persistent threats (APTs) and other sophisticated attacks.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Blockchain-based Security Solution",
+        "description": "Develop a security solution that utilizes blockchain technology for secure storage, authentication, and verification of data. Leverage smart contracts to enforce access controls and ensure data integrity.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Advanced Network Forensics",
+        "description": "Build an Advanced network forensics system that captures and analyzes network traffic to reconstruct events and identify the source of an attack. Use Advanced techniques like deep packet inspection and behavior analysis.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Red Team Operations Framework",
+        "description": "Create a comprehensive framework for conducting red team operations. Define methodologies, tools, and techniques for simulating real-world attacks and assessing the effectiveness of defensive measures.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Biometric Authentication System",
+        "description": "Develop a biometric authentication system that uses techniques like fingerprint recognition, facial recognition, or iris scanning for secure and convenient user authentication. Implement accuracy and anti-spoofing measures.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Industrial Control Systems",
+        "description": "Design and implement security measures for industrial control systems (ICS) like SCADA or PLCs. Address vulnerabilities, implement access controls, and monitor for anomalous activities that could impact critical infrastructure.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Software-Defined Networking (SDN) Security",
+        "description": "Explore security challenges in software-defined networking (SDN) environments and develop techniques to protect SDN infrastructure and applications. Address issues like controller security, network virtualization, and flow security.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Zero Trust Network Architecture",
+        "description": "Implement a zero trust network architecture that assumes no implicit trust, even for internal network traffic. Utilize micro-segmentation, strong authentication, and continuous monitoring to enhance network security.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Automated Vulnerability Exploitation",
+        "description": "Develop a tool or framework that automates the process of vulnerability exploitation. Explore techniques like fuzzing, buffer overflow exploits, or web application vulnerabilities to identify and exploit security weaknesses.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Advanced Intrusion Detection System (IDS)",
+        "description": "Design and implement an Advanced intrusion detection system (IDS) that utilizes machine learning algorithms, anomaly detection, or behavior analysis to detect and respond to sophisticated attacks.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Cloud-native Application Development",
+        "description": "Build cloud-native applications with a strong focus on security. Implement containerization, orchestration, and secure deployment practices to ensure the confidentiality, integrity, and availability of cloud-based services.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Machine Learning for Threat Intelligence",
+        "description": "Develop machine learning models and algorithms to analyze large-scale threat intelligence data. Detect patterns, correlations, and emerging threats to enhance proactive defense and threat hunting capabilities.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Advanced Wireless Security",
+        "description": "Research and develop Advanced techniques to secure wireless networks, including Wi-Fi, Bluetooth, or Zigbee. Address security challenges like key management, authentication protocols, and secure communication.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Security Orchestration, Automation, and Response (SOAR) System",
+        "description": "Build a security orchestration, automation, and response (SOAR) system that integrates security tools, automates incident response processes, and provides centralized incident management and reporting.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Privacy-Preserving Data Analysis",
+        "description": "Develop techniques for performing privacy-preserving data analysis. Explore methods like secure multiparty computation, differential privacy, or homomorphic encryption to enable secure data sharing and analysis.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Internet Routing",
+        "description": "Design and implement security measures to protect internet routing protocols like BGP (Border Gateway Protocol). Address threats like route hijacking, IP spoofing, and distributed denial-of-service (DDoS) attacks.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Quantum Communication",
+        "description": "Explore quantum cryptography and develop secure communication protocols that utilize quantum key distribution (QKD) or quantum-resistant algorithms. Address challenges like key distribution and quantum network security.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Post-Exploitation Framework",
+        "description": "Build a post-exploitation framework that aids in the exploration and exploitation of compromised systems. Provide functionalities like privilege escalation, lateral movement, persistence, and data exfiltration.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    },
+    {
+        "name": "Secure Hardware Design",
+        "description": "Research and develop techniques for secure hardware design. Explore topics like hardware trojans, side-channel attacks, secure bootstrapping, and hardware-based root of trust.",
+        "level": "Advanced",
+        "specialisation": "CS"
+    }
+]

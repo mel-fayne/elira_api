@@ -1,0 +1,362 @@
+[
+    {
+        "name": "Personal Website",
+        "description": "Create a personal website to showcase your skills, projects, and resume. You can use HTML, CSS, and JavaScript to build an attractive and responsive website.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "To-Do List Application",
+        "description": "Build a simple to-do list application that allows users to add, update, and delete tasks. You can use a programming language like Python or JavaScript for the backend and HTML/CSS for the frontend.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Calculator",
+        "description": "Develop a basic calculator application that can perform arithmetic operations like addition, subtraction, multiplication, and division. You can create a graphical user interface (GUI) using a framework like JavaFX or Tkinter.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Simple Text Editor",
+        "description": "Create a basic text editor application that allows users to create, edit, and save text files. You can use a programming language like Java or C# for building the application.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Temperature Converter",
+        "description": "Build a temperature converter application that converts temperatures between Celsius, Fahrenheit, and Kelvin. You can create a user-friendly interface using a web framework like Flask or Django.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Simple Blogging Platform",
+        "description": "Develop a simple blogging platform where users can create accounts, write blog posts, and publish them. You can use a web framework like Ruby on Rails or Laravel for building the platform.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Currency Converter",
+        "description": "Create a currency converter application that converts currencies based on the latest exchange rates. You can use an API to fetch exchange rate data and build the application using a programming language of your choice.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Quiz Application",
+        "description": "Build a quiz application that presents users with multiple-choice questions and provides instant feedback on their answers. You can use HTML, CSS, and JavaScript to create the frontend, and a server-side language for the backend.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Library Management System",
+        "description": "Develop a library management system that allows librarians to manage books, borrowers, and transactions. You can use a programming language like Java or C# and a database management system like MySQL or SQLite.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Recipe Finder",
+        "description": "Create a recipe finder application that allows users to search for recipes based on ingredients or keywords. You can use a web framework like Express.js or Flask for building the application.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Address Book",
+        "description": "Build a simple address book application that allows users to store and manage contact information. You can use a programming language like Python or C++ for implementing the functionality.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Guess the Number Game",
+        "description": "Develop a guess the number game where the computer generates a random number and the player tries to guess it within a certain number of attempts. You can implement the game logic using a programming language of your choice.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "File Encryption/Decryption Tool",
+        "description": "Create a file encryption and decryption tool that allows users to encrypt and decrypt files using a password-based encryption algorithm. You can use a programming language with encryption libraries, such as Python or Java.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "BMI Calculator",
+        "description": "Build a body mass index (BMI) calculator that calculates BMI based on a person's height and weight. You can create a simple GUI using a framework like PyQt or Tkinter.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Student Grade Tracker",
+        "description": "Develop a student grade tracker application that allows teachers or students to enter and track grades for different subjects. You can use a web framework like Ruby on Rails or Django for building the application.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Weather Application",
+        "description": "Create a weather application that fetches and displays weather information for a given location. You can use an API like OpenWeatherMap or WeatherAPI to retrieve weather data.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Image Gallery",
+        "description": "Build an image gallery application that displays a collection of images with features like image upload, categorization, and search. You can use a web framework like Flask or Express.js for building the application.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Bank Account Management",
+        "description": "Develop a bank account management system that allows users to create accounts, deposit/withdraw money, and view transaction history. You can use a programming language like Java or C# for implementing the system.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Online Marketplace",
+        "description": "Create a simple online marketplace where users can buy and sell products. You can use a web framework like Ruby on Rails or Laravel and a database management system to build the platform.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Hangman Game",
+        "description": "Build a classic hangman game where players guess letters to complete a hidden word within a certain number of attempts. You can implement the game logic using a programming language of your choice.",
+        "level": "Beginner",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Blog CMS",
+        "description": "Develop a content management system (CMS) for blogging that allows users to create, edit, and publish blog posts. Implement features like user authentication, rich text editing, and comment functionality.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "E-commerce Website",
+        "description": "Build an e-commerce website where users can browse products, add items to a shopping cart, and complete the purchase. Implement features like user authentication, product search, and payment integration.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Task Management Application",
+        "description": "Create a task management application that allows users to create, assign, and track tasks. Implement features like task filtering, priority settings, and notifications.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Social Media Dashboard",
+        "description": "Develop a social media dashboard that aggregates and displays data from multiple social media platforms, such as user analytics, post engagements, and follower growth.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Online Booking System",
+        "description": "Build an online booking system for services like appointments, reservations, or ticket bookings. Implement features like availability calendars, time slots, and confirmation notifications.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Inventory Management System",
+        "description": "Create an inventory management system that tracks and manages stock levels, orders, and shipments. Implement features like product categorization, barcode scanning, and reporting.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Fitness Tracker",
+        "description": "Develop a fitness tracker application that allows users to track their physical activities, set goals, and monitor progress. Implement features like workout logging, data visualization, and goal tracking.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Discussion Forum",
+        "description": "Build a discussion forum where users can create topics, post messages, and engage in discussions. Implement features like user profiles, topic categorization, and comment threading.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Expense Tracker",
+        "description": "Create an expense tracker application that allows users to log and categorize their expenses, set budgets, and generate reports. Implement features like expense categorization, budget alerts, and data visualization.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Recipe Sharing Platform",
+        "description": "Develop a recipe sharing platform where users can share and discover new recipes. Implement features like recipe uploading, search functionality, and user ratings/reviews.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "File Sharing Application",
+        "description": "Build a file sharing application that allows users to upload, share, and download files. Implement features like file encryption, access control, and file versioning.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Appointment Scheduler",
+        "description": "Create an appointment scheduling system for businesses or professionals. Implement features like calendar integration, automated reminders, and availability management.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Project Management Tool",
+        "description": "Develop a project management tool that helps teams plan, track, and collaborate on projects. Implement features like task boards, progress tracking, and team communication.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Job Board",
+        "description": "Build a job board platform where employers can post job listings and job seekers can search and apply for jobs. Implement features like job search filters, application tracking, and user profiles.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Music Player",
+        "description": "Create a music player application that allows users to organize and play their music collection. Implement features like playlist management, audio visualization, and media controls.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Online Learning Platform",
+        "description": "Develop an online learning platform where instructors can create courses and students can enroll and access course materials. Implement features like video lectures, quizzes, and progress tracking.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Event Management System",
+        "description": "Build an event management system that allows organizers to create and manage events, and attendees to register and receive event updates. Implement features like event calendars, ticketing, and notifications.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Weather Forecast Application",
+        "description": "Create a weather forecast application that provides detailed weather information for different locations. Implement features like current weather, hourly forecasts, and weather alerts.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Travel Planner",
+        "description": "Develop a travel planner application that helps users plan their trips, including itinerary creation, destination recommendations, and budget tracking.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Messaging App",
+        "description": "Build a messaging application that allows users to send and receive messages in real-time. Implement features like user authentication, chat rooms, and message notifications.",
+        "level": "Intermediate",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Machine Learning Platform",
+        "description": "Build a platform that enables users to develop, train, and deploy machine learning models. Implement features like data preprocessing, model selection, and scalable model deployment.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Virtual Reality Game",
+        "description": "Develop a virtual reality game that provides an immersive gaming experience. Utilize frameworks like Unity or Unreal Engine and incorporate features like interactive environments and realistic physics.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Automated Testing Framework",
+        "description": "Create an automated testing framework that streamlines the testing process for software applications. Implement features like test case management, test script generation, and test result analysis.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Blockchain-based Application",
+        "description": "Build a decentralized application (DApp) utilizing blockchain technology. Implement features like smart contracts, transaction verification, and decentralized storage.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Natural Language Processing (NLP) System",
+        "description": "Develop an NLP system that can process and understand human language. Implement features like sentiment analysis, named entity recognition, and text summarization.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Recommendation Engine",
+        "description": "Create a recommendation engine that provides personalized recommendations based on user preferences and behavior. Implement algorithms like collaborative filtering or content-based filtering.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "High-Performance Computing Application",
+        "description": "Build an application that leverages parallel computing and distributed systems for high-performance tasks. Implement features like load balancing, fault tolerance, and efficient resource utilization.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Augmented Reality App",
+        "description": "Develop an augmented reality application that overlays digital content onto the real world. Utilize frameworks like ARKit or ARCore and incorporate features like object recognition and tracking.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Cloud-Based SaaS Application",
+        "description": "Create a cloud-based Software-as-a-Service (SaaS) application that provides scalable and on-demand services to users. Implement features like multi-tenancy, user management, and payment integration.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Automated Code Review Tool",
+        "description": "Build an automated code review tool that analyzes code quality, identifies potential issues, and provides actionable suggestions for improvement. Utilize static code analysis techniques and coding standards.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Deep Learning Chatbot",
+        "description": "Develop a chatbot that utilizes deep learning techniques for natural language understanding and generation. Implement features like context-aware responses and dialog management.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Robotic Process Automation (RPA) Tool",
+        "description": "Create an RPA tool that automates repetitive tasks in business processes. Implement features like task automation, process scheduling, and integration with existing software systems.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Data Visualization Dashboard",
+        "description": "Build a data visualization dashboard that enables users to explore and analyze complex datasets. Implement features like interactive charts, filters, and drill-down capabilities.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Cloud Infrastructure Management Tool",
+        "description": "Develop a tool that simplifies the management of cloud infrastructure across multiple cloud providers. Implement features like provisioning, scaling, and monitoring of cloud resources.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Autonomous Drone System",
+        "description": "Create an autonomous drone system that can perform tasks like aerial mapping, surveillance, or package delivery. Implement features like obstacle avoidance, path planning, and remote control.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Cybersecurity Incident Response Platform",
+        "description": "Build a platform that helps organizations respond to and manage cybersecurity incidents. Implement features like incident detection, analysis, and automated response workflows.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Image Recognition System",
+        "description": "Develop an image recognition system that can identify and classify objects or patterns within images. Implement machine learning algorithms like convolutional neural networks (CNNs).",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Quantum Computing Simulation",
+        "description": "Create a quantum computing simulation tool that allows users to experiment with quantum algorithms and simulate quantum systems. Implement features like quantum circuit modeling and visualization.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Autonomous Vehicle Control System",
+        "description": "Build a control system for autonomous vehicles that can navigate and interact with the environment. Implement features like sensor fusion, path planning, and real-time control algorithms.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    },
+    {
+        "name": "Healthcare Management System",
+        "description": "Develop a comprehensive healthcare management system that integrates patient records, appointment scheduling, billing, and medical data analysis. Implement features like HL7 integration and compliance with healthcare standards.",
+        "level": "Advanced",
+        "specialisation": "SD"
+    }
+]

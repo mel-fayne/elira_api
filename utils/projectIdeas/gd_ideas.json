@@ -1,0 +1,362 @@
+[
+    {
+        "name": "Logo Design for a Coffee Shop",
+        "description": "Create a logo for a coffee shop that captures the essence of the brand and appeals to the target audience. Consider elements like typography, color scheme, and symbolism.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Website Redesign for a Local Business",
+        "description": "Redesign the website of a local business to improve its user experience and visual appeal. Focus on organizing content, choosing suitable fonts and colors, and creating a responsive layout.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Mobile App Wireframing",
+        "description": "Create wireframes for a mobile app that outline the structure and layout of its screens. Consider user flow, placement of elements, and navigation patterns to ensure a seamless user experience.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Social Media Post Design",
+        "description": "Design engaging and visually appealing social media posts for a brand's social media platforms. Experiment with different layouts, typography, and imagery to capture attention and convey the brand message.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Infographic Creation",
+        "description": "Design an infographic that presents complex information or data in a visually appealing and easy-to-understand manner. Use icons, charts, and illustrations to enhance comprehension.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Product Packaging Design",
+        "description": "Design eye-catching and informative packaging for a product. Consider the target market, product specifications, and branding guidelines to create a packaging design that stands out on the shelves.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Website Banner Design",
+        "description": "Create visually appealing and attention-grabbing website banners for a specific campaign or promotion. Incorporate compelling visuals, clear messaging, and effective call-to-action buttons.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Typography Poster Design",
+        "description": "Design a typographic poster that showcases a quote or a message. Experiment with different font combinations, hierarchy, and layout to create an aesthetically pleasing composition.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Website Icon Set",
+        "description": "Create a set of cohesive icons for a website that align with the website's design style and purpose. Ensure consistency in size, style, and visual representation across the icon set.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "T-shirt Design",
+        "description": "Design an attractive and impactful graphic for a t-shirt. Consider the target audience, the brand or message to be conveyed, and create a design that is visually appealing when worn.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Email Newsletter Template",
+        "description": "Design an email newsletter template that is visually appealing, responsive, and easy to read. Consider the brand guidelines, use of imagery, and hierarchy of content to create an engaging template.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Business Card Design",
+        "description": "Design a professional and visually striking business card for an individual or a company. Consider the use of typography, color, and layout to create a memorable and impactful design.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Website Color Scheme Exploration",
+        "description": "Explore different color schemes for a website design. Create variations and combinations to find a suitable color palette that aligns with the brand and evokes the desired emotions.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "User Persona Creation",
+        "description": "Create user personas that represent different target audience segments for a product or service. Consider demographics, motivations, and pain points to develop realistic and relatable personas.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Social Media Profile Design",
+        "description": "Design visually consistent and attractive profile banners and avatars for a brand's social media profiles. Ensure the design elements align with the brand identity and evoke a positive impression.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Presentation Slide Design",
+        "description": "Design visually appealing and impactful slides for a presentation. Incorporate effective use of imagery, typography, and hierarchy to enhance the clarity and engagement of the presentation.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Digital Art Illustration",
+        "description": "Create a digital art illustration that showcases your creativity and storytelling ability. Experiment with different styles, colors, and techniques to produce a visually captivating piece.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Web Banner Ad Design",
+        "description": "Design eye-catching and effective web banner ads for online advertising campaigns. Consider the ad dimensions, placement, and call-to-action to create engaging designs that drive clicks.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "UI Design for a Mobile App",
+        "description": "Design the user interface (UI) for a mobile app, focusing on creating intuitive and visually appealing screens. Consider usability, navigation, and consistent branding throughout the app.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Book Cover Design",
+        "description": "Design a captivating and visually striking book cover. Consider the genre, target audience, and book synopsis to create a design that entices readers and reflects the essence of the book.",
+        "level": "Beginner",
+        "specialisation": "GD"
+    },
+    {
+        "name": "E-commerce Website Redesign",
+        "description": "Redesign the user interface (UI) and user experience (UX) of an e-commerce website to improve its usability, conversion rate, and overall visual appeal. Focus on optimizing product browsing, checkout process, and mobile responsiveness.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Mobile App UI/UX Redesign",
+        "description": "Revamp the UI and UX of a mobile app to enhance its usability, user engagement, and brand consistency. Conduct user research, improve navigation flows, and create a visually cohesive interface.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Responsive Web Design for a Blog",
+        "description": "Design a responsive and visually appealing layout for a blog website. Focus on creating an optimal reading experience across different devices, implementing intuitive navigation, and optimizing typography.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "UI Style Guide Creation",
+        "description": "Develop a comprehensive UI style guide for a brand or a product. Define guidelines for typography, colors, button styles, form elements, and other UI components to ensure visual consistency.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Dashboard Design for Analytics Platform",
+        "description": "Design an intuitive and visually appealing dashboard for an analytics platform. Focus on data visualization, user-friendly filters, and providing actionable insights through clear and concise presentation of information.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Game User Interface (UI) Design",
+        "description": "Design the user interface (UI) for a game, including menus, HUD elements, and interactive components. Create a visually engaging and intuitive interface that enhances the overall gaming experience.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Icon Design for a Mobile App",
+        "description": "Create a set of cohesive and visually appealing icons for a mobile app. Ensure consistency in style, size, and visual representation, and consider the app's overall branding and user interface.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Branding and Identity Design for a Startup",
+        "description": "Develop a comprehensive branding and identity package for a startup, including logo design, color palette, typography, and brand guidelines. Create a visual identity that communicates the startup's values and differentiates it from competitors.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "User Onboarding Redesign",
+        "description": "Redesign the user onboarding process of a web or mobile app to improve user engagement and decrease abandonment rates. Streamline the onboarding flow, provide clear instructions, and highlight the app's value proposition.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "UI/UX Audit and Improvement",
+        "description": "Conduct a thorough audit of the user interface (UI) and user experience (UX) of an existing website or application. Identify areas for improvement, usability issues, and propose solutions to enhance the overall experience.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Magazine Layout Design",
+        "description": "Design a visually appealing and well-organized layout for a magazine. Experiment with grid systems, typography, imagery, and create a balanced composition that enhances readability and visual interest.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "UI Design for a SaaS Dashboard",
+        "description": "Design the user interface (UI) for a software-as-a-service (SaaS) dashboard. Focus on creating a clean and intuitive interface that allows users to manage their account, access data, and perform key actions.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Interactive Prototype for a Mobile App",
+        "description": "Create an interactive prototype for a mobile app using design tools like Figma or Adobe XD. Showcase key app screens, user interactions, and simulate the user experience to gather feedback and validate the design.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "UI/UX Design for a Web Application",
+        "description": "Design the user interface (UI) and user experience (UX) for a web application. Consider usability, navigation, information architecture, and create a visually appealing and intuitive interface.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Print Advertisement Design",
+        "description": "Design a visually compelling print advertisement for a product or service. Consider the target audience, brand guidelines, and create an eye-catching design that effectively communicates the key message.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Responsive Email Template Design",
+        "description": "Design a responsive email template that adapts to different devices and email clients. Focus on readability, hierarchy of content, and clear call-to-action buttons to optimize engagement and conversions.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "User Flow Optimization",
+        "description": "Analyze and optimize the user flow of a website or app to improve usability and conversion rates. Identify areas of friction, simplify steps, and enhance the overall user experience.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "UI Design for a Landing Page",
+        "description": "Design the user interface (UI) for a landing page that effectively communicates the value proposition and encourages conversions. Focus on creating a visually appealing layout, clear messaging, and persuasive call-to-action elements.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Packaging Design for a Food Product",
+        "description": "Design attractive and informative packaging for a food product. Consider the target market, packaging materials, labeling requirements, and create a design that stands out on store shelves.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "UI/UX Design for a Health & Wellness App",
+        "description": "Design the user interface (UI) and user experience (UX) for a health and wellness mobile app. Create a visually pleasing and intuitive interface that encourages users to engage with the app's features and achieve their health goals.",
+        "level": "Intermediate",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Augmented Reality (AR) Interface Design",
+        "description": "Design a user interface (UI) for an augmented reality (AR) application. Consider the unique challenges of AR, such as spatial awareness, interactive elements, and seamless integration with the real world.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Virtual Reality (VR) Experience Design",
+        "description": "Design a captivating and immersive virtual reality (VR) experience. Create a visually stunning environment, design intuitive user interactions, and consider the user's comfort and engagement within the virtual space.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Data Visualization Dashboard Design",
+        "description": "Design a comprehensive data visualization dashboard that allows users to explore and analyze complex data sets. Consider the best practices for data visualization, interactivity, and providing meaningful insights.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Interactive Storytelling Experience",
+        "description": "Create an interactive storytelling experience using a combination of visuals, animations, and user interactions. Design an engaging narrative flow that captivates users and encourages exploration.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "User-Centered Design for Accessibility",
+        "description": "Design a user interface (UI) and user experience (UX) that caters to users with disabilities, ensuring inclusivity and accessibility. Consider accessibility guidelines, assistive technologies, and usability for all users.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Multilingual User Interface (UI) Design",
+        "description": "Design a user interface (UI) that supports multiple languages and cultures. Consider the challenges of typography, layout adjustments, and localization while maintaining a consistent and intuitive interface.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Experimental Typography Design",
+        "description": "Push the boundaries of typography design by experimenting with innovative and expressive typefaces, layouts, and visual treatments. Create unique compositions that challenge traditional typographic conventions.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "UX Research and Usability Testing",
+        "description": "Plan and conduct extensive user research and usability testing to evaluate and improve the user experience (UX) of a digital product. Gather valuable insights, identify pain points, and propose effective design solutions.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Mobile App Gamification Design",
+        "description": "Design a mobile app that incorporates gamification elements to engage and motivate users. Create a system of rewards, challenges, and achievements that enhances user retention and encourages desired behaviors.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Brand Identity System Design",
+        "description": "Develop a comprehensive brand identity system that includes logo design, typography, color palette, visual guidelines, and application examples. Ensure consistency and coherence across various brand touchpoints.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Interactive Web Animation",
+        "description": "Create interactive web animations using CSS, JavaScript, or animation tools like Adobe Animate. Design engaging and seamless animations that enhance the user experience and provide visual delight.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Design System Implementation",
+        "description": "Develop and implement a design system for a large-scale web or mobile application. Define design principles, UI components, and create a centralized resource that ensures consistency and efficiency in the design process.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Visual Brand Language Design",
+        "description": "Create a visual brand language that encompasses all visual elements, including logos, typography, colors, imagery, and design elements. Establish a cohesive and distinctive visual identity for a brand.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Motion Graphics for Video Production",
+        "description": "Design and create motion graphics for video production. Use animation, visual effects, and storytelling techniques to enhance the video content and create engaging and visually stunning visual experiences.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "User-Centric Design for Internet of Things (IoT)",
+        "description": "Design user interfaces (UI) and experiences (UX) for Internet of Things (IoT) devices, considering the unique challenges of connected devices and creating intuitive and seamless interactions for users.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Experimental User Interface (UI) Design",
+        "description": "Challenge traditional user interface (UI) design conventions by creating experimental and innovative interfaces. Explore unconventional interaction patterns, visual treatments, and unique ways of presenting information.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Design for Voice User Interfaces (VUI)",
+        "description": "Design intuitive and effective voice user interfaces (VUI) for voice-controlled devices and applications. Consider natural language processing, conversation flows, and context-aware interactions.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Generative Art and Design",
+        "description": "Explore generative art and design by creating algorithms and systems that generate visual compositions. Experiment with code, randomness, and parameters to create unique and evolving visual experiences.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "Design for Virtual Assistants",
+        "description": "Design conversational interfaces and user experiences for virtual assistants like chatbots and voice-activated assistants. Create intuitive dialog flows, error handling, and personalized interactions.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    },
+    {
+        "name": "User Experience (UX) Optimization for Conversion",
+        "description": "Optimize the user experience (UX) of a website or application to increase conversion rates. Use A/B testing, user research, and data analysis to identify and implement design changes that drive higher conversions.",
+        "level": "Advanced",
+        "specialisation": "GD"
+    }
+]

@@ -1,0 +1,362 @@
+[
+    {
+        "name": "Library Management System",
+        "description": "Develop a database-driven system for managing library operations, including book cataloging, member management, and borrowing/returning books. Implement search functionalities and generate reports for efficient library management.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Student Information System",
+        "description": "Create a database system to store and manage student information, including personal details, courses, grades, and attendance records. Develop user-friendly interfaces for data entry and retrieval.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Online Store Database",
+        "description": "Design a database schema for an online store, including products, customers, orders, and inventory management. Implement functionality for adding products, processing orders, and tracking stock levels.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Employee Attendance Tracker",
+        "description": "Build a database system to track employee attendance, including clock-in/out times, leave requests, and time-off balances. Generate reports to monitor attendance patterns and calculate payroll.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Recipe Management System",
+        "description": "Develop a database-driven system for managing recipes, ingredients, and meal planning. Allow users to search for recipes, create shopping lists, and save favorite recipes for future reference.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Inventory Management System",
+        "description": "Create a database system to track inventory levels, manage stock replenishment, and generate reports on inventory status. Implement functionalities for adding/removing items and monitoring stock levels.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Event Management System",
+        "description": "Design a database-driven system for managing events, including event details, attendees, and scheduling. Enable functionalities for event registration, attendee management, and event coordination.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Task Management System",
+        "description": "Build a database system for managing tasks and to-do lists. Allow users to create tasks, set due dates, assign priorities, and track task completion.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Product Catalog Management",
+        "description": "Develop a database system to manage a product catalog, including product details, categories, and pricing information. Implement search functionalities and enable product updates and additions.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Customer Relationship Management (CRM) System",
+        "description": "Design a database-driven CRM system to manage customer information, interactions, and sales leads. Implement functionalities for customer data entry, sales tracking, and communication logs.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Music Library Management",
+        "description": "Create a database system to manage a music library, including albums, artists, and song details. Implement search functionalities and enable features like playlist creation and music recommendations.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Fitness Tracker Database",
+        "description": "Build a database system to store and track fitness-related data, including user profiles, workouts, and progress. Implement functionalities for data entry, goal setting, and performance tracking.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Content Management System (CMS)",
+        "description": "Develop a database-driven CMS for managing website content, including pages, posts, and media files. Implement features like user authentication, content editing, and version control.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Movie Database",
+        "description": "Design a database system to manage a movie collection, including movie details, genres, and ratings. Implement search functionalities and enable features like movie recommendations and user reviews.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Issue Tracking System",
+        "description": "Create a database-driven system for tracking and managing software issues. Allow users to submit bug reports, assign issues to developers, and track issue resolution status.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Customer Support Ticketing System",
+        "description": "Build a database system for managing customer support tickets, including ticket details, customer information, and support agent assignments. Implement functionalities for ticket status tracking and communication logs.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Bank Account Management System",
+        "description": "Develop a database system to manage bank accounts, including account details, transactions, and balances. Implement functionalities for account creation, fund transfers, and transaction history.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Online Survey System",
+        "description": "Design a database-driven system for creating and managing online surveys. Allow users to create surveys, collect responses, and generate reports based on survey results.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Flight Booking System",
+        "description": "Create a database system to manage flight bookings, including flight details, passenger information, and reservations. Implement functionalities for flight search, booking, and ticket generation.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "Job Application Tracking System",
+        "description": "Build a database-driven system for managing job applications, including applicant details, job postings, and application status. Implement functionalities for application submission, review, and interview scheduling.",
+        "level": "Beginner",
+        "specialisation": "DA"
+    },
+    {
+        "name": "E-commerce Order Management System",
+        "description": "Build a database-driven system for managing e-commerce orders, including order processing, inventory management, and shipping. Implement functionalities for order tracking, stock updates, and customer notifications.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Hotel Reservation System",
+        "description": "Develop a database system to manage hotel reservations, including room availability, booking management, and guest information. Implement functionalities for online booking, reservation modification, and billing.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Social Media Analytics Platform",
+        "description": "Design a database-driven analytics platform for social media data, including user profiles, posts, and engagement metrics. Implement functionalities for data collection, analysis, and visualization.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Warehouse Management System",
+        "description": "Create a database system for managing warehouse operations, including inventory tracking, order fulfillment, and logistics. Implement functionalities for inventory optimization, shipment tracking, and reporting.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Online Learning Management System",
+        "description": "Build a database-driven system for managing online learning courses, including course enrollment, progress tracking, and assessments. Implement functionalities for course content management, student interactions, and grading.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Appointment Scheduling System",
+        "description": "Develop a database system to manage appointments and scheduling, such as doctor appointments, salon bookings, or service appointments. Implement functionalities for appointment booking, reminders, and calendar integration.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Vehicle Rental Management System",
+        "description": "Design a database system for managing vehicle rentals, including vehicle inventory, reservations, and customer information. Implement functionalities for vehicle availability tracking, rental duration management, and billing.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Online Auction System",
+        "description": "Build a database-driven system for conducting online auctions, including item listings, bidding management, and transaction processing. Implement functionalities for bid tracking, auction timers, and winning notifications.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Project Management Tool",
+        "description": "Create a database system to manage projects, including task tracking, team collaboration, and progress monitoring. Implement functionalities for task assignment, milestone tracking, and project status reporting.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Healthcare Appointment Reminder System",
+        "description": "Develop a database-driven system for managing healthcare appointments, including patient details, appointment scheduling, and reminders. Implement functionalities for appointment notifications, rescheduling, and patient history tracking.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Restaurant Ordering and Inventory System",
+        "description": "Build a database system to manage restaurant orders, inventory, and ingredient tracking. Implement functionalities for order processing, stock management, and recipe cost calculation.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "CRM Analytics Dashboard",
+        "description": "Design a database-driven analytics dashboard for a customer relationship management (CRM) system. Implement functionalities for visualizing customer data, sales performance, and marketing insights.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Issue Escalation System",
+        "description": "Create a database system to manage and escalate issues based on predefined rules and priorities. Implement functionalities for issue tracking, automated escalation notifications, and resolution management.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Asset Tracking System",
+        "description": "Develop a database-driven system for tracking and managing company assets, including equipment, software licenses, and maintenance schedules. Implement functionalities for asset registration, location tracking, and maintenance history.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Online Job Portal",
+        "description": "Build a database system to facilitate job search and recruitment processes. Implement functionalities for job posting, resume management, applicant tracking, and job recommendations.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Customer Feedback Management System",
+        "description": "Design a database system for collecting, managing, and analyzing customer feedback. Implement functionalities for feedback submission, sentiment analysis, and reporting.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "School Management System",
+        "description": "Create a database system to manage school operations, including student records, class schedules, and attendance. Implement functionalities for enrollment, grading, and communication with parents.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Content Recommendation Engine",
+        "description": "Develop a database-driven recommendation engine that suggests personalized content based on user preferences and behavior. Implement functionalities for content categorization, user profiling, and recommendation algorithms.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Employee Performance Evaluation System",
+        "description": "Build a database system to track and evaluate employee performance, including goal setting, performance reviews, and feedback collection. Implement functionalities for performance appraisal, goal alignment, and reporting.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Online Event Registration System",
+        "description": "Design a database-driven system for managing online event registrations, including event details, attendee information, and ticketing. Implement functionalities for registration processing, ticket generation, and event reminders.",
+        "level": "intermediate",
+        "specialization": "DA"
+    },
+    {
+        "name": "Real-Time Stock Market Analysis Platform",
+        "description": "Build a real-time database-driven platform for analyzing stock market data, including market trends, stock prices, and trading volumes. Implement functionalities for data streaming, real-time analytics, and trading strategy backtesting.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Predictive Maintenance System",
+        "description": "Develop a database-driven system for predicting equipment failures and optimizing maintenance schedules. Implement functionalities for data collection, predictive modeling, and maintenance recommendation generation.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Fraud Detection System",
+        "description": "Design a database system for detecting fraudulent activities in financial transactions. Implement functionalities for data integration, anomaly detection, and fraud pattern recognition.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Healthcare Data Integration and Analytics Platform",
+        "description": "Create a database-driven platform for integrating and analyzing healthcare data from various sources, including electronic health records, medical devices, and wearables. Implement functionalities for data interoperability, advanced analytics, and patient insights.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Supply Chain Optimization System",
+        "description": "Build a database system for optimizing supply chain operations, including inventory management, demand forecasting, and logistics optimization. Implement functionalities for data-driven decision-making, supply chain simulation, and performance monitoring.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Personalized Recommender System",
+        "description": "Develop a database-driven personalized recommender system that suggests products, services, or content based on individual user preferences and behavior. Implement advanced recommendation algorithms, such as collaborative filtering or content-based filtering.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Smart Energy Management System",
+        "description": "Design a database system for managing and optimizing energy consumption in buildings or industrial facilities. Implement functionalities for real-time energy monitoring, demand response, and energy efficiency analysis.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Big Data Analytics Platform",
+        "description": "Create a database-driven platform for processing and analyzing large volumes of structured and unstructured data. Implement functionalities for distributed data processing, parallel computing, and scalable analytics.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Smart City Management System",
+        "description": "Build a database system for managing various aspects of a smart city, such as transportation, waste management, and public services. Implement functionalities for data integration, real-time monitoring, and urban analytics.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Genomic Data Analysis Platform",
+        "description": "Develop a database-driven platform for analyzing genomic data, including DNA sequencing, gene expression, and genetic variations. Implement functionalities for data storage, analysis pipelines, and visualization.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Blockchain-Based Identity Management System",
+        "description": "Design a database system for managing digital identities using blockchain technology. Implement functionalities for identity verification, authentication, and privacy-preserving data storage.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Predictive Sales Analytics Platform",
+        "description": "Create a database-driven platform for analyzing sales data and predicting future sales performance. Implement functionalities for data preprocessing, predictive modeling, and sales forecasting.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Smart Farming System",
+        "description": "Build a database system for monitoring and managing agricultural processes using IoT sensors and data analysis. Implement functionalities for real-time environmental monitoring, crop yield prediction, and automated irrigation.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Sentiment Analysis System",
+        "description": "Develop a database-driven system for sentiment analysis of textual data, such as social media posts, customer reviews, or support tickets. Implement functionalities for natural language processing, sentiment classification, and trend analysis.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Real-Time Traffic Management System",
+        "description": "Design a database system for managing and optimizing traffic flow in urban areas. Implement functionalities for real-time data collection, traffic prediction, and adaptive signal control.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Smart Home Automation System",
+        "description": "Create a database-driven system for controlling and automating various devices and appliances in a smart home. Implement functionalities for device integration, rule-based automation, and energy management.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Robotic Process Automation (RPA) Framework",
+        "description": "Build a database system to support robotic process automation, including process definition, task scheduling, and performance monitoring. Implement functionalities for workflow management, exception handling, and reporting.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Smart Retail Analytics Platform",
+        "description": "Develop a database-driven analytics platform for retail businesses, including sales analysis, customer behavior tracking, and inventory optimization. Implement functionalities for data integration, visualization, and actionable insights.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Intelligent Document Management System",
+        "description": "Design a database system for managing and organizing large volumes of documents, such as contracts, invoices, or legal papers. Implement functionalities for document indexing, search, and version control.",
+        "level": "advanced",
+        "specialization": "DA"
+    },
+    {
+        "name": "Risk Management System",
+        "description": "Create a database-driven system for assessing and managing risks in various domains, such as finance, insurance, or project management. Implement functionalities for risk identification, analysis, and mitigation planning.",
+        "level": "advanced",
+        "specialization": "DA"
+    }
+]
