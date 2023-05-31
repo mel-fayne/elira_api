@@ -19,7 +19,7 @@ class ProjectIdea(models.Model):
         ('A', 'Advanced'),
     )
 
-    name = models.CharField(max_length=50, null=True)
+    name = models.CharField(max_length=100, null=True)
     description = models.CharField(max_length=200, null=True)
     specialisation = models.CharField(max_length=50, choices=SPECIALISATIONS)
     level = models.CharField(max_length=50, choices=LEVELS)

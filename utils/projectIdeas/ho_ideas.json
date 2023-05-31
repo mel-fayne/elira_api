@@ -2,361 +2,361 @@
     {
         "name": "Smart Home Weather Station",
         "description": "Build a weather station that collects temperature, humidity, and atmospheric pressure data from sensors and displays it on a web or mobile interface. Expand it to include weather forecasting and notifications.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Home Automation with Voice Control",
         "description": "Create a home automation system that allows users to control lights, appliances, and other devices using voice commands. Integrate voice recognition technologies like Amazon Alexa or Google Assistant.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Plant Monitoring System",
         "description": "Develop a system to monitor and automate plant care. Use sensors to measure soil moisture, temperature, and light levels, and create a responsive system that waters plants and adjusts lighting accordingly.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Smart Garage Door Opener",
         "description": "Build a smart garage door opener that can be controlled remotely using a mobile app. Implement features like automatic door opening when approaching home, remote monitoring, and notification alerts.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Home Energy Monitoring",
         "description": "Create a system that monitors and tracks home energy consumption. Use sensors to measure electricity usage and display real-time and historical data on a web or mobile interface for energy optimization.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Smart Irrigation System",
         "description": "Design an automated irrigation system that adjusts watering schedules based on soil moisture levels and weather conditions. Use sensors, actuators, and a microcontroller to control water flow and optimize plant watering.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Motion-Activated Security Camera",
         "description": "Build a motion-activated security camera system using a Raspberry Pi or Arduino. Capture video footage when motion is detected and send alerts to a mobile device for remote monitoring.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Home Air Quality Monitor",
         "description": "Develop a system that monitors air quality parameters such as particulate matter (PM), carbon dioxide (CO2), and volatile organic compounds (VOCs). Display real-time data and send alerts for air quality improvement.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Automated Pet Feeder",
         "description": "Create an automated pet feeder that dispenses food at scheduled intervals. Use a microcontroller, sensors, and a motor to control feeding times and portion sizes for pets.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Smart Doorbell with Camera",
         "description": "Build a smart doorbell system that includes a camera for video recording and two-way audio communication. Enable remote access to view visitors and receive notifications on a mobile device.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Garage Parking Assistant",
         "description": "Develop a garage parking assistant system that uses ultrasonic sensors to detect the distance between a car and the garage wall. Provide visual or audible feedback to assist with parking maneuvers.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Smart Plant Watering System",
         "description": "Create an automated plant watering system that adjusts watering based on moisture levels. Use a microcontroller, water pump, and sensors to maintain optimal moisture for indoor or outdoor plants.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Temperature and Humidity Logger",
         "description": "Build a temperature and humidity data logger using sensors and a microcontroller. Record environmental data at regular intervals and store it for analysis or visualization.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Automated Curtain Opener",
         "description": "Design a system to automate curtain or blind opening and closing. Use a motor, sensors, and a microcontroller to control curtain movement based on predefined schedules or environmental conditions.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Smart Light Switch",
         "description": "Create a smart light switch that allows users to control lights remotely via a mobile app. Implement features like dimming, color control, and scheduling for energy-saving purposes.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Parking Spot Availability Tracker",
         "description": "Build a parking spot availability tracking system using sensors to detect occupied and vacant parking spots. Display real-time availability on a web or mobile interface to assist drivers in finding parking.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Bluetooth-Based Proximity Sensor",
         "description": "Develop a Bluetooth-based proximity sensor that detects nearby devices and triggers actions. Use Bluetooth low energy (BLE) and a microcontroller to track proximity and initiate responses.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Home Rainwater Harvesting System",
         "description": "Design a rainwater harvesting system for home use. Implement sensors, valves, and a microcontroller to collect rainwater and control its storage, filtration, and distribution for various purposes.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Smart Smoke Detector",
         "description": "Build a smart smoke detector system that detects smoke and sends alerts to a mobile device. Include features like real-time monitoring, battery level notifications, and integration with home automation.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "IoT-based Home Security System",
         "description": "Develop an IoT-based home security system that includes door/window sensors, motion detectors, and a central control hub. Enable remote monitoring and notification alerts for enhanced home security.",
-        "level": "Beginner",
+        "level": "B",
         "specialisation": "HO"
     },
     {
         "name": "Smart Water Management System",
         "description": "Design an intelligent water management system that monitors and controls water usage in residential or commercial buildings. Implement features like leak detection, automated valve control, and real-time consumption monitoring.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Automated Indoor Garden",
         "description": "Create an automated indoor garden system that regulates lighting, temperature, humidity, and watering schedules. Utilize sensors, actuators, and a microcontroller to create an optimal environment for plant growth.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Home Energy Optimization System",
         "description": "Develop a system that optimizes home energy usage by analyzing real-time data from smart meters, weather forecasts, and user preferences. Implement energy-saving algorithms and provide recommendations for efficient energy management.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Smart Thermostat with Machine Learning",
         "description": "Build a smart thermostat that learns user preferences, adjusts temperature settings automatically, and provides energy-saving recommendations. Utilize machine learning algorithms to optimize temperature control based on user behavior and external factors.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Automated Pet Monitoring System",
         "description": "Create a comprehensive pet monitoring system that includes video surveillance, activity tracking, and environmental sensing. Develop a mobile or web interface to monitor pets remotely and receive health or behavior-related alerts.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Smart Irrigation System with Weather Integration",
         "description": "Enhance a smart irrigation system by integrating weather forecasts to optimize watering schedules. Use data from weather APIs to adjust irrigation levels based on predicted rainfall, temperature, and humidity.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Automated Aquarium Monitoring and Control",
         "description": "Develop an automated system to monitor and control an aquarium environment. Include sensors to measure water parameters, control pumps, adjust lighting, and provide a mobile interface for remote monitoring and management.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Smart Home Energy Storage System",
         "description": "Design a smart energy storage system that integrates with renewable energy sources like solar panels. Use batteries, power inverters, and a microcontroller to optimize energy storage and consumption.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Smart Garden Watering with Soil Analysis",
         "description": "Create a smart garden watering system that analyzes soil composition and moisture levels. Use sensors to collect data, analyze it to determine optimal watering needs, and automate watering accordingly.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Vehicle Tracking and Fleet Management",
         "description": "Develop a vehicle tracking and fleet management system using GPS and IoT technologies. Monitor vehicle location, performance, and maintenance schedules to optimize fleet operations and improve efficiency.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Smart Home Security with Facial Recognition",
         "description": "Build a smart home security system that utilizes facial recognition for user identification. Integrate IP cameras, facial recognition algorithms, and real-time alerts for enhanced home security.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Air Quality Monitoring and Ventilation Control",
         "description": "Create an air quality monitoring system that detects pollutants and adjusts ventilation systems accordingly. Use sensors to measure air quality parameters and automate ventilation for optimal indoor air quality.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Smart Waste Management System",
         "description": "Develop a smart waste management system that optimizes waste collection routes, monitors waste levels in bins, and sends notifications for timely pick-up. Improve efficiency and reduce environmental impact.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Automated Plant Disease Detection",
         "description": "Build a system that detects plant diseases using computer vision and machine learning. Capture leaf images, analyze them to identify diseases, and provide recommendations for appropriate treatment.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Smart Parking System with Mobile App Integration",
         "description": "Design a smart parking system that integrates with a mobile app to provide real-time parking spot availability, reservations, and payment options. Utilize sensors and a backend server to manage parking data.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Smart Waste Sorting and Recycling",
         "description": "Create a smart waste sorting and recycling system that uses sensors and actuators to separate different types of waste. Implement a machine learning model for improved waste classification and recycling efficiency.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Indoor Air Quality Monitoring and Purification",
         "description": "Develop an indoor air quality monitoring system that measures pollutants and triggers air purifiers when necessary. Utilize sensors, air quality algorithms, and a microcontroller for real-time monitoring and purification control.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Smart Watering System with Rainwater Harvesting",
         "description": "Build a smart watering system that incorporates rainwater harvesting for irrigation purposes. Capture rainwater, store it in tanks, and automate watering schedules based on water availability and plant needs.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Real-Time Traffic Monitoring and Analysis",
         "description": "Develop a system for real-time traffic monitoring using cameras and image processing techniques. Analyze traffic patterns, detect congestion, and provide alternative route suggestions to optimize traffic flow.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Health Monitoring Wearable Device",
         "description": "Create a wearable device that monitors vital signs like heart rate, blood pressure, and sleep patterns. Collect and analyze data to provide health insights and personalized recommendations for wellness improvement.",
-        "level": "Intermediate",
+        "level": "I",
         "specialisation": "HO"
     },
     {
         "name": "Autonomous Delivery Robot",
         "description": "Design and build an autonomous robot capable of navigating outdoor environments and delivering packages. Incorporate obstacle avoidance, mapping, and communication capabilities for efficient and safe deliveries.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Smart City Infrastructure Management",
         "description": "Develop a comprehensive system for managing and optimizing various aspects of a smart city infrastructure, including traffic, energy, waste management, and public services. Utilize IoT devices and data analytics for efficient resource allocation and monitoring.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Industrial Automation System",
         "description": "Create an advanced industrial automation system that integrates with various manufacturing processes. Implement real-time monitoring, predictive maintenance, and automated control for improved efficiency and productivity.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Smart Grid Energy Management",
         "description": "Design and implement a smart grid energy management system that optimizes power distribution, load balancing, and demand response. Utilize IoT devices, advanced algorithms, and real-time data analysis for efficient energy utilization.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Drone Swarm Control System",
         "description": "Develop a system for controlling a swarm of drones to perform complex tasks collaboratively. Implement communication protocols, path planning algorithms, and coordination strategies for efficient and synchronized drone operations.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Smart Building Automation System",
         "description": "Create an advanced smart building automation system that integrates with various subsystems, including lighting, HVAC, security, and energy management. Enable intelligent control, predictive analytics, and user-centric automation for enhanced building efficiency.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Wireless Sensor Networks for Environmental Monitoring",
         "description": "Design and deploy a wireless sensor network for environmental monitoring of large areas or remote locations. Develop energy-efficient protocols, data aggregation techniques, and visualization tools for comprehensive environmental analysis.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Autonomous Underwater Vehicle",
         "description": "Build an autonomous underwater vehicle (AUV) capable of exploring underwater environments for research or industrial purposes. Incorporate navigation, imaging, and communication systems for autonomous underwater operations.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Real-Time Video Analytics for Surveillance",
         "description": "Develop a real-time video analytics system for surveillance applications. Utilize computer vision algorithms, machine learning models, and edge computing for object detection, tracking, and behavior analysis.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Smart Agriculture with Precision Farming",
         "description": "Create an advanced smart agriculture system that combines IoT, robotics, and data analytics for precision farming. Develop crop monitoring, irrigation control, and yield prediction capabilities for optimized agriculture operations.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Autonomous Indoor Navigation for Robots",
         "description": "Build an advanced system for autonomous indoor navigation of robots in dynamic environments. Utilize sensor fusion, simultaneous localization and mapping (SLAM), and motion planning algorithms for robust and efficient navigation.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Smart Healthcare Monitoring System",
         "description": "Develop an advanced healthcare monitoring system that integrates wearable devices, remote sensing, and data analytics for personalized healthcare. Provide real-time monitoring, early detection of health issues, and predictive analytics for proactive care.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Industrial Internet of Things (IIoT) Platform",
         "description": "Design and implement an advanced IIoT platform for industrial applications. Enable seamless connectivity, data collection, and analysis across various industrial devices and systems for optimized operations and predictive maintenance.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Smart Traffic Management System",
         "description": "Create an advanced smart traffic management system that utilizes IoT, machine learning, and real-time data analysis to optimize traffic flow, reduce congestion, and enhance transportation efficiency.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Real-Time Object Tracking in Surveillance Videos",
         "description": "Develop an advanced system for real-time object tracking in surveillance videos. Implement object detection, tracking, and classification algorithms to enable intelligent video analysis and enhance security monitoring capabilities.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Wireless Power Transfer for IoT Devices",
         "description": "Explore and implement wireless power transfer techniques for charging IoT devices without physical connections. Develop efficient power transfer protocols and design charging infrastructure for seamless wireless charging of IoT devices.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Smart Wearable Assistive Technology",
         "description": "Design and develop advanced wearable assistive technology devices for individuals with disabilities or special needs. Incorporate sensors, actuators, and machine learning algorithms to provide personalized assistance and improve quality of life.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Blockchain-based IoT Security Framework",
         "description": "Create an advanced security framework for IoT devices using blockchain technology. Implement decentralized identity management, secure data communication, and tamper-proof device authentication for enhanced IoT security.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Advanced Drone Delivery System",
         "description": "Develop an advanced drone delivery system with extended range, payload capacity, and autonomous navigation capabilities. Integrate advanced safety features, obstacle avoidance, and efficient logistics management for reliable and efficient drone deliveries.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     },
     {
         "name": "Human-Robot Interaction and Collaboration",
         "description": "Explore and develop advanced techniques for human-robot interaction and collaboration. Enable natural language processing, gesture recognition, and intuitive interfaces for seamless communication and cooperation between humans and robots.",
-        "level": "Advanced",
+        "level": "A",
         "specialisation": "HO"
     }
 ]
