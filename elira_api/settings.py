@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'student',
-    'news'
+    'news',
+    'progress'
 ]
 
 
