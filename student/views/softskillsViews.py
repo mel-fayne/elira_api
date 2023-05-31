@@ -12,7 +12,9 @@ class SoftSkillProfileView(APIView):
         ssp_serializer = SoftSkillProfileSerializer(softskill_profile)
         ss_data['ss_profile'] = ssp_serializer.data
 
-        skills = SoftSkill.objects.filter(ss_profile=softskill_profile.ssProfileId)
+        ssProfId = softskill_profile.ssProfileId
+
+        skills = SoftSkill.objects.filter(ss_profile=ssProfId)
         ss_serializer = SoftSkillSerializer(skills, many=True)
         ss_data['skills'] = ss_serializer.data
 

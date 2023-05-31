@@ -136,7 +136,10 @@ class StudentUnitView(APIView):     # pass studentId
         avgTotal = 0.0
         for avg in semAvgs:
             avgTotal = avgTotal + avg
-        profileData['current_avg'] = avgTotal / len(semAvgs)
+        if len(semAvgs) == 0:
+            profileData['current_avg'] = avgTotal
+        else:
+            profileData['current_avg'] = avgTotal / len(semAvgs)
         profileData['current_honours'] = getHonours(profileData['current_avg'])
 
         acp_serializer = AcademicProfileSerializer(ac_profile, data=profileData, partial=True)

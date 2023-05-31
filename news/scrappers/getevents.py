@@ -219,25 +219,28 @@ print(f"Yesterday's TechEvent Objects Deleted: {num_deleted}")
 
 # ----------- Step Four: Add Today's events ------------------
 
-tech_events = []
+if len(events) == 0:
+    pass
+else:
+    tech_events = []
 
-for item in events:
-    tech_event = TechEvent(
-        source=item.get('source', ''),
-        isOnline=item.get('isOnline', False),
-        title=item.get('title', ''),
-        link=item.get('link', ''),
-        img=item.get('img', ''),
-        date=item.get('date').strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
-        location=item.get('location', ''),
-        organiser=item.get('organiser', ''),
-        format=item.get('format', []),
-        themes=item.get('themes', [])
-    )
-    tech_events.append(tech_event)
+    for item in events:
+        tech_event = TechEvent(
+            source=item.get('source', ''),
+            isOnline=item.get('isOnline', False),
+            title=item.get('title', ''),
+            link=item.get('link', ''),
+            img=item.get('img', ''),
+            date=item.get('date').strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+            location=item.get('location', ''),
+            organiser=item.get('organiser', ''),
+            format=item.get('format', []),
+            themes=item.get('themes', [])
+        )
+        tech_events.append(tech_event)
 
-TechEvent.objects.bulk_create(tech_events)
+    TechEvent.objects.bulk_create(tech_events)
 
-print(f"Today's TechEvent Objects Created: {len(tech_events)}")
+    print(f"Today's TechEvent Objects Created: {len(tech_events)}")
 
 print('***************** Events Fetch Ended *****************')
