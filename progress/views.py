@@ -15,14 +15,9 @@ class ProjectIdeasView(APIView):    # pass specialisation
 
         # get today's 3 ideas
         todaysIdeas = []
-        todaysIdeas.append(ProjectIdeaSerializer(data=beginnerIdeas[ideaIndex]).data)
-        todaysIdeas.append(ProjectIdeaSerializer(data=interIdeas[ideaIndex]).data)
-        todaysIdeas.append(ProjectIdeaSerializer(data=advIdeas[ideaIndex]).data)
-
-        # update index for tomorrow
-        appDataSer = AppDataSerializer(data={"current_value": ideaIndex + 1}, partial=True)
-        appDataSer.is_valid(raise_exception=True)
-        appDataSer.save()
+        todaysIdeas.append(ProjectIdeaSerializer(beginnerIdeas[ideaIndex]).data)
+        todaysIdeas.append(ProjectIdeaSerializer(interIdeas[ideaIndex]).data)
+        todaysIdeas.append(ProjectIdeaSerializer(advIdeas[ideaIndex]).data)
 
         return Response({"ideas" : todaysIdeas})
 
@@ -32,14 +27,14 @@ class ProjectIdeasView(APIView):    # pass specialisation
         serializer.save()
         return Response('All Project Ideas Uploaded Successfully')
 
-class AllProjectIdeasView(APIView):    
+class AllProjectIdeasView(APIView):
     def get(self, *args, **kwargs):
         ideas = ProjectIdea.objects.all()
         ideas_serializer = ProjectIdeaSerializer(
             ideas, many=True)
         return Response(ideas_serializer.data)
-    
-    
+
+
 class AppDataView(APIView):
     def post(self, request):
         serializer = AppDataSerializer(data=request.data)

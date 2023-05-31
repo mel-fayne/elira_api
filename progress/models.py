@@ -19,8 +19,8 @@ class ProjectIdea(models.Model):
         ('A', 'Advanced'),
     )
 
-    name = models.CharField(max_length=100, null=True)
-    description = models.CharField(max_length=200, null=True)
+    name = models.CharField(max_length=150, null=True)
+    description = models.CharField(max_length=300, null=True)
     specialisation = models.CharField(max_length=50, choices=SPECIALISATIONS)
     level = models.CharField(max_length=50, choices=LEVELS)
 
@@ -30,7 +30,7 @@ class ProjectIdea(models.Model):
     @property
     def ideaSpec(self):
         return self.specialisation
-    
+
     @property
     def ideaLevel(self):
         return self.level
