@@ -36,7 +36,7 @@ class ProjectIdea(models.Model):
     @property
     def ideaLevel(self):
         return self.level
-    
+
 class StudentProject(models.Model):
     STATUSES = (
         ('O', 'Ongoing'),
@@ -44,8 +44,8 @@ class StudentProject(models.Model):
     )
 
     name = models.CharField(max_length=150)
-    description = models.CharField(max_length=300, null=True)
-    git_link = models.CharField(max_length=200, null=True)
+    description = models.CharField(max_length=300, null=True, blank=True)
+    git_link = models.CharField(max_length=200, null=True, blank=True)
     status = models.CharField(max_length=50, choices=STATUSES, default='O')
     progress = models.FloatField(default=0.0)
     current_step = models.IntegerField(default=1)
@@ -54,7 +54,7 @@ class StudentProject(models.Model):
         Student, null=True, on_delete=models.CASCADE)
     project_idea = models.ForeignKey(
         ProjectIdea, null=True, on_delete=models.SET_NULL)
-    
+
 
 class AppData(models.Model):
     name = models.CharField(max_length=50, unique=True)

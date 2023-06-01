@@ -18,6 +18,7 @@ class StudentSerializer(serializers.ModelSerializer):
             'compatibility_scores',
             'email',
             'password',
+            'project_wishlist',
             'last_active', 'user_token',
             'first_pet',
             'childhood_street',

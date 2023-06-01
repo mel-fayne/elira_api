@@ -46,12 +46,12 @@ class StudentProjectView(APIView):          # pass studentId
         studentProjects['completed'] = StudentProjectSerializer(
             completedPrjs, many=True).data
         return Response(studentProjects)
-    
+
     def post(self, request):
         serializer = StudentProjectSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-
+        return Response(serializer.data)
 
     def patch(self, request, *args, **kwargs):    # pass project_id
         workExp = StudentProject.objects.filter(id=self.kwargs['project_id']).first()
@@ -63,7 +63,7 @@ class StudentProjectView(APIView):          # pass studentId
     def delete(self, *args, **kwargs):      # pass project_id
         StudentProject.objects.filter(id=self.kwargs['project_id']).first().delete()
         return Response('Deleted Successfully')
-    
+
 
 class StudentIdeaWishListView(APIView):    # pass studentId
     def get(self, *args, **kwargs):
@@ -71,7 +71,8 @@ class StudentIdeaWishListView(APIView):    # pass studentId
             id=self.kwargs['student_id']).first().projectWishList
         projectWishList = []
         for id in wishList:
-            projectWishList.append(ProjectIdea.objects.filter(id=id).first())
+            ideaSer = ProjectIdeaSerializer(ProjectIdea.objects.filter(id=id).first())
+            projectWishList.append(ideaSer.data)
         return Response({"ideas": projectWishList})
 
 
