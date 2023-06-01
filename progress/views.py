@@ -63,8 +63,8 @@ class StudentProjectView(APIView):          # pass studentId
         return Response(serializer.data)
 
     def patch(self, request, *args, **kwargs):    # pass project_id
-        workExp = StudentProject.objects.filter(id=self.kwargs['project_id']).first()
-        serializer = StudentProjectSerializer(workExp, data=request.data, partial=True)
+        projIdea = StudentProject.objects.filter(id=self.kwargs['project_id']).first()
+        serializer = StudentProjectSerializer(projIdea, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data)

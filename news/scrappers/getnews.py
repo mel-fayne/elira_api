@@ -5,9 +5,6 @@ import feedparser
 import requests
 from bs4 import BeautifulSoup
 
-from progress.models import AppData
-from progress.serializers import AppDataSerializer
-
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
 }
@@ -21,6 +18,8 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'elira_api.settings')
 django.setup()
 
 from news.models import NewsPiece
+from progress.models import AppData
+from progress.serializers import AppDataSerializer
 
 
 print('***************** News Fetch Started *****************')
