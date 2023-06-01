@@ -45,6 +45,15 @@ class StudentProjectView(APIView):          # pass studentId
             ongoingPrjs, many=True).data
         studentProjects['completed'] = StudentProjectSerializer(
             completedPrjs, many=True).data
+
+        wishList = Student.objects.filter(
+            id=self.kwargs['student_id']).first().projectWishList
+        projectWishList = []
+        for id in wishList:
+            ideaSer = ProjectIdeaSerializer(ProjectIdea.objects.filter(id=id).first())
+            projectWishList.append(ideaSer.data)
+        studentProjects['projectWishList'] = projectWishList
+
         return Response(studentProjects)
 
     def post(self, request):

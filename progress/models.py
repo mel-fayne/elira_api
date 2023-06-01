@@ -44,11 +44,10 @@ class StudentProject(models.Model):
     )
 
     name = models.CharField(max_length=150)
-    description = models.CharField(max_length=300, null=True, blank=True)
+    description = models.CharField(max_length=500, null=True, blank=True)
     git_link = models.CharField(max_length=200, null=True, blank=True)
     status = models.CharField(max_length=50, choices=STATUSES, default='O')
     progress = models.FloatField(default=0.0)
-    current_step = models.IntegerField(default=1)
     steps  = models.JSONField(default=list)
     student_id = models.ForeignKey(
         Student, null=True, on_delete=models.CASCADE)
