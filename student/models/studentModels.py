@@ -55,6 +55,10 @@ class Student(models.Model):
     @property
     def projectWishList(self):
         return self.project_wishlist
+    
+    @property
+    def specMaps(self):
+        return self.spec_roadmaps
 
     @property
     def securityQuestions(self):

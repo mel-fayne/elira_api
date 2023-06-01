@@ -45,7 +45,7 @@
         "link": "https://roadmap.sh/blockchain",
         "name": "Blockchain",
         "description": "Step by step guide to becoming a blockchain developer in 2023.",
-        "specialisation": "NA"
+        "specialisation": "NC"
     },
     {
         "link": "https://roadmap.sh/blockchain",
@@ -81,7 +81,7 @@
         "link": "https://roadmap.sh/cpp",
         "name": "C++",
         "description": "Step by step guide to becoming a C++ developer in 2023",
-        "specialisation": "NA"
+        "specialisation": "NC"
     },
     {
         "link": "https://roadmap.sh/cpp",
@@ -105,7 +105,7 @@
         "link": "https://roadmap.sh/cyber-security",
         "name": "Cyber Security",
         "description": "Step by step guide to becoming a Cyber Security Expert in 2023",
-        "specialisation": "NA"
+        "specialisation": "NC"
     },
     {
         "link": "https://roadmap.sh/ux-design",
@@ -164,7 +164,7 @@
         "link": "https://roadmap.sh/nodejs",
         "name": "Node.js",
         "description": "Step by step guide to becoming a modern Node.js developer in 2023",
-        "specialisation": "DB"
+        "specialisation": "DA"
     },
     {
         "link": "https://roadmap.sh/typescript",
@@ -285,7 +285,7 @@
         "link": "https://roadmap.sh/best-practices/aws",
         "name": "AWS",
         "description": "Detailed list of best practices for Amazon Web Services (AWS)",
-        "specialisation": "NA"
+        "specialisation": "NC"
     },
     {
         "link": "https://roadmap.sh/best-practices/aws",
