@@ -51,7 +51,7 @@ class SpecRoadmapView(APIView):    # pass specialisation
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response('All Roadmaps Uploaded Successfully')
-    
+
 class StudentRoadMapsView(APIView):    # pass studentId
     def get(self, *args, **kwargs):
         spec_maps = Student.objects.filter(
@@ -60,7 +60,7 @@ class StudentRoadMapsView(APIView):    # pass studentId
         for id in spec_maps:
             mapSer = SpecRoadmapSerializer(SpecRoadmap.objects.filter(id=id).first())
             specMapsList.append(mapSer.data)
-        return Response({"ideas": specMapsList})
+        return Response({"maps": specMapsList})
 
 
 class StudentProjectView(APIView):          # pass studentId
