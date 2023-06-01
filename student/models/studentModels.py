@@ -28,6 +28,7 @@ class Student(models.Model):
 
     # ------------- progress fields --------------
     project_wishlist = models.JSONField(default=list)
+    spec_roadmaps = models.JSONField(default=list)
 
     # ------------- auth fields --------------
     user_token = models.CharField(max_length=200, null=True)

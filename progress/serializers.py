@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from progress.models import AppData, ProjectIdea, StudentProject
+from progress.models import AppData, ProjectIdea, SpecRoadmap, StudentProject
 
 class ProjectIdeaSerializer(serializers.ModelSerializer):
     class Meta:
@@ -10,6 +10,12 @@ class ProjectIdeaSerializer(serializers.ModelSerializer):
 class StudentProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentProject
+        fields = '__all__'
+
+
+class SpecRoadmapSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SpecRoadmap
         fields = '__all__'
 
 class AppDataSerializer(serializers.ModelSerializer):

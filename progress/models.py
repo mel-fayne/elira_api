@@ -23,7 +23,6 @@ class ProjectIdea(models.Model):
 
     name = models.CharField(max_length=150, null=True)
     description = models.CharField(max_length=300, null=True)
-    specialisation = models.CharField(max_length=50, choices=SPECIALISATIONS)
     level = models.CharField(max_length=50, choices=LEVELS)
 
     def __str__(self):
@@ -36,6 +35,20 @@ class ProjectIdea(models.Model):
     @property
     def ideaLevel(self):
         return self.level
+    
+class SpecRoadmap(models.Model):
+    name = models.CharField(max_length=150)
+    description = models.CharField(max_length=300)
+    specialisation = models.CharField(max_length=50, choices=SPECIALISATIONS, null=True)
+    link = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name
+
+    @property
+    def ideaSpec(self):
+        return self.specialisation
+
 
 class StudentProject(models.Model):
     STATUSES = (

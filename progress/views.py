@@ -1,8 +1,8 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-from progress.models import AppData, ProjectIdea, StudentProject
-from progress.serializers import AppDataSerializer, ProjectIdeaSerializer, StudentProjectSerializer
+from progress.models import AppData, ProjectIdea, SpecRoadmap, StudentProject
+from progress.serializers import AppDataSerializer, ProjectIdeaSerializer, SpecRoadmapSerializer, StudentProjectSerializer
 from student.models.studentModels import Student
 
 
@@ -32,6 +32,25 @@ class ProjectIdeasView(APIView):    # pass specialisation
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response('All Project Ideas Uploaded Successfully')
+
+
+class SpecRoadmapView(APIView):    # pass specialisation
+    def get(self, *args, **kwargs):
+        specMaps = SpecRoadmap.objects.filter(specialisation=self.kwargs['specialisation'])
+        genMaps = SpecRoadmap.objects.filter(specialisation=None)
+
+        allMaps = {}
+        allMaps["specMaps"] = SpecRoadmapSerializer(specMaps, many=True).data
+        allMaps["generalMaps"] = SpecRoadmapSerializer(genMaps, many=True).data
+
+        return Response(allMaps)
+
+    def post(self, request):
+        serializer = SpecRoadmapSerializer(
+            data=request.data['roadmaps'], many=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response('All Roadmaps Uploaded Successfully')
 
 
 class StudentProjectView(APIView):          # pass studentId

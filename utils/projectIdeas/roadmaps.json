@@ -1,0 +1,296 @@
+[
+    {
+        "link": "https://roadmap.sh/frontend",
+        "name": "Frontend",
+        "description": "Step by step guide to becoming a modern frontend developer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/backend",
+        "name": "Backend",
+        "description": "Step by step guide to becoming a modern backend developer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/devops",
+        "name": "DevOps",
+        "description": "Step by step guide for DevOps, SRE or any other Operations Role in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/full-stack",
+        "name": "Full Stack",
+        "description": "Step by step guide to becoming a modern full stack developer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/android",
+        "name": "Android",
+        "description": "Step by step guide to becoming an Android developer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/postgresql-dba",
+        "name": "PostgreSQL",
+        "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2023",
+        "specialisation": "DA"
+    },
+    {
+        "link": "https://roadmap.sh/postgresql-dba",
+        "name": "PostgreSQL",
+        "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2023",
+        "specialisation": "AI"
+    },
+    {
+        "link": "https://roadmap.sh/blockchain",
+        "name": "Blockchain",
+        "description": "Step by step guide to becoming a blockchain developer in 2023.",
+        "specialisation": "NA"
+    },
+    {
+        "link": "https://roadmap.sh/blockchain",
+        "name": "Blockchain",
+        "description": "Step by step guide to becoming a blockchain developer in 2023.",
+        "specialisation": "CS"
+    },
+    {
+        "link": "https://roadmap.sh/blockchain",
+        "name": "Blockchain",
+        "description": "Step by step guide to becoming a blockchain developer in 2023.",
+        "specialisation": "DA"
+    },
+    {
+        "link": "https://roadmap.sh/qa",
+        "name": "QA",
+        "description": "Steps to follow in order to become a modern QA Engineer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/software-architect",
+        "name": "Software Architect",
+        "description": "Step by step guide to becoming a Software Architect in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/aspnet-core",
+        "name": "ASP.NET Core",
+        "description": "Step by step guide to becoming an ASP.NET core developer in 2023",
+        "specialisation": "IS"
+    },
+    {
+        "link": "https://roadmap.sh/cpp",
+        "name": "C++",
+        "description": "Step by step guide to becoming a C++ developer in 2023",
+        "specialisation": "NA"
+    },
+    {
+        "link": "https://roadmap.sh/cpp",
+        "name": "C++",
+        "description": "Step by step guide to becoming a C++ developer in 2023",
+        "specialisation": "HO"
+    },
+    {
+        "link": "https://roadmap.sh/flutter",
+        "name": "Flutter",
+        "description": "Step by step guide to becoming a Flutter developer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/cyber-security",
+        "name": "Cyber Security",
+        "description": "Step by step guide to becoming a Cyber Security Expert in 2023",
+        "specialisation": "CS"
+    },
+    {
+        "link": "https://roadmap.sh/cyber-security",
+        "name": "Cyber Security",
+        "description": "Step by step guide to becoming a Cyber Security Expert in 2023",
+        "specialisation": "NA"
+    },
+    {
+        "link": "https://roadmap.sh/ux-design",
+        "name": "UX Design",
+        "description": "Step by step guide to becoming a UX Designer in 2023",
+        "specialisation": "GD"
+    },
+    {
+        "link": "https://roadmap.sh/react-native",
+        "name": "React Native",
+        "description": "Step by step guide to becoming a React Native developer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/computer-science",
+        "name": "Computer Science",
+        "description": "Computer Science curriculum with free resources for a self-taught developer."
+    },
+    {
+        "link": "https://roadmap.sh/react",
+        "name": "React",
+        "description": "Everything that is there to learn about React and the ecosystem in 2023.",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/angular",
+        "name": "Angular",
+        "description": "Everything that is there to learn about Angular and the ecosystem in 2023.",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/vue",
+        "name": "Vue",
+        "description": "Everything that is there to learn about Vue and the ecosystem in 2023.",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/javascript",
+        "name": "JavaScript",
+        "description": "Step by step guide to learn JavaScript in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/javascript",
+        "name": "JavaScript",
+        "description": "Step by step guide to learn JavaScript in 2023",
+        "specialisation": "GD"
+    },
+    {
+        "link": "https://roadmap.sh/nodejs",
+        "name": "Node.js",
+        "description": "Step by step guide to becoming a modern Node.js developer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/nodejs",
+        "name": "Node.js",
+        "description": "Step by step guide to becoming a modern Node.js developer in 2023",
+        "specialisation": "DB"
+    },
+    {
+        "link": "https://roadmap.sh/typescript",
+        "name": "TypeScript",
+        "description": "Everything you need to learn about TypeScript in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/python",
+        "name": "Python",
+        "description": "Step by step guide to becoming a Python developer in 2023",
+        "specialisation": "AI"
+    },
+    {
+        "link": "https://roadmap.sh/system-design",
+        "name": "System Design",
+        "description": "Everything you need to know about designing large scale systems."
+    },
+    {
+        "link": "https://roadmap.sh/java",
+        "name": "Java",
+        "description": "Step by step guide to becoming a Java developer in 2023",
+        "specialisation": "IS"
+    },
+    {
+        "link": "https://roadmap.sh/java",
+        "name": "Java",
+        "description": "Step by step guide to becoming a Java developer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/spring-boot",
+        "name": "Spring Boot",
+        "description": "Step by step guide to becoming a Spring Boot developer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/golang",
+        "name": "Go Roadmap",
+        "description": "Step by step guide to becoming a Go developer in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/graphql",
+        "name": "GraphQL",
+        "description": "Step by step guide to learn GraphQL in 2023",
+        "specialisation": "DA"
+    },
+    {
+        "link": "https://roadmap.sh/graphql",
+        "name": "GraphQL",
+        "description": "Step by step guide to learn GraphQL in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/software-design-architecture",
+        "name": "Design and Architecture",
+        "description": "Step by step guide to learn software design and architecture"
+    },
+    {
+        "link": "https://roadmap.sh/design-system",
+        "name": "Design System",
+        "description": "Learn how to create a design system with this step by step guide"
+    },
+    {
+        "link": "https://roadmap.sh/docker",
+        "name": "Docker",
+        "description": "Step by step guide to learning Docker in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/kubernetes",
+        "name": "Kubernetes",
+        "description": "Step by step guide to learning Kubernetes in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/mongodb",
+        "name": "MongoDB",
+        "description": "Step by step guide to learning MongoDB in 2023",
+        "specialisation": "DA"
+    },
+    {
+        "link": "https://roadmap.sh/mongodb",
+        "name": "MongoDB",
+        "description": "Step by step guide to learning MongoDB in 2023",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/prompt-engineering",
+        "name": "Prompt Engineering",
+        "description": "Step by step guide to learning Prompt Engineering"
+    },
+    {
+        "link": "https://roadmap.sh/best-practices/frontend-performance",
+        "name": "Frontend Performance",
+        "description": "Detailed list of best practices to improve your frontend performance",
+        "specialisation": "GD"
+    },
+    {
+        "link": "https://roadmap.sh/best-practices/frontend-performance",
+        "name": "Frontend Performance",
+        "description": "Detailed list of best practices to improve your frontend performance",
+        "specialisation": "SD"
+    },
+    {
+        "link": "https://roadmap.sh/best-practices/api-security",
+        "name": "API Security",
+        "description": "Detailed list of best practices to make your APIs secure",
+        "specialisation": "CS"
+    },
+    {
+        "link": "https://roadmap.sh/best-practices/code-review",
+        "name": "Code Reviews",
+        "description": "Detailed list of best practices for effective code reviews and quality"
+    },
+    {
+        "link": "https://roadmap.sh/best-practices/aws",
+        "name": "AWS",
+        "description": "Detailed list of best practices for Amazon Web Services (AWS)",
+        "specialisation": "NA"
+    },
+    {
+        "link": "https://roadmap.sh/best-practices/aws",
+        "name": "AWS",
+        "description": "Detailed list of best practices for Amazon Web Services (AWS)",
+        "specialisation": "DA"
+    }
+]

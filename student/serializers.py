@@ -19,6 +19,7 @@ class StudentSerializer(serializers.ModelSerializer):
             'email',
             'password',
             'project_wishlist',
+            'spec_roadmaps',
             'last_active', 'user_token',
             'first_pet',
             'childhood_street',
