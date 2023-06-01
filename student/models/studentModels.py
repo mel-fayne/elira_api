@@ -26,6 +26,9 @@ class Student(models.Model):
     specialisation_score = models.FloatField(default=0.0)
     compatibility_scores = models.JSONField(default=list)
 
+    # ------------- progress fields --------------
+    project_wishlist = models.JSONField(default=list)
+
     # ------------- auth fields --------------
     user_token = models.CharField(max_length=200, null=True)
     last_active = models.CharField(max_length=200, null=True)
@@ -47,6 +50,10 @@ class Student(models.Model):
     @property
     def studentSpec(self):
         return self.specialisation
+    
+    @property
+    def projectWishList(self):
+        return self.project_wishlist
 
     @property
     def securityQuestions(self):

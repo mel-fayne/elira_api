@@ -1,5 +1,7 @@
 from django.db import models
 
+from student.models.studentModels import Student
+
 
 SPECIALISATIONS = (
         ('AI', 'Artificial Intellignce & Data Science'),
@@ -34,6 +36,25 @@ class ProjectIdea(models.Model):
     @property
     def ideaLevel(self):
         return self.level
+    
+class StudentProject(models.Model):
+    STATUSES = (
+        ('O', 'Ongoing'),
+        ('C', 'Complete')
+    )
+
+    name = models.CharField(max_length=150)
+    description = models.CharField(max_length=300, null=True)
+    git_link = models.CharField(max_length=200, null=True)
+    status = models.CharField(max_length=50, choices=STATUSES, default='O')
+    progress = models.FloatField(default=0.0)
+    current_step = models.IntegerField(default=1)
+    steps  = models.JSONField(default=list)
+    student_id = models.ForeignKey(
+        Student, null=True, on_delete=models.CASCADE)
+    project_idea = models.ForeignKey(
+        ProjectIdea, null=True, on_delete=models.SET_NULL)
+    
 
 class AppData(models.Model):
     name = models.CharField(max_length=50, unique=True)
